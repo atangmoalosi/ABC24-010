@@ -1,6 +1,6 @@
 const imageList = [
    {
-    src: 'images/straplesstop.jpg',
+    src: 'images/strapless top.jpg',
     title: 'Strapless Top'
   },
   {
