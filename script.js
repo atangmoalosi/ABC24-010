@@ -1,7 +1,16 @@
 const imageList = [
- 'images/blackfloralhaltertop.jpg',
- 'images/bluehaltertop.jpg',
- 'images/orangedresstop.jpg'
+   {
+    src: 'images/blackfloralhaltertop.jpg',
+    title: 'Black Floral Halter Top'
+  },
+  {
+    src: 'images/bluehaltertop.jpg',
+    title: 'Blue Halter Top'
+  },
+  {
+    src: 'images/orangedresstop.jpg',
+    title: 'Orange Dress Top'
+  }
 ];
 
 let currentIndex = 0;
