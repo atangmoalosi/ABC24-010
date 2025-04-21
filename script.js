@@ -10,11 +10,11 @@ const imageList = [
   {
     src: 'images/orangedresstop.jpg',
     title: 'Orange Dress Top'
-  }
+  },
    {
     src: 'images/leopardprinttop.jpg',
     title: 'Leopard Print Top'
-   },
+   }
    
 ];
 
