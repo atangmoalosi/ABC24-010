@@ -1,7 +1,7 @@
 const imageList = [
    {
-    src: 'images/strapless top.jpg',
-    title: 'Strapless Top'
+     src: 'images/strapless top.jpg' ,
+     title: 'Strapless Top'
   },
   {
     src: 'images/blackfloralhaltertop.jpg',
