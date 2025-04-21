@@ -1,5 +1,5 @@
 const imageList = [
-  'images/women-top1.jpg',
+  'images/women-blackfloralhaltertop.jpg',
   'images/women-top2.jpg',
   'images/women-top3.jpg'
 ];
