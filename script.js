@@ -1,7 +1,7 @@
 const imageList = [
-  'images/women-blackfloralhaltertop.jpg',
-  'images/women-top2.jpg',
-  'images/women-top3.jpg'
+  'images/women-top1.jpg' , blackfloralhaltertop.jpg
+  'images/women-top2.jpg',  bluehaltertop.jpg
+  'images/women-top3.jpg' , orangedresstop.jpg
 ];
 
 let currentIndex = 0;
