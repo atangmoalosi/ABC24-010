@@ -14,12 +14,14 @@ const imageList = [
 ];
 
 let currentIndex = 0;
+const titleElement = document.getElementById('carousel-title');
 const imgElement = document.getElementById('carousel-image');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 
 function showImage(index) {
-  imgElement.src = imageList[index];
+  imgElement.src = imageList[index].src;
+  titleElement.textContent = imageList[index].title;
 }
 
 prevBtn.addEventListener('click', () => {
