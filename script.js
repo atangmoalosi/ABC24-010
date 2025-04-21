@@ -17,7 +17,7 @@ const imageList = [
    },
    {
     src: 'images/lacetop.jpg',
-    title: 'Leopard Top'
+    title: 'Lace Top'
    },
    {
     src: 'images/meshtop.jpg',
