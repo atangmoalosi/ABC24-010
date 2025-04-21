@@ -14,7 +14,24 @@ const imageList = [
    {
     src: 'images/leopardprinttop.jpg',
     title: 'Leopard Print Top'
+   },
+   {
+    src: 'images/lacetop.jpg',
+    title: 'Leopard Top'
+   },
+   {
+    src: 'images/meshtop.jpg',
+    title: 'Mesh Top'
+   },
+   {
+    src: 'images/vneckleopardtop.jpg',
+    title: 'V-Neck Leopard Top'
+   },
+   {
+    src: 'images/dazzlingredtop.jpg',
+    title: 'Dazzling Red Top'
    }
+   
    
 ];
 
