@@ -25,7 +25,7 @@ function createCarousel(images, imgId, titleId, prevClass, nextClass) {
 
 createCarousel([
   { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:,size: },
-  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:,size: },
+  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:,size:},
   {src: 'images/orangedresstop.jpg', title: 'Orange Dress Top',price:,size: },
   {src: 'images/leopardprinttop.jpg',title: 'Leopard Print Top',price:,size:},
   {src: 'images/lacetop.jpg', title: 'Lace Top',price:,size:},
