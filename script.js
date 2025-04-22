@@ -34,9 +34,7 @@ createCarousel([
   {src: 'images/vneckleopardtop.jpg',title: 'V-Neck Leopard Top'},
   {src: 'images/dazzlingredtop.jpg',title: 'Dazzling Red Top'},
   {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top'},
-  {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top'}
-  
-          
+  {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top'}          
 ], 'tops-image', 'tops-title', 'tops-prev', 'tops-next');
 
 // Carousel 2: Skirts
