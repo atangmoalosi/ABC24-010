@@ -50,7 +50,7 @@ createCarousel([
   {src: 'images/yellowleoparddress.jpg', title: 'Yellow Leopard Dress'},
   {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt'},
   
-], 'skirts-image', 'skirts-title', 'skirts-prev', 'skirts-next');
+], 'skirts and dresses-image', 'skirts and dresses-title', 'skirts and dresses-prev', 'skirts and dresses-next');
 
 // Carousel 3: Pants
 createCarousel([
