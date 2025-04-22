@@ -49,7 +49,7 @@ createCarousel([
   {src: 'images/dazzlingredtop.jpg',title: 'Dazzling Red Top',price:'P45',size:'M'},
   {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top',price:'P25',size:'S'},
   {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:'P30',size:'M'}          
-], 'tops-image', 'tops-title','tops-price','tops-size', 'tops-prev', 'tops-next');
+], 'tops-image', 'tops-title','tops-price','tops-size', 'tops-prev', 'tops-next','add-tops');
 
 
 createCarousel([
