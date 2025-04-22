@@ -39,8 +39,17 @@ createCarousel([
 
 // Carousel 2: Skirts
 createCarousel([
-  { src: 'images/skirt1.jpg', title: 'Denim Skirt' },
-  { src: 'images/skirt2.jpg', title: 'Floral Skirt' }
+  { src: 'images/blacklaceskirt.jpg', title: 'Black Lace Skirt' },
+  { src: 'images/blackwrapneckdress.jpg', title: 'Black Wrap Neck Dress' },
+  {src: 'images/bluefloralskirt.jpg', title: 'Blue Floral Skirt'},
+  {src: 'images/olivemaxidress.jpg', title: 'Olive Maxi Dress'},
+  {src: 'images/denimmaxiskirt.jpg', title: 'Denim Maxi Skirt'},
+  {src: 'images/pinkmaxidress.jpg', title: 'Pink Maxi Dress'},
+  {src: 'images/rainbowminidress.jpg', title: 'Rainbow Mini Dress'},
+  {src: 'images/purplemeshskirt.jpg', title: 'Purple Mesh Skirt'},
+  {src: 'images/yellowleoparddress.jpg', title: 'Yellow Leopard Dress'},
+  {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt'},
+  
 ], 'skirts-image', 'skirts-title', 'skirts-prev', 'skirts-next');
 
 // Carousel 3: Pants
