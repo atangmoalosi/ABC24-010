@@ -29,8 +29,8 @@ createCarousel([
   {src: 'images/orangedresstop.jpg', title: 'Orange Dress Top',price:'P45',size:'M' },
   {src: 'images/leopardprinttop.jpg',title: 'Leopard Print Top',price:'P35',size:'S'},
   {src: 'images/lacetop.jpg', title: 'Lace Top',price:'P30',size:'M'},
-  {src: 'images/meshtop.jpg',title: 'Mesh Top',price:'P35',size:'S},
-  {src: 'images/vneckleopardtop.jpg',title: 'V-Neck Leopard Top',price:'P40,size:'S'},
+  {src: 'images/meshtop.jpg',title: 'Mesh Top',price:'P35',size:'S'},
+  {src: 'images/vneckleopardtop.jpg',title: 'V-Neck Leopard Top',price:'P40',size:'S'},
   {src: 'images/dazzlingredtop.jpg',title: 'Dazzling Red Top',price:'P45',size:'M'},
   {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top',price:'P25',size:'S'},
   {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:'P30',size:'M'}          
