@@ -1,13 +1,19 @@
-function createCarousel(images, imgId, titleId, prevClass, nextClass) {
+function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, nextClass, buttonId) {
   let index = 0;
   const imgEl = document.getElementById(imgId);
   const titleEl = document.getElementById(titleId);
+  const priceEl = document.getElementById(priceId);
+  const sizeEl = document.getElementById(sizeId);
   const prevBtn = document.querySelector(`.${prevClass}`);
   const nextBtn = document.querySelector(`.${nextClass}`);
+  const addToCartBtn = document.getElementById(buttonId);
 
   function show() {
-    imgEl.src = images[index].src;
-    titleEl.textContent = images[index].title;
+    const item = images[index];
+    imgEl.src = item.src;
+    titleEl.textContent = item.title;
+    priceEl.textContent = `Price: ${item.price}`;
+    sizeEl.textContent = `Size: ${item.size}`;
   }
 
   prevBtn.addEventListener('click', () => {
@@ -20,8 +26,17 @@ function createCarousel(images, imgId, titleId, prevClass, nextClass) {
     show();
   });
 
-  show(); 
+  addToCartBtn.addEventListener('click', () => {
+    const item = images[index];
+    const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+    cart.push(item);
+    localStorage.setItem('ecoCart', JSON.stringify(cart));
+    alert(`${item.title} has been added to your cart.`);
+  });
+
+  show();
 }
+
 
 createCarousel([
   { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:'P40',size: 'S'},
