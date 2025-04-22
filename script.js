@@ -66,8 +66,18 @@ createCarousel([
 ], 'skirts-and-dresses-image', 'skirts-and-dresses-title','skirts-and-dresses-price','skirts-and-dresses-size', 'skirts-and-dresses-prev', 'skirts-and-dresses-next','add-skirts-and-dresses');
 
 createCarousel([
-    { src: 'images/blackjacket.jpg', title: 'Black Jacket', price: 'P80', size: 'M' },
-    { src: 'images/bluedenimcoat.jpg', title: 'Denim Coat', price: 'P90', size: 'L' }
+    { src: 'images/blackleatherjacket.jpg', title: 'Black Leather Jacket', price: 'P60', size: 'M' },
+    { src: 'images/browncroppedcoat.jpg', title: 'Brown Cropped Coat', price: 'P55', size: 'S' },
+    { src: 'images/burgundyfurcoat.jpg', title: 'Burgundy Fur Coat', price: 'P60', size: 'M' },
+    { src: 'images/croppedcardigan.jpg', title: 'Cropped Cardigan', price: 'P30', size: 'XS' },
+    { src: 'images/denimjacket.jpg', title: 'Denim Jacket', price: 'P45', size: 'S' },
+    { src: 'images/brownleatherjacket.jpg', title: 'Brown Leather Jacket', price: 'P55', size: 'M' },
+    { src: 'images/browncroppedcoat.jpg', title: 'Brown Cropped Coat', price: 'P55', size: 'S' },
+    { src: 'images/navybluewindbreaker.jpg', title: 'Navy Blue Wind Breaker', price: 'P35', size: 'S' },
+    { src: 'images/longfauxfurcoat.jpg', title: 'Long Faux Fur Coat', price: 'P55', size: 'L' },
+    { src: 'images/redplushjacket.jpg', title: 'Red Plush Jacket', price: 'P45', size: 'M' },
+    { src: 'images/vneckcardigan.jpg', title: 'V-Neck Cardigan', price: 'P55', size: 'S' },
+  
   ],'outerwear-image','outerwear-title','outerwear-price','outerwear-size','outerwear-prev','outerwear-next', 'add-outerwear');
 
 createCarousel([
