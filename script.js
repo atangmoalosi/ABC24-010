@@ -30,8 +30,15 @@ const imageList = [
    {
     src: 'images/dazzlingredtop.jpg',
     title: 'Dazzling Red Top'
+   },
+   {
+    src: 'images/tightlongsleeve.jpg',
+    title: 'Tight Long Sleeve Top'
+   },
+   {
+    src: 'images/stripedlongsleeve.jpg',
+    title: 'Striped Long Sleeve Top'
    }
-   
    
 ];
 
