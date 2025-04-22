@@ -48,8 +48,7 @@ createCarousel([
   {src: 'images/rainbowminidress.jpg', title: 'Rainbow Mini Dress'},
   {src: 'images/purplemeshskirt.jpg', title: 'Purple Mesh Skirt'},
   {src: 'images/yellowleoparddress.jpg', title: 'Yellow Leopard Dress'},
-  {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt'},
-  
+  {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt'}  
 ], 'skirts and dresses-image', 'skirts and dresses-title', 'skirts and dresses-prev', 'skirts and dresses-next');
 
 // Carousel 3: Pants
