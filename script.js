@@ -26,7 +26,7 @@ function createCarousel(images, imgId, titleId, prevClass, nextClass) {
 // Carousel 1: Tops
 createCarousel([
   { src: 'images/straplesstop.jpg', title: 'Strapless Top' },
-  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top' }
+  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top' },
   {src: 'images/orangedresstop.jpg', title: 'Orange Dress Top' },
   {src: 'images/leopardprinttop.jpg',title: 'Leopard Print Top'},
   {src: 'images/lacetop.jpg', title: 'Lace Top'},
