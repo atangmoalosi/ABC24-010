@@ -71,7 +71,6 @@ createCarousel([
   ],'outerwear-image','outerwear-title','outerwear-price','outerwear-size','outerwear-prev','outerwear-next', 'add-outerwear');
 
 createCarousel([
-    { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P45', size: 'M' },
-    { src: 'images/beigetrousers.jpg', title: 'Beige Trousers', price: 'P65', size: 'L' }
-  ],'trousers-leggings-image','trousers-leggings-title','trousers-leggings-price','trousers-leggings-size','trousers-leggings-prev','trousers-leggings-next','add-trousers-leggings');
-
+  { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P45', size: 'M' },
+  { src: 'images/beigetrousers.jpg', title: 'Beige Trousers', price: 'P65', size: 'L' }
+], 'trousers-leggings-image', 'trousers-leggings-title', 'trousers-leggings-price', 'trousers-leggings-size', 'trousers-leggings-prev', 'trousers-leggings-next', 'add-trousers-leggings');
