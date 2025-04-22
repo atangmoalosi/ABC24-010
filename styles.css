@@ -123,5 +123,24 @@ footer {
 .js-carousel .next {
   right: 10px;
 }
+/* Apply to all images with this class */
+.product-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px; /* Optional for rounded corners */
+}
+#tops-image,
+#skirts-image,
+#pants-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 
