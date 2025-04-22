@@ -24,16 +24,16 @@ function createCarousel(images, imgId, titleId, prevClass, nextClass) {
 }
 
 createCarousel([
-  { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:,size: },
-  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:,size:},
-  {src: 'images/orangedresstop.jpg', title: 'Orange Dress Top',price:,size: },
-  {src: 'images/leopardprinttop.jpg',title: 'Leopard Print Top',price:,size:},
-  {src: 'images/lacetop.jpg', title: 'Lace Top',price:,size:},
-  {src: 'images/meshtop.jpg',title: 'Mesh Top',price:,size:},
-  {src: 'images/vneckleopardtop.jpg',title: 'V-Neck Leopard Top',price:,size:},
-  {src: 'images/dazzlingredtop.jpg',title: 'Dazzling Red Top',price:,size:},
-  {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top',price:,size:},
-  {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:,size:}          
+  { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:P40,size: S},
+  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:P40,size:S},
+  {src: 'images/orangedresstop.jpg', title: 'Orange Dress Top',price:P45,size:M },
+  {src: 'images/leopardprinttop.jpg',title: 'Leopard Print Top',price:P35,size:S},
+  {src: 'images/lacetop.jpg', title: 'Lace Top',price:P30,size:M},
+  {src: 'images/meshtop.jpg',title: 'Mesh Top',price:P35,size:S},
+  {src: 'images/vneckleopardtop.jpg',title: 'V-Neck Leopard Top',price:P40,size:S},
+  {src: 'images/dazzlingredtop.jpg',title: 'Dazzling Red Top',price:P45,size:M},
+  {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top',price:P25,size:S},
+  {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:P30,size:M}          
 ], 'tops-image', 'tops-title','tops-price','tops-size', 'tops-prev', 'tops-next');
 
 
