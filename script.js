@@ -47,7 +47,7 @@ createCarousel([
   {src: 'images/rainbowminidress.jpg', title: 'Rainbow Mini Dress',price:'P35',size:'S'},
   {src: 'images/purplemeshskirt.jpg', title: 'Purple Mesh Skirt',price:'P35',size:'M'},
   {src: 'images/yellowleoparddress.jpg', title: 'Yellow Leopard Dress',price:'P45',size:'M'},
-  {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt',price'P40':,size:'M'}  
+  {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt',price:'P40',size:'M'}  
 ], 'skirts-and-dresses-image', 'skirts-and-dresses-title','skirts-and-dresses-price','skirts-and-dresses-size', 'skirts-and-dresses-prev', 'skirts-and-dresses-next','add-skirts-and-dresses');
 
 createCarousel([
