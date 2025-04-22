@@ -20,10 +20,9 @@ function createCarousel(images, imgId, titleId, prevClass, nextClass) {
     show();
   });
 
-  show(); // show first image
+  show(); 
 }
 
-// Carousel 1: Tops
 createCarousel([
   { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:,size: },
   { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:,size: },
@@ -37,7 +36,7 @@ createCarousel([
   {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:,size:}          
 ], 'tops-image', 'tops-title','tops-price','tops-size', 'tops-prev', 'tops-next');
 
-// Carousel 2: Skirts
+
 createCarousel([
   { src: 'images/blacklaceskirt.jpg', title: 'Black Lace Skirt',price:,size: },
   { src: 'images/blackwrapneckdress.jpg', title: 'Black Wrap Neck Dress',price:,size: },
@@ -51,8 +50,13 @@ createCarousel([
   {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt',price:,size:}  
 ], 'skirts-and-dresses-image', 'skirts-and-dresses-title','skirts-and-dresses-price','skirts-and-dresses-size', 'skirts-and-dresses-prev', 'skirts-and-dresses-next','add-skirts-and-dresses');
 
-// Carousel 3: Pants
 createCarousel([
-  { src: 'images/pants1.jpg', title: 'Black Pants' },
-  { src: 'images/pants2.jpg', title: 'Beige Pants' }
-], 'pants-image', 'pants-title', 'pants-prev', 'pants-next');
+    { src: 'images/blackjacket.jpg', title: 'Black Jacket', price: 'P80', size: 'M' },
+    { src: 'images/bluedenimcoat.jpg', title: 'Denim Coat', price: 'P90', size: 'L' }
+  ],'outerwear-image','outerwear-title','outerwear-price','outerwear-size','outerwear-prev','outerwear-next', 'add-outerwear');
+
+createCarousel([
+    { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P45', size: 'M' },
+    { src: 'images/beigetrousers.jpg', title: 'Beige Trousers', price: 'P65', size: 'L' }
+  ],'trousers-leggings-image','trousers-leggings-title','trousers-leggings-price','trousers-leggings-size','trousers-leggings-prev','trousers-leggings-next','add-trousers-leggings');
+
