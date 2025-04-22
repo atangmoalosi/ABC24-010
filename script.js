@@ -24,30 +24,30 @@ function createCarousel(images, imgId, titleId, prevClass, nextClass) {
 }
 
 createCarousel([
-  { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:P40,size: S},
-  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:P40,size:S},
-  {src: 'images/orangedresstop.jpg', title: 'Orange Dress Top',price:P45,size:M },
-  {src: 'images/leopardprinttop.jpg',title: 'Leopard Print Top',price:P35,size:S},
-  {src: 'images/lacetop.jpg', title: 'Lace Top',price:P30,size:M},
-  {src: 'images/meshtop.jpg',title: 'Mesh Top',price:P35,size:S},
-  {src: 'images/vneckleopardtop.jpg',title: 'V-Neck Leopard Top',price:P40,size:S},
-  {src: 'images/dazzlingredtop.jpg',title: 'Dazzling Red Top',price:P45,size:M},
-  {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top',price:P25,size:S},
-  {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:P30,size:M}          
+  { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:'P40',size: 'S'},
+  { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:'P40',size:'S'},
+  {src: 'images/orangedresstop.jpg', title: 'Orange Dress Top',price:'P45',size:'M' },
+  {src: 'images/leopardprinttop.jpg',title: 'Leopard Print Top',price:'P35',size:'S'},
+  {src: 'images/lacetop.jpg', title: 'Lace Top',price:'P30',size:'M'},
+  {src: 'images/meshtop.jpg',title: 'Mesh Top',price:'P35',size:'S},
+  {src: 'images/vneckleopardtop.jpg',title: 'V-Neck Leopard Top',price:'P40,size:'S'},
+  {src: 'images/dazzlingredtop.jpg',title: 'Dazzling Red Top',price:'P45',size:'M'},
+  {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top',price:'P25',size:'S'},
+  {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:'P30',size:'M'}          
 ], 'tops-image', 'tops-title','tops-price','tops-size', 'tops-prev', 'tops-next');
 
 
 createCarousel([
-  { src: 'images/blacklaceskirt.jpg', title: 'Black Lace Skirt',price:,size: },
-  { src: 'images/blackwrapneckdress.jpg', title: 'Black Wrap Neck Dress',price:,size: },
-  {src: 'images/bluefloralskirt.jpg', title: 'Blue Floral Skirt',price:,size:},
-  {src: 'images/olivemaxidress.jpg', title: 'Olive Maxi Dress',price:,size:},
-  {src: 'images/denimmaxiskirt.jpg', title: 'Denim Maxi Skirt',price:,size:},
-  {src: 'images/pinkmaxidress.jpg', title: 'Pink Maxi Dress',price:,size:},
-  {src: 'images/rainbowminidress.jpg', title: 'Rainbow Mini Dress',price:,size:},
-  {src: 'images/purplemeshskirt.jpg', title: 'Purple Mesh Skirt',price:,size:},
-  {src: 'images/yellowleoparddress.jpg', title: 'Yellow Leopard Dress',price:,size:},
-  {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt',price:,size:}  
+  { src: 'images/blacklaceskirt.jpg', title: 'Black Lace Skirt',price:'P30',size:'M' },
+  { src: 'images/blackwrapneckdress.jpg', title: 'Black Wrap Neck Dress',price:'P50',size:'S' },
+  {src: 'images/bluefloralskirt.jpg', title: 'Blue Floral Skirt',price:'P35',size:'S'},
+  {src: 'images/olivemaxidress.jpg', title: 'Olive Maxi Dress',price:'P45',size:'M'},
+  {src: 'images/denimmaxiskirt.jpg', title: 'Denim Maxi Skirt',price:'P55',size:'L'},
+  {src: 'images/pinkmaxidress.jpg', title: 'Pink Maxi Dress',price:'P45',size:'M'},
+  {src: 'images/rainbowminidress.jpg', title: 'Rainbow Mini Dress',price:'P35',size:'S'},
+  {src: 'images/purplemeshskirt.jpg', title: 'Purple Mesh Skirt',price:'P35',size:'M'},
+  {src: 'images/yellowleoparddress.jpg', title: 'Yellow Leopard Dress',price:'P45',size:'M'},
+  {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt',price'P40':,size:'M'}  
 ], 'skirts-and-dresses-image', 'skirts-and-dresses-title','skirts-and-dresses-price','skirts-and-dresses-size', 'skirts-and-dresses-prev', 'skirts-and-dresses-next','add-skirts-and-dresses');
 
 createCarousel([
