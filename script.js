@@ -81,6 +81,15 @@ createCarousel([
   ],'outerwear-image','outerwear-title','outerwear-price','outerwear-size','outerwear-prev','outerwear-next', 'add-outerwear');
 
 createCarousel([
-  { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P45', size: 'M' },
-  { src: 'images/beigetrousers.jpg', title: 'Beige Trousers', price: 'P65', size: 'L' }
+  { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P20', size: 'S' },
+  { src: 'images/blackvelourpants.jpg', title: 'Black Velour Pants', price: 'P35', size: 'M' },
+   { src: 'images/bluedenimjorts.jpg', title: 'Blue Denim Jorts', price: 'P45', size: 'L' },
+   { src: 'images/browncargopants.jpg', title: 'Brown Cargo Pants', price: 'P45', size: 'M' },
+   { src: 'images/blueskinnyjeans.jpg', title: 'Brown Skinny Jeans', price: 'P35', size: 'M' },
+   { src: 'images/blackskinnyjeans.jpg', title: 'Black Skinny Jeans', price: 'P35', size: 'M' },
+   { src: 'images/greyleggings.jpg', title: 'Grey Leggings', price: 'P25', size: 'S' },
+   { src: 'images/highwaistedflaredjeans.jpg', title: 'High Waisted Flared Jeans', price: 'P35', size: 'S' },
+   { src: 'images/whiteflaredjoggers.jpg', title: 'White Flared Joggers', price: 'P25', size: 'S' },
+   { src: 'images/greyshorts.jpg', title: 'Grey Shorts', price: 'P20', size: 'S' }
+  
 ], 'trousers-leggings-image', 'trousers-leggings-title', 'trousers-leggings-price', 'trousers-leggings-size', 'trousers-leggings-prev', 'trousers-leggings-next', 'add-trousers-leggings');
