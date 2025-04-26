@@ -107,6 +107,7 @@ footer {
 
 .js-carousel button.prev,
 .js-carousel button.next{
+    font-family: 'Boldonse', Arial, sans-serif;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -120,6 +121,7 @@ footer {
 }
 
 .add-to-cart {
+    font-family: 'Boldonse', Arial, sans-serif;
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
