@@ -106,7 +106,7 @@ createCarousel([
    { src: 'images/silverabstractearrings.jpg', title: 'Silver Abstract Earrings', price: 'P35', size: 'One Size' },
    { src: 'images/silverhoopearrings.jpg', title: 'Silver Hoop Earrings', price: 'P30', size: 'One Size' },
    { src: 'images/silvertearearrings.jpg', title: 'Silver Tear Earrings', price: 'P40', size: 'One Size' },
-   { src: 'images/purpleflowerearrings.jpg', title: 'Purple Flower Earrings', price: 'P4', size: 'One Size' },
+   { src: 'images/purpleflowerearrings.jpg', title: 'Purple Flower Earrings', price: 'P4', size: 'One Size' }
   
 ], 'earrings-image', 'earrings-title', 'earrings-price', 'earrings-size', 'earrings-prev', 'earrings-next', 'add-earrings');
 
