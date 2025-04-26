@@ -97,9 +97,17 @@ createCarousel([
 
 // Earrings Carousel
 createCarousel([
-  { src: 'images/earring1.jpg', title: 'Gold Hoop Earrings', price: 'P20', size: 'One Size' },
-  { src: 'images/earring2.jpg', title: 'Pearl Stud Earrings', price: 'P15', size: 'One Size' },
-  { src: 'images/earring3.jpg', title: 'Crystal Drop Earrings', price: 'P25', size: 'One Size' }
+  { src: 'images/brownhoopearrings.jpg', title: 'Brown Hoop Earrings', price: 'P20', size: 'One Size' },
+  { src: 'images/engravedbrownearrings.jpg', title: 'Engraved Brown Earrings', price: 'P15', size: 'One Size' },
+  { src: 'images/goldabstractearrings.jpg', title: 'Gold Abstract Earrings', price: 'P35', size: 'One Size' },
+   { src: 'images/goldencircleearrings.jpg', title: 'Golden Circle Earrings', price: 'P35', size: 'One Size' },
+   { src: 'images/goldhoopearrings.jpg', title: 'Gold Hoop Earrings', price: 'P35', size: 'One Size' },
+   { src: 'images/rubybrownearrings.jpg', title: 'Ruby Brown Earrings', price: 'P40', size: 'One Size' },
+   { src: 'images/silverabstractearrings.jpg', title: 'Silver Abstract Earrings', price: 'P35', size: 'One Size' },
+   { src: 'images/silverhoopearrings.jpg', title: 'Silver Hoop Earrings', price: 'P30', size: 'One Size' },
+   { src: 'images/silvertearearrings.jpg', title: 'Silver Tear Earrings', price: 'P40', size: 'One Size' },
+   { src: 'images/purpleflowerearrings.jpg', title: 'Purple Flower Earrings', price: 'P4', size: 'One Size' },
+  
 ], 'earrings-image', 'earrings-title', 'earrings-price', 'earrings-size', 'earrings-prev', 'earrings-next', 'add-earrings');
 
 // Bracelets Carousel
