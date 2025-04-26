@@ -137,3 +137,22 @@ createCarousel([
   { src: 'images/boots2.jpg', title: 'Suede Knee Boots', price: 'P120', size: '8' }
 ], 'boots-sneakers-image', 'boots-sneakers-title', 'boots-sneakers-price', 'boots-sneakers-size', 'boots-sneakers-prev', 'boots-sneakers-next', 'add-boots-sneakers');
 
+// Tops and T-Shirts Carousel
+createCarousel([
+  { src: 'images/men-top1.jpg', title: 'Basic White T-Shirt', price: 'P40', size: 'M' },
+  { src: 'images/men-top2.jpg', title: 'Graphic T-Shirt', price: 'P45', size: 'L' },
+  { src: 'images/men-top3.jpg', title: 'Casual Polo Shirt', price: 'P50', size: 'M' }
+], 'tops-tshirts-image', 'tops-tshirts-title', 'tops-tshirts-price', 'tops-tshirts-size', 'tops-tshirts-prev', 'tops-tshirts-next', 'add-tops-tshirts');
+
+// Outerwear Carousel
+createCarousel([
+  { src: 'images/men-jacket1.jpg', title: 'Denim Jacket', price: 'P90', size: 'L' },
+  { src: 'images/men-coat1.jpg', title: 'Wool Overcoat', price: 'P120', size: 'M' }
+], 'outerwear-men-image', 'outerwear-men-title', 'outerwear-men-price', 'outerwear-men-size', 'outerwear-men-prev', 'outerwear-men-next', 'add-outerwear-men');
+
+// Trousers Carousel
+createCarousel([
+  { src: 'images/men-trousers1.jpg', title: 'Slim Fit Jeans', price: 'P70', size: '32' },
+  { src: 'images/men-trousers2.jpg', title: 'Chino Pants', price: 'P65', size: '34' }
+], 'trousers-men-image', 'trousers-men-title', 'trousers-men-price', 'trousers-men-size', 'trousers-men-prev', 'trousers-men-next', 'add-trousers-men');
+
