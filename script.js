@@ -93,3 +93,25 @@ createCarousel([
    { src: 'images/greyshorts.png', title: 'Grey Shorts', price: 'P20', size: 'S' }
   
 ], 'trousers-leggings-image', 'trousers-leggings-title', 'trousers-leggings-price', 'trousers-leggings-size', 'trousers-leggings-prev', 'trousers-leggings-next', 'add-trousers-leggings');
+
+
+// Earrings Carousel
+createCarousel([
+  { src: 'images/earring1.jpg', title: 'Gold Hoop Earrings', price: 'P20', size: 'One Size' },
+  { src: 'images/earring2.jpg', title: 'Pearl Stud Earrings', price: 'P15', size: 'One Size' },
+  { src: 'images/earring3.jpg', title: 'Crystal Drop Earrings', price: 'P25', size: 'One Size' }
+], 'earrings-image', 'earrings-title', 'earrings-price', 'earrings-size', 'earrings-prev', 'earrings-next', 'add-earrings');
+
+// Bracelets Carousel
+createCarousel([
+  { src: 'images/bracelet1.jpg', title: 'Silver Chain Bracelet', price: 'P30', size: 'One Size' },
+  { src: 'images/bracelet2.jpg', title: 'Beaded Friendship Bracelet', price: 'P25', size: 'One Size' },
+  { src: 'images/bracelet3.jpg', title: 'Gold Charm Bracelet', price: 'P40', size: 'One Size' }
+], 'bracelets-image', 'bracelets-title', 'bracelets-price', 'bracelets-size', 'bracelets-prev', 'bracelets-next', 'add-bracelets');
+
+// Necklaces Carousel
+createCarousel([
+  { src: 'images/necklace1.jpg', title: 'Diamond Pendant Necklace', price: 'P100', size: 'One Size' },
+  { src: 'images/necklace2.jpg', title: 'Heart Shaped Necklace', price: 'P80', size: 'One Size' },
+  { src: 'images/necklace3.jpg', title: 'Pearl Strand Necklace', price: 'P90', size: 'One Size' }
+], 'necklaces-image', 'necklaces-title', 'necklaces-price', 'necklaces-size', 'necklaces-prev', 'necklaces-next', 'add-necklaces');
