@@ -91,8 +91,11 @@ footer {
     margin-top: 30px;
 }
 .js-carousel {
-text-align: center;
-  margin: 20px auto
+ position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .js-carousel img {
