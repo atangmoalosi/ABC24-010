@@ -115,3 +115,25 @@ createCarousel([
   { src: 'images/necklace2.jpg', title: 'Heart Shaped Necklace', price: 'P80', size: 'One Size' },
   { src: 'images/necklace3.jpg', title: 'Pearl Strand Necklace', price: 'P90', size: 'One Size' }
 ], 'necklaces-image', 'necklaces-title', 'necklaces-price', 'necklaces-size', 'necklaces-prev', 'necklaces-next', 'add-necklaces');
+
+// Sandals and Flats Carousel
+createCarousel([
+  { src: 'images/sandal1.jpg', title: 'Leather Sandals', price: 'P60', size: '6' },
+  { src: 'images/flat1.jpg', title: 'Ballet Flats', price: 'P55', size: '5' },
+  { src: 'images/sandal2.jpg', title: 'Beaded Sandals', price: 'P65', size: '7' }
+], 'sandals-flats-image', 'sandals-flats-title', 'sandals-flats-price', 'sandals-flats-size', 'sandals-flats-prev', 'sandals-flats-next', 'add-sandals-flats');
+
+// Heels Carousel
+createCarousel([
+  { src: 'images/heels1.jpg', title: 'Red High Heels', price: 'P80', size: '6' },
+  { src: 'images/heels2.jpg', title: 'Silver Stiletto', price: 'P90', size: '7' },
+  { src: 'images/heels3.jpg', title: 'Block Heels', price: 'P70', size: '5' }
+], 'heels-image', 'heels-title', 'heels-price', 'heels-size', 'heels-prev', 'heels-next', 'add-heels');
+
+// Boots and Sneakers Carousel
+createCarousel([
+  { src: 'images/boots1.jpg', title: 'Black Ankle Boots', price: 'P100', size: '7' },
+  { src: 'images/sneakers1.jpg', title: 'White Sneakers', price: 'P85', size: '6' },
+  { src: 'images/boots2.jpg', title: 'Suede Knee Boots', price: 'P120', size: '8' }
+], 'boots-sneakers-image', 'boots-sneakers-title', 'boots-sneakers-price', 'boots-sneakers-size', 'boots-sneakers-prev', 'boots-sneakers-next', 'add-boots-sneakers');
+
