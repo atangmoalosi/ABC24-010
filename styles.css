@@ -135,8 +135,8 @@ footer {
   border-radius: 8px; /* Optional for rounded corners */
 }
 #tops-image,
-#skirts and dresses-image,
-#pants-image {
+#skirts-and-dresses-image,
+#trousers-and-leggings-image {
   width: 100%;
   max-width: 300px;
   height: auto;
