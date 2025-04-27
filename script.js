@@ -103,7 +103,7 @@ createCarousel([
 // Earrings Carousel
 if (document.getElementById('earrings-image')) {
 createCarousel([
-  { src: 'images/brownhoopearrings.jpg', title: 'Brown Hoop Earrings', price: 'P20', size: 'One Size' },
+  { src: 'images/brownhoopearrings.png', title: 'Brown Hoop Earrings', price: 'P20', size: 'One Size' },
   { src: 'images/engravedbrownearrings.png', title: 'Engraved Brown Earrings', price: 'P15', size: 'One Size' },
   { src: 'images/goldabstractearrings.png', title: 'Gold Abstract Earrings', price: 'P35', size: 'One Size' },
    { src: 'images/goldencircleearrings.png', title: 'Golden Circle Earrings', price: 'P35', size: 'One Size' },
