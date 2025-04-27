@@ -139,7 +139,7 @@ createCarousel([
   { src: 'images/evileyenecklace.png', title: 'Evil Eye Necklace', price: 'P20', size: 'One Size' },
   { src: 'images/goldspiralnecklace.png', title: 'Gold Spiral Necklace', price: 'P40', size: 'One Size' },
   {src: 'images/hollowsilvernecklace.png', title: 'Hollow Silver Necklace', price: 'P35', size: 'One Size' },
-  {src: 'images/orangebeadlnecklace.png', title: 'Orange Bead Necklace', price: 'P30', size: 'One Size' },
+  {src: 'images/orangebeadnecklace.png', title: 'Orange Bead Necklace', price: 'P30', size: 'One Size' },
   {src: 'images/pebblenecklace.png', title: 'Pebble Necklace', price: 'P30', size: 'One Size' },
   { src: 'images/purpleorchidnecklace.png', title: 'Purple Orchid Necklace', price: 'P35', size: 'One Size' },
   {src: 'images/silverspiralnecklace.png', title: 'Silver Spiral Necklace', price: 'P40', size: 'One Size' },
