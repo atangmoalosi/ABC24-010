@@ -119,9 +119,17 @@ createCarousel([
 // Bracelets Carousel
   if (document.getElementById('bracelets-image')) {
 createCarousel([
-  { src: 'images/bracelet1.jpg', title: 'Silver Chain Bracelet', price: 'P30', size: 'One Size' },
-  { src: 'images/bracelet2.jpg', title: 'Beaded Friendship Bracelet', price: 'P25', size: 'One Size' },
-  { src: 'images/bracelet3.jpg', title: 'Gold Charm Bracelet', price: 'P40', size: 'One Size' }
+  { src: 'images/brownbraceletset.png', title: 'Brown Bracelet Set', price: 'P20', size: 'One Size' },
+  { src: 'images/goldbrowncharmbracelet.png', title: 'Gold Brown Charm Bracelet', price: 'P20', size: 'One Size' },
+  { src: 'images/goldencuffbracelet.png', title: 'Golden Cuff Bracelet', price: 'P30', size: 'One Size' },
+   { src: 'images/layeredcuffbangle.png', title: 'Layered Cuff Bangle', price: 'P30', size: 'One Size' },
+   { src: 'images/pearlbracelet.png', title: 'Pearl Bracelet', price: 'P10', size: 'One Size' },
+   { src: 'images/silverabstractbracelet.png', title: 'Silver Abstract Bracelet', price: 'P20', size: 'One Size' },
+   { src: 'images/stretchybrownbracelet.png', title: 'Stretchy Brown Bracelet', price: 'P10', size: 'One Size' },
+   { src: 'images/greencrystalbracelet.png', title: 'Green Crystal Bracelet', price: 'P15', size: 'One Size' },
+   { src: 'images/mirrorbracelet.png', title: 'Mirror Bracelet', price: 'P30', size: 'One Size' },
+   { src: 'images/goldstar.png', title: 'Gold Star Bracelet', price: 'P20', size: 'One Size' }
+  
 ], 'bracelets-image', 'bracelets-title', 'bracelets-price', 'bracelets-size', 'bracelets-prev', 'bracelets-next', 'add-bracelets');
   }
 // Necklaces Carousel
