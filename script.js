@@ -128,7 +128,7 @@ createCarousel([
    { src: 'images/stretchybrownbracelet.png', title: 'Stretchy Brown Bracelet', price: 'P10', size: 'One Size' },
    { src: 'images/greencrystalbracelet.png', title: 'Green Crystal Bracelet', price: 'P15', size: 'One Size' },
    { src: 'images/mirrorbracelet.png', title: 'Mirror Bracelet', price: 'P30', size: 'One Size' },
-   { src: 'images/goldstar.png', title: 'Gold Star Bracelet', price: 'P20', size: 'One Size' }
+   { src: 'images/goldstarbracelet.png', title: 'Gold Star Bracelet', price: 'P20', size: 'One Size' }
   
 ], 'bracelets-image', 'bracelets-title', 'bracelets-price', 'bracelets-size', 'bracelets-prev', 'bracelets-next', 'add-bracelets');
   }
