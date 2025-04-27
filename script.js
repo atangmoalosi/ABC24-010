@@ -135,9 +135,17 @@ createCarousel([
 // Necklaces Carousel
 if (document.getElementById('necklaces-image')) {
 createCarousel([
-  { src: 'images/necklace1.jpg', title: 'Diamond Pendant Necklace', price: 'P100', size: 'One Size' },
-  { src: 'images/necklace2.jpg', title: 'Heart Shaped Necklace', price: 'P80', size: 'One Size' },
-  { src: 'images/necklace3.jpg', title: 'Pearl Strand Necklace', price: 'P90', size: 'One Size' }
+  { src: 'images/browncowrieshellnecklace.png', title: 'Brown Cowrie Shell Necklace', price: 'P30', size: 'One Size' },
+  { src: 'images/evileyenecklace.png', title: 'Evil Eye Necklace', price: 'P20', size: 'One Size' },
+  { src: 'images/goldspiralnecklace.png', title: 'Gold Spiral Necklace', price: 'P40', size: 'One Size' },
+  {src: 'images/hollowsilvernecklace.png', title: 'Hollow Silver Necklace', price: 'P35', size: 'One Size' },
+  {src: 'images/orangebeadlnecklace.png', title: 'Orange Bead Necklace', price: 'P30', size: 'One Size' },
+  {src: 'images/pebblenecklace.png', title: 'Pebble Necklace', price: 'P30', size: 'One Size' },
+  { src: 'images/purpleorchidnecklace.png', title: 'Purple Orchid Necklace', price: 'P35', size: 'One Size' },
+  {src: 'images/silverspiralnecklace.png', title: 'Silver Spiral Necklace', price: 'P40', size: 'One Size' },
+  {src: 'images/stonesnecklace.png', title: 'Stones Necklace', price: 'P30', size: 'One Size' },
+  {src: 'images/woodenankhnecklace.png', title: 'Wooden Ankh Necklace', price: 'P20', size: 'One Size' },
+  {src: 'images/cowrieshellnecklace.png', title: 'Cowrie Shell Necklace', price: 'P30', size: 'One Size' }
 ], 'necklaces-image', 'necklaces-title', 'necklaces-price', 'necklaces-size', 'necklaces-prev', 'necklaces-next', 'add-necklaces');
 }
 // Sandals and Flats Carousel
