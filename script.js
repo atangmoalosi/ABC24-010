@@ -37,7 +37,7 @@ function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, next
   show();
 }
 
-
+if (document.getElementById('tops-image')) {
 createCarousel([
   { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:'P40',size: 'S'},
   { src: 'images/blackfloralhaltertop.jpg', title: 'Black Floral Halter Top',price:'P40',size:'S'},
@@ -50,8 +50,9 @@ createCarousel([
   {src: 'images/tightlongsleeve.jpg',title: 'Tight Long Sleeve Top',price:'P25',size:'S'},
   {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:'P30',size:'M'}          
 ], 'tops-image', 'tops-title','tops-price','tops-size', 'tops-prev', 'tops-next','add-tops');
+}
 
-
+if (document.getElementById('skirts-and-dresses-image')) {
 createCarousel([
   { src: 'images/blacklaceskirt.jpg', title: 'Black Lace Skirt',price:'P30',size:'M' },
   { src: 'images/blackwrapneckdress.jpg', title: 'Black Wrap Neck Dress',price:'P50',size:'S' },
@@ -64,7 +65,9 @@ createCarousel([
   {src: 'images/yellowleoparddress.jpg', title: 'Yellow Leopard Dress',price:'P45',size:'M'},
   {src: 'images/pinkmaxiskirt.jpg', title: 'Pink Maxi Skirt',price:'P40',size:'M'}  
 ], 'skirts-and-dresses-image', 'skirts-and-dresses-title','skirts-and-dresses-price','skirts-and-dresses-size', 'skirts-and-dresses-prev', 'skirts-and-dresses-next','add-skirts-and-dresses');
+}
 
+if (document.getElementById('outerwear-image')) {
 createCarousel([
     { src: 'images/blackleatherjacket.jpg', title: 'Black Leather Jacket', price: 'P60', size: 'M' },
     { src: 'images/browncroppedcoat.jpg', title: 'Brown Cropped Coat', price: 'P55', size: 'S' },
@@ -79,7 +82,9 @@ createCarousel([
     { src: 'images/vneckcardigan.jpg', title: 'V-Neck Cardigan', price: 'P55', size: 'S' },
   
   ],'outerwear-image','outerwear-title','outerwear-price','outerwear-size','outerwear-prev','outerwear-next', 'add-outerwear');
+}
 
+if (document.getElementById('trousers-leggings-image')) {
 createCarousel([
   { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P20', size: 'S' },
   { src: 'images/blackvelourpants.png', title: 'Black Velour Pants', price: 'P35', size: 'M' },
@@ -93,9 +98,10 @@ createCarousel([
    { src: 'images/greyshorts.png', title: 'Grey Shorts', price: 'P20', size: 'S' }
   
 ], 'trousers-leggings-image', 'trousers-leggings-title', 'trousers-leggings-price', 'trousers-leggings-size', 'trousers-leggings-prev', 'trousers-leggings-next', 'add-trousers-leggings');
-
+}
 
 // Earrings Carousel
+if (document.getElementById('earrings-image')) {
 createCarousel([
   { src: 'images/brownhoopearrings.jpg', title: 'Brown Hoop Earrings', price: 'P20', size: 'One Size' },
   { src: 'images/engravedbrownearrings.jpg', title: 'Engraved Brown Earrings', price: 'P15', size: 'One Size' },
@@ -109,58 +115,66 @@ createCarousel([
    { src: 'images/purpleflowerearrings.jpg', title: 'Purple Flower Earrings', price: 'P4', size: 'One Size' }
   
 ], 'earrings-image', 'earrings-title', 'earrings-price', 'earrings-size', 'earrings-prev', 'earrings-next', 'add-earrings');
-
+}
 // Bracelets Carousel
+  if (document.getElementById('bracelets-image')) {
 createCarousel([
   { src: 'images/bracelet1.jpg', title: 'Silver Chain Bracelet', price: 'P30', size: 'One Size' },
   { src: 'images/bracelet2.jpg', title: 'Beaded Friendship Bracelet', price: 'P25', size: 'One Size' },
   { src: 'images/bracelet3.jpg', title: 'Gold Charm Bracelet', price: 'P40', size: 'One Size' }
 ], 'bracelets-image', 'bracelets-title', 'bracelets-price', 'bracelets-size', 'bracelets-prev', 'bracelets-next', 'add-bracelets');
-
+  }
 // Necklaces Carousel
+if (document.getElementById('necklaces-image')) {
 createCarousel([
   { src: 'images/necklace1.jpg', title: 'Diamond Pendant Necklace', price: 'P100', size: 'One Size' },
   { src: 'images/necklace2.jpg', title: 'Heart Shaped Necklace', price: 'P80', size: 'One Size' },
   { src: 'images/necklace3.jpg', title: 'Pearl Strand Necklace', price: 'P90', size: 'One Size' }
 ], 'necklaces-image', 'necklaces-title', 'necklaces-price', 'necklaces-size', 'necklaces-prev', 'necklaces-next', 'add-necklaces');
-
+}
 // Sandals and Flats Carousel
+if (document.getElementById('sandals-flats-image')) {
 createCarousel([
   { src: 'images/sandal1.jpg', title: 'Leather Sandals', price: 'P60', size: '6' },
   { src: 'images/flat1.jpg', title: 'Ballet Flats', price: 'P55', size: '5' },
   { src: 'images/sandal2.jpg', title: 'Beaded Sandals', price: 'P65', size: '7' }
 ], 'sandals-flats-image', 'sandals-flats-title', 'sandals-flats-price', 'sandals-flats-size', 'sandals-flats-prev', 'sandals-flats-next', 'add-sandals-flats');
-
+}
 // Heels Carousel
+if (document.getElementById('heels-image')) {
 createCarousel([
   { src: 'images/heels1.jpg', title: 'Red High Heels', price: 'P80', size: '6' },
   { src: 'images/heels2.jpg', title: 'Silver Stiletto', price: 'P90', size: '7' },
   { src: 'images/heels3.jpg', title: 'Block Heels', price: 'P70', size: '5' }
 ], 'heels-image', 'heels-title', 'heels-price', 'heels-size', 'heels-prev', 'heels-next', 'add-heels');
-
+}
 // Boots and Sneakers Carousel
+if (document.getElementById('boots-sneakers-image')) {
 createCarousel([
   { src: 'images/boots1.jpg', title: 'Black Ankle Boots', price: 'P100', size: '7' },
   { src: 'images/sneakers1.jpg', title: 'White Sneakers', price: 'P85', size: '6' },
   { src: 'images/boots2.jpg', title: 'Suede Knee Boots', price: 'P120', size: '8' }
 ], 'boots-sneakers-image', 'boots-sneakers-title', 'boots-sneakers-price', 'boots-sneakers-size', 'boots-sneakers-prev', 'boots-sneakers-next', 'add-boots-sneakers');
-
+}
 // Tops and T-Shirts Carousel
+if (document.getElementById('tops-tshirts-image')) {
 createCarousel([
   { src: 'images/men-top1.jpg', title: 'Basic White T-Shirt', price: 'P40', size: 'M' },
   { src: 'images/men-top2.jpg', title: 'Graphic T-Shirt', price: 'P45', size: 'L' },
   { src: 'images/men-top3.jpg', title: 'Casual Polo Shirt', price: 'P50', size: 'M' }
 ], 'tops-tshirts-image', 'tops-tshirts-title', 'tops-tshirts-price', 'tops-tshirts-size', 'tops-tshirts-prev', 'tops-tshirts-next', 'add-tops-tshirts');
-
+}
 // Outerwear Carousel
+if (document.getElementById('outerwear-image')) {
 createCarousel([
   { src: 'images/men-jacket1.jpg', title: 'Denim Jacket', price: 'P90', size: 'L' },
   { src: 'images/men-coat1.jpg', title: 'Wool Overcoat', price: 'P120', size: 'M' }
 ], 'outerwear-men-image', 'outerwear-men-title', 'outerwear-men-price', 'outerwear-men-size', 'outerwear-men-prev', 'outerwear-men-next', 'add-outerwear-men');
-
+}
 // Trousers Carousel
+if (document.getElementById('trousers-image')) {
 createCarousel([
   { src: 'images/men-trousers1.jpg', title: 'Slim Fit Jeans', price: 'P70', size: '32' },
   { src: 'images/men-trousers2.jpg', title: 'Chino Pants', price: 'P65', size: '34' }
 ], 'trousers-men-image', 'trousers-men-title', 'trousers-men-price', 'trousers-men-size', 'trousers-men-prev', 'trousers-men-next', 'add-trousers-men');
-
+}
