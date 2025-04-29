@@ -151,9 +151,18 @@ createCarousel([
 // Sandals and Flats Carousel
 if (document.getElementById('sandals-flats-image')) {
 createCarousel([
-  { src: 'images/sandal1.jpg', title: 'Leather Sandals', price: 'P60', size: '6' },
-  { src: 'images/flat1.jpg', title: 'Ballet Flats', price: 'P55', size: '5' },
-  { src: 'images/sandal2.jpg', title: 'Beaded Sandals', price: 'P65', size: '7' }
+  { src: 'images/blackbowsandals.png', title: 'Black Gold Sandals', price: 'P40', size: '6' },
+  { src: 'images/blackpumps.png', title: 'Black Pumps', price: 'P35', size: '5' },
+  { src: 'images/burgundysandals.png', title: 'Burgundy Sandals', price: 'P35', size: '4' },
+   { src: 'images/limesandals.png', title: 'Lime Sandals', price: 'P35', size: '6' },
+   { src: 'images/redpumps.png', title: 'Red Pumps', price: 'P35', size: '3' },
+   { src: 'images/whitebowsandals.png', title: 'White Bow Sandals', price: 'P35', size: '4' },
+   { src: 'images/brownplatformsandals.png', title: 'Brown Platform Sandals', price: 'P35', size: '4' },
+   { src: 'images/blackleathersandals.png', title: 'Black Leather Sandals', price: 'P35', size: '4' },
+   { src: 'images/maroonflipflops.png', title: 'Maroon Flip Flops', price: 'P35', size: '4' },
+  
+  
+  
 ], 'sandals-flats-image', 'sandals-flats-title', 'sandals-flats-price', 'sandals-flats-size', 'sandals-flats-prev', 'sandals-flats-next', 'add-sandals-flats');
 }
 // Heels Carousel
