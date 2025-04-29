@@ -186,17 +186,26 @@ createCarousel([
 // Boots and Sneakers Carousel
 if (document.getElementById('boots-sneakers-image')) {
 createCarousel([
-  { src: 'images/boots1.jpg', title: 'Black Ankle Boots', price: 'P100', size: '7' },
-  { src: 'images/sneakers1.jpg', title: 'White Sneakers', price: 'P85', size: '6' },
-  { src: 'images/boots2.jpg', title: 'Suede Knee Boots', price: 'P120', size: '8' }
+  { src: 'images/530sneakers.png', title: 'Black Ankle Boots', price: 'P100', size: '5' },
+  { src: 'images/airforcewhites.png', title: 'Air Force Whites', price: 'P100', size: '6' },
+  { src: 'images/blackuggs.png', title: 'Black Uggs', price: 'P65', size: '3' },
+   { src: 'images/brownplatformboots.png', title: 'Brown Platform Boots', price: 'P55', size: '6' },
+  { src: 'images/brownuggs.png', title: 'Brown Uggs', price: 'P50', size: '4' },
+  { src: 'images/midcalfboots.png', title: 'Mid Calf Boots', price: 'P65', size: '5' },
+{ src: 'images/whitetigers.png', title: 'White Tigers', price: 'P75', size: '4' },
+  { src: 'images/brownthighhighs.png', title: 'Brown Thigh Highs', price: 'P50', size: '7' },
+  { src: 'images/burgundythighhighboots.png', title: 'Burgundy Thigh High Boots', price: 'P120', size: '6' }
+  
+  
+  
 ], 'boots-sneakers-image', 'boots-sneakers-title', 'boots-sneakers-price', 'boots-sneakers-size', 'boots-sneakers-prev', 'boots-sneakers-next', 'add-boots-sneakers');
 }
 // Tops and T-Shirts Carousel
 if (document.getElementById('tops-tshirts-image')) {
 createCarousel([
-  { src: 'images/men-top1.jpg', title: 'Basic White T-Shirt', price: 'P40', size: 'M' },
-  { src: 'images/men-top2.jpg', title: 'Graphic T-Shirt', price: 'P45', size: 'L' },
-  { src: 'images/men-top3.jpg', title: 'Casual Polo Shirt', price: 'P50', size: 'M' }
+  { src: 'images/530sneakers.png', title: '530 sneakers', price: 'P40', size: 'M' },
+  { src: 'images/airforcewhites.png', title: 'Air Force Whites', price: 'P45', size: 'L' },
+  { src: 'images/', title: 'Casual Polo Shirt', price: 'P50', size: 'M' }
 ], 'tops-tshirts-image', 'tops-tshirts-title', 'tops-tshirts-price', 'tops-tshirts-size', 'tops-tshirts-prev', 'tops-tshirts-next', 'add-tops-tshirts');
 }
 // Outerwear Carousel
