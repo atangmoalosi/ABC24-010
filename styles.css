@@ -9,7 +9,7 @@
 body {
   font-family: 'Boldonse', Arial, sans-serif;
   background-color: #a63607 ;
-  color: #000000;
+  color: #f7bf05;
   line-height: 1.6;
 }
 
@@ -17,10 +17,10 @@ body {
 
 /* Header section */
 header {
-    background-color: #000000;
+    background-color: #a63607;
     padding: 20px 0;
     text-align: center;
-    color: white;
+    color: #f7bf05;
 }
 
 header h1 {
