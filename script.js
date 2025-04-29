@@ -160,6 +160,7 @@ createCarousel([
    { src: 'images/brownplatformsandals.png', title: 'Brown Platform Sandals', price: 'P35', size: '4' },
    { src: 'images/blackleathersandals.png', title: 'Black Leather Sandals', price: 'P35', size: '4' },
    { src: 'images/maroonflipflops.png', title: 'Maroon Flip Flops', price: 'P35', size: '4' },
+   { src: 'images/greypumps.png', title: 'Grey Pumps', price: 'P35', size: '5' }
   
   
   
