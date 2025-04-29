@@ -169,9 +169,18 @@ createCarousel([
 // Heels Carousel
 if (document.getElementById('heels-image')) {
 createCarousel([
-  { src: 'images/heels1.jpg', title: 'Red High Heels', price: 'P80', size: '6' },
-  { src: 'images/heels2.jpg', title: 'Silver Stiletto', price: 'P90', size: '7' },
-  { src: 'images/heels3.jpg', title: 'Block Heels', price: 'P70', size: '5' }
+  { src: 'images/blackheels.png', title: 'Black Heels', price: 'P45', size: '6' },
+  { src: 'images/brownblockheels.png', title: 'Brown Block Heels', price: 'P50', size: '5' },
+  { src: 'images/flowerheels.png', title: 'Flower Heels', price: 'P40', size: '5' },
+  { src: 'images/furheels.png', title: 'Fur Heels', price: 'P40', size: '5' },
+  { src: 'images/pointykittenheels.png', title: 'Pointy Kitten Heels', price: 'P45', size: '3' },
+  { src: 'images/sliponblockheels.png', title: 'Slip On Block Heels', price: 'P40', size: '6' },
+  { src: 'images/redheels.png', title: 'Red Heels', price: 'P45', size: '5' },
+  { src: 'images/strapheels.png', title: 'Strap Heels', price: 'P40', size: '5' },
+  { src: 'images/ultrahighplatformheels.png', title: 'Ultra High Platform Heels', price: 'P40', size: '5' },
+  { src: 'images/blockkittenheels.png', title: 'Block Kitten Heels', price: 'P40', size: '4' },
+  
+  
 ], 'heels-image', 'heels-title', 'heels-price', 'heels-size', 'heels-prev', 'heels-next', 'add-heels');
 }
 // Boots and Sneakers Carousel
