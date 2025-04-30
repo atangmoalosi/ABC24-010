@@ -186,7 +186,7 @@ createCarousel([
 // Boots and Sneakers Carousel
 if (document.getElementById('boots-sneakers-image')) {
 createCarousel([
-  { src: 'images/530sneakers.png', title: 'Black Ankle Boots', price: 'P100', size: '5' },
+  { src: 'images/530sneakers.png', title: '530 Sneakers', price: 'P100', size: '5' },
   { src: 'images/airforcewhites.png', title: 'Air Force Whites', price: 'P100', size: '6' },
   { src: 'images/blackuggs.png', title: 'Black Uggs', price: 'P65', size: '3' },
    { src: 'images/brownplatformboots.png', title: 'Brown Platform Boots', price: 'P55', size: '6' },
@@ -194,7 +194,9 @@ createCarousel([
   { src: 'images/midcalfboots.png', title: 'Mid Calf Boots', price: 'P65', size: '5' },
 { src: 'images/whitetigers.png', title: 'White Tigers', price: 'P75', size: '4' },
   { src: 'images/brownthighhighs.png', title: 'Brown Thigh Highs', price: 'P50', size: '7' },
-  { src: 'images/burgundythighhighboots.png', title: 'Burgundy Thigh High Boots', price: 'P120', size: '6' }
+  { src: 'images/burgundythighhighboots.png', title: 'Burgundy Thigh High Boots', price: 'P90', size: '6' },
+    { src: 'images/pinksneakers.png', title: 'Pink Sneakers', price: 'P60', size: '6' }
+  
   
   
   
