@@ -8,8 +8,8 @@
 /* Body style */
 body {
   font-family: 'Boldonse', Arial, sans-serif;
-  background-color: #400404;
-  color: #f7bf05;
+  background-color: #bbf74a;
+  color: #064218;
   line-height: 1.6;
 }
 
@@ -17,10 +17,10 @@ body {
 
 /* Header section */
 header {
-    background-color: #400404;
+    background-color: #bbf74a;
     padding: 20px 0;
     text-align: center;
-    color: #f7bf05;
+    color: #064218;
 }
 
 header h1 {
