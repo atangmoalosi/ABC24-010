@@ -225,6 +225,114 @@ footer {
 main section {
   background-color: transparent;
 }
+/* HOMEPAGE HEADER */
+.homepage-header {
+  background-color: #a2cd50;
+  color: #003d1f;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.eco-logo {
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.homepage-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Navigation */
+#nav-links ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+#nav-links ul li {
+  margin: 0 10px;
+}
+
+#nav-links ul li a {
+  text-decoration: none;
+  color: #003d1f;
+  font-weight: bold;
+}
+
+/* HAMBURGER MENU ICON */
+.menu-icon {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #003d1f;
+}
+
+/* HOMEPAGE BANNER SECTION */
+.home-banner {
+  background-color: #a2cd50;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.banner-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.banner-text {
+  margin-top: 20px;
+  color: #003d1f;
+  font-weight: bold;
+}
+
+.banner-text h2 {
+  margin-top: 10px;
+}
+
+/* HOMEPAGE FOOTER */
+footer {
+  background-color: #1c5526;
+  color: #c0e96f;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #nav-links ul {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  #nav-links.active ul {
+    display: flex;
+  }
+
+  #nav-links ul li {
+    margin: 10px 0;
+  }
+}
+
 
 
 
