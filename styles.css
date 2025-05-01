@@ -29,20 +29,21 @@ header h1 {
 /* Navigation bar */
 nav {
   background-color: #bbf74a;
+  position: relative;
 }
 
-nav ul {
-  list-style: none;
+#nav-links {
   display: flex;
   justify-content: center;
+  list-style: none;
   padding: 10px 0;
 }
 
-nav ul li {
+#nav-links li {
   margin: 0 15px;
 }
 
-nav ul li a {
+#nav-links li a {
   color: #064218;
   text-decoration: none;
   padding: 10px 15px;
@@ -50,9 +51,21 @@ nav ul li a {
   transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
+#nav-links li a:hover {
   background-color: #666;
   border-radius: 4px;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #064218;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* Main content */
@@ -61,28 +74,6 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-}
-
-/* Product images */
-main ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-main ul li.product-list li {
-  background-color: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  width: 150px;
-}
-
-main ul li img {
-  width: 100%;
-  height: auto;
 }
 
 /* Footer */
@@ -150,7 +141,6 @@ footer {
   background-color: #45a049;
 }
 
-/* Images */
 .product-image {
   width: 100%;
   max-width: 300px;
@@ -168,15 +158,6 @@ footer {
   height: auto;
   display: block;
   margin: 0 auto;
-}
-
-/* Hamburger menu */
-.menu-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: #064218;
-  padding: 10px;
 }
 
 /* Women's collection section */
@@ -248,32 +229,26 @@ footer {
   margin-top: 10px;
 }
 
-/* Default desktop nav */
-#nav-links {
-  display: flex;
-  justify-content: center;
-}
-
-/* Mobile screen styles */
+/* MOBILE STYLES */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
-    text-align: right;
-    padding-right: 20px;
   }
 
-  nav ul {
+  #nav-links {
     flex-direction: column;
     align-items: center;
-    background-color: #444;
     display: none;
+    background-color: #444;
+    padding: 10px 0;
+    margin-top: 10px;
   }
 
   #nav-links.active {
     display: flex;
   }
 
-  nav ul li {
+  #nav-links li {
     margin: 10px 0;
   }
 
@@ -295,5 +270,4 @@ footer {
     font-size: 1.3rem;
   }
 }
-
 
