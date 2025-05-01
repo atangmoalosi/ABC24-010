@@ -225,118 +225,71 @@ footer {
 main section {
   background-color: transparent;
 }
-/* HOMEPAGE HEADER */
-.homepage-header {
-  background-color: #a2cd50;
-  color: #003d1f;
-  text-align: center;
-  padding: 20px 10px;
-  position: relative;
-}
-
-.eco-logo {
-  width: 70px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-.homepage-header h1 {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-/* Navigation */
-#nav-links ul {
+/* Homepage Layout */
+.homepage-content {
   display: flex;
   justify-content: center;
-  list-style: none;
-  margin-top: 15px;
-  padding: 0;
+  align-items: center;
+  padding: 30px 20px;
+  min-height: 80vh;
+}
+
+.homepage-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
-#nav-links ul li {
-  margin: 0 10px;
+.homepage-banner img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-#nav-links ul li a {
-  text-decoration: none;
-  color: #003d1f;
-  font-weight: bold;
+.homepage-banner img:hover {
+  transform: scale(1.03);
 }
 
-/* HAMBURGER MENU ICON */
-.menu-icon {
-  display: none;
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #003d1f;
-}
-
-/* HOMEPAGE BANNER SECTION */
-.home-banner {
-  background-color: #a2cd50;
-  padding: 40px 20px;
+.homepage-text {
+  max-width: 400px;
   text-align: center;
 }
 
-.banner-image {
-  width: 90%;
-  max-width: 500px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.banner-text {
-  margin-top: 20px;
-  color: #003d1f;
+.winter-line {
+  font-size: 1.2rem;
   font-weight: bold;
+  color: #013a00;
 }
 
-.banner-text h2 {
+.winter-date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #013a00;
   margin-top: 10px;
 }
 
-/* HOMEPAGE FOOTER */
-footer {
-  background-color: #1c5526;
-  color: #c0e96f;
-  text-align: center;
-  padding: 15px;
-  font-weight: bold;
-}
-
-/* MOBILE NAVIGATION */
+/* Responsive for mobile */
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  #nav-links ul {
-    display: none;
+  .homepage-banner {
     flex-direction: column;
-    background-color: #444;
-    text-align: center;
-    padding: 20px 0;
+    gap: 20px;
   }
 
-  #nav-links.active ul {
-    display: flex;
+  .homepage-text {
+    max-width: 100%;
+    padding: 0 10px;
   }
 
-  #nav-links ul li {
-    margin: 10px 0;
+  .winter-line {
+    font-size: 1rem;
+  }
+
+  .winter-date {
+    font-size: 1.3rem;
   }
 }
-
-
-
-
-
-
-
-        
