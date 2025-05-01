@@ -1,8 +1,8 @@
- /* Reset some default browser styles */
+/* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body style */
@@ -13,45 +13,46 @@ body {
   line-height: 1.6;
 }
 
-
-
 /* Header section */
 header {
-    background-color: #bbf74a;
-    padding: 20px 0;
-    text-align: center;
-    color: #064218;
+  background-color: #bbf74a;
+  padding: 20px 0;
+  text-align: center;
+  color: #064218;
 }
 
 header h1 {
-    margin-bottom: 10px;
-    font-size: 28px;
+  margin-bottom: 10px;
+  font-size: 28px;
 }
 
 /* Navigation bar */
+nav {
+  background-color: #bbf74a;
+}
+
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background-color:#bbf74a ;
-    padding: 10px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #064218;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  color: #064218;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #666;
-    border-radius: 4px;
+  background-color: #666;
+  border-radius: 4px;
 }
 
 /* Main content */
@@ -62,38 +63,40 @@ main {
   padding: 20px;
 }
 
-/* Product images (optional styling) */
+/* Product images */
 main ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 main ul li.product-list li {
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 150px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 150px;
 }
 
 main ul li img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-/* Footer style */
+/* Footer */
 footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    margin-top: 30px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
 }
+
+/* Carousel */
 .js-carousel {
- position: relative;
+  position: relative;
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
@@ -108,8 +111,8 @@ footer {
 }
 
 .js-carousel button.prev,
-.js-carousel button.next{
-    font-family: 'Boldonse', Arial, sans-serif;
+.js-carousel button.next {
+  font-family: 'Boldonse', Arial, sans-serif;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -122,8 +125,16 @@ footer {
   border-radius: 50%;
 }
 
+.js-carousel .prev {
+  left: 10px;
+}
+
+.js-carousel .next {
+  right: 10px;
+}
+
 .add-to-cart {
-    font-family: 'Boldonse', Arial, sans-serif;
+  font-family: 'Boldonse', Arial, sans-serif;
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -139,23 +150,16 @@ footer {
   background-color: #45a049;
 }
 
-
-.js-carousel .prev {
-  left: 10px;
-}
-
-.js-carousel .next {
-  right: 10px;
-}
-/* Apply to all images with this class */
+/* Images */
 .product-image {
   width: 100%;
   max-width: 300px;
   height: auto;
   display: block;
   margin: 10px auto;
-  border-radius: 8px; /* Optional for rounded corners */
+  border-radius: 8px;
 }
+
 #tops-image,
 #skirts-and-dresses-image,
 #trousers-leggings-image {
@@ -165,45 +169,17 @@ footer {
   display: block;
   margin: 0 auto;
 }
+
+/* Hamburger menu */
 .menu-icon {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  color: white;
+  color: #064218;
   padding: 10px;
 }
 
-/* Show normal navigation horizontally */
-@media (min-width: 769px) {
-#nav-links {
-  display: flex;
-  justify-content: center;
-}
-
-/* Mobile screen only: */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Show ☰ on phone */
-    text-align: right;
-    padding-right: 20px;
-  }
-
-  #nav-links {
-    display: none; /* Hide the links normally */
-    flex-direction: column;
-    background-color: #444;
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  #nav-links.active {
-    display: flex; /* When hamburger is clicked, show links */
-  }
-
-  nav ul li {
-    margin: 10px 0; /* Space between menu items */
-  }
-}
+/* Women's collection section */
 .women's-collection {
   text-align: center;
   margin: 40px 0;
@@ -218,15 +194,13 @@ footer {
 }
 
 .women's-collection h2 {
-  font-family: 'Boldonse', Arial, sans-serif; /* Your website font */
+  font-family: 'Boldonse', Arial, sans-serif;
   margin-top: 20px;
   font-size: 28px;
   color: #333;
 }
-main section {
-  background-color: transparent;
-}
-/* Homepage Layout */
+
+/* Homepage */
 .homepage-content {
   display: flex;
   justify-content: center;
@@ -274,8 +248,35 @@ main section {
   margin-top: 10px;
 }
 
-/* Responsive for mobile */
+/* Default desktop nav */
+#nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile screen styles */
 @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: #444;
+    display: none;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
   .homepage-banner {
     flex-direction: column;
     gap: 20px;
@@ -294,3 +295,5 @@ main section {
     font-size: 1.3rem;
   }
 }
+
+
