@@ -188,25 +188,28 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 30px 20px;
-  min-height: 80vh;
 }
 
 .homepage-banner {
   display: flex;
+  flex-direction: row; /* default is row for wide screens */
   justify-content: center;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  border: 2px solid #064218; /* optional: border around image + text */
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .homepage-banner img {
   width: 400px;
-  max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
+
 
 .homepage-banner img:hover {
   transform: scale(1.03);
@@ -232,8 +235,8 @@ footer {
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-  .menu-icon {
-    display: block;
+  flex-direction: column;
+  gap: 20px;
   }
 
   #nav-links {
