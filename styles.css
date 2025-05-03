@@ -290,8 +290,9 @@ footer {
 /* Underline the ECO THRIFT header text */
 header h1 {
   border-bottom: 3px solid #064218;
-  display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Curved border around navigation - only on wide screens */
