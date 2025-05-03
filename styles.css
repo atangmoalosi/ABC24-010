@@ -264,14 +264,18 @@ footer {
 
 /* Curved border around navigation - only on wide screens */
 @media (min-width: 769px) {
-  nav {
-    border: 2px solid #064218;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px auto;
-    max-width: 90%;
+  .homepage-banner {
+    justify-content: flex-start; /* Align items to the left */
+  }
+
+  .homepage-banner img {
+    margin-left: 0; /* Remove auto-centering if it exists */
+    margin-right: 40px; /* Optional spacing between image and text */
   }
 }
+
+  
+
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
