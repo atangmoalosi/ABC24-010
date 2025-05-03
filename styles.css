@@ -19,23 +19,17 @@ header {
   padding: 20px 0;
   text-align: center;
   color: #064218;
-  position: relative;
 }
 
 header h1 {
   font-size: 28px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-}
-
-header h1::after {
-  content: "";
+  border-bottom: 3px solid #064218;
   display: block;
-  height: 3px;
-  background-color: #064218;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 5px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Navigation bar */
@@ -44,9 +38,29 @@ nav {
   position: relative;
 }
 
+/* Wide screen nav curved border */
+@media (min-width: 769px) {
+  nav {
+    border: 2px solid #064218;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Nav links */
 #nav-links {
-  display: flex;
-  justify-content: center;
   list-style: none;
   padding: 10px 0;
 }
@@ -68,9 +82,8 @@ nav {
   border-radius: 4px;
 }
 
-/* Mobile Menu Icon */
+/* Hamburger icon */
 .menu-icon {
-  display: none;
   font-size: 30px;
   cursor: pointer;
   color: #064218;
@@ -78,6 +91,31 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
+  display: none;
+}
+
+/* MOBILE nav */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  #nav-links li {
+    margin: 10px 0;
+  }
 }
 
 /* Main content */
@@ -217,14 +255,13 @@ footer {
 }
 
 .winter-container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
 }
 
-.homepage-banner img {
+.winter-container img {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -234,13 +271,6 @@ footer {
   display: block;
   margin: 0 auto;
 }
-.winter-container img {
-  width: 400px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
 
 .winter-container img:hover {
   transform: scale(1.03);
@@ -249,6 +279,7 @@ footer {
 .homepage-text {
   max-width: 400px;
   text-align: left;
+  margin-top: 15px;
 }
 
 .winter-line {
@@ -264,6 +295,28 @@ footer {
   margin-top: 10px;
 }
 
+/* Adjust layout for mobile */
+@media (max-width: 768px) {
+  .homepage-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .homepage-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .winter-line {
+    font-size: 1rem;
+  }
+
+  .winter-date {
+    font-size: 1.3rem;
+  }
+}
+
 /* Material Icon support */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
@@ -273,93 +326,3 @@ footer {
   display: inline-block;
   vertical-align: middle;
 }
-
-/* Curved border around navigation - only on wide screens */
-@media (min-width: 769px) {
-  nav {
-    border: 2px solid #064218;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px auto;
-    max-width: 90%;
-  }
-
-  .homepage-banner {
-    justify-content: flex-start;
-  }
-
-  .winter-container img {
-    margin-left: 0;
-    margin-right: 30px;
-  }
-
-  .homepage-text {
-    text-align: left;
-  }
-}
-@media (min-width: 769px) {
-  .menu-icon {
-    display: none;
-  }
-
-  #nav-links {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-/* MOBILE STYLES */
-@media (max-width: 768px) {
-  .homepage-banner {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-
-  .winter-container img {
-    max-width: 90%;
-  }
-
-  .homepage-text {
-    text-align: center;
-    padding: 0 10px;
-  }
-}
-
-
-  .winter-line {
-    font-size: 1rem;
-  }
-
-  .winter-date {
-    font-size: 1.3rem;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  #nav-links {
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    background-color: #444;
-    padding: 10px 0;
-    margin-top: 10px;
-  }
-
-  #nav-links.active {
-    display: flex;
-  }
-
-  #nav-links li {
-    margin: 10px 0;
-  }
-}
-
-
-
