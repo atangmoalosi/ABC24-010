@@ -370,65 +370,64 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-}
-.women-header {
+/* Women's section layout */
+.women-section {
   text-align: center;
-  padding: 40px 20px 20px;
-  color: #064218;
+  padding: 40px 20px;
 }
 
-.women-header h2 {
-  font-size: 2rem;
+.section-title {
+  font-size: 28px;
   font-weight: bold;
+  color: #064218;
   margin-bottom: 10px;
 }
 
-.women-header p {
-  font-size: 1.2rem;
+.section-subtitle {
+  font-size: 18px;
   margin-bottom: 30px;
+  color: #333;
 }
 
-.women-grid {
+.category-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 0 20px 40px;
+  gap: 40px;
 }
 
-.category-card {
-  width: 220px;
+.category-item {
+  max-width: 300px;
   text-align: center;
 }
 
-.category-card img {
+.category-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.category-card img:hover {
-  transform: scale(1.05);
+.category-image:hover {
+  transform: scale(1.03);
 }
 
-.category-card a {
-  display: block;
-  margin-top: 12px;
-  font-weight: bold;
+.category-item p {
+  margin-top: 10px;
+  font-size: 16px;
   color: #064218;
-  text-decoration: none;
+  font-weight: bold;
 }
 
-.category-card a:hover {
-  text-decoration: underline;
-}
-
-/* Mobile responsiveness */
+/* Mobile view */
 @media (max-width: 768px) {
-  .women-grid {
+  .category-grid {
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
+  }
+
+  .category-item {
+    max-width: 100%;
   }
 }
