@@ -205,16 +205,27 @@ createCarousel([
 // Tops and T-Shirts Carousel
 if (document.getElementById('tops-tshirts-image')) {
 createCarousel([
-  { src: 'images/530sneakers.png', title: '530 sneakers', price: 'P40', size: 'M' },
-  { src: 'images/airforcewhites.png', title: 'Air Force Whites', price: 'P45', size: 'L' },
-  { src: 'images/', title: 'Casual Polo Shirt', price: 'P50', size: 'M' }
+ { src: 'images/plainblacktshirt.png', title: 'Plain Black T-Shirt', price: 'P20', size: 'L' },
+  { src: 'images/shortlongsleeveshirt.png', title: 'Short Long Sleeve', price: 'P30', size: 'M' },
+  { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
+   { src: 'images/crewneckshirt.png', title: 'Crew Neck Shirt', price: 'P20', size: 'S' },
+  { src: 'images/vintageshirt.png', title: 'Vintage Shirt', price: 'P30', size: 'M' },
+  { src: 'images/collartshirt.png', title: 'Collar T Shirt', price: 'P30', size: 'M' },
+   { src: 'images/spidermantshirt.png', title: 'Spider Man T-Shirt', price: 'P20', size: 'S' },
+  { src: 'images/longsleevetshirt.png', title: 'Long Sleeve T-Shirt', price: 'P30', size: 'M' },
+  { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
+   { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
+  
+  
 ], 'tops-tshirts-image', 'tops-tshirts-title', 'tops-tshirts-price', 'tops-tshirts-size', 'tops-tshirts-prev', 'tops-tshirts-next', 'add-tops-tshirts');
 }
 // Outerwear Carousel
 if (document.getElementById('outerwear-image')) {
 createCarousel([
-  { src: 'images/men-jacket1.jpg', title: 'Denim Jacket', price: 'P90', size: 'L' },
-  { src: 'images/men-coat1.jpg', title: 'Wool Overcoat', price: 'P120', size: 'M' }
+  { src: 'images/plainblacktshirt.png', title: 'Plain Black T-Shirt', price: 'P20', size: 'L' },
+  { src: 'images/shortlongsleeveshirt.png', title: 'Short Long Sleeve', price: 'P30', size: 'M' },
+  { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
+  
 ], 'outerwear-men-image', 'outerwear-men-title', 'outerwear-men-price', 'outerwear-men-size', 'outerwear-men-prev', 'outerwear-men-next', 'add-outerwear-men');
 }
 // Trousers Carousel
