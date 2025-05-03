@@ -22,21 +22,17 @@ header {
 }
 
 header h1 {
-  position: relative;
-  display: inline-block;
   font-size: 28px;
   margin-bottom: 10px;
-  padding-bottom: 10px;
 }
 
-header h1::after {
-  content: "";
-  position: absolute;
-  width: 100%;
+/* Full-width underline under "ECO THRIFT" */
+.header-underline {
   height: 3px;
   background-color: #064218;
-  left: 0;
-  bottom: 0;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 /* Navigation bar */
@@ -211,7 +207,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Updated: don't wrap on wide screens */
   border: 3px solid #064218;
   border-radius: 20px;
   padding: 20px;
@@ -310,3 +306,4 @@ footer {
     margin: 10px 0;
   }
 }
+
