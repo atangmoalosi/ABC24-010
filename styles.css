@@ -297,6 +297,17 @@ footer {
     text-align: left;
   }
 }
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  #nav-links {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
