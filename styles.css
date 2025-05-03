@@ -224,6 +224,16 @@ footer {
   flex-wrap: wrap;
 }
 
+.homepage-banner img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
 .winter-container img {
   width: 400px;
   height: auto;
@@ -294,17 +304,21 @@ footer {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
-  .winter-container {
-    flex-direction: column;
-    text-align: center;
+  .winter-container img {
+    max-width: 90%;
   }
 
   .homepage-text {
     text-align: center;
     padding: 0 10px;
   }
+}
+
 
   .winter-line {
     font-size: 1rem;
@@ -335,4 +349,6 @@ footer {
     margin: 10px 0;
   }
 }
+
+
 
