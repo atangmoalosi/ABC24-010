@@ -213,8 +213,8 @@ createCarousel([
   { src: 'images/collartshirt.png', title: 'Collar T Shirt', price: 'P30', size: 'M' },
    { src: 'images/spidermantshirt.png', title: 'Spider Man T-Shirt', price: 'P20', size: 'S' },
   { src: 'images/longsleevetshirt.png', title: 'Long Sleeve T-Shirt', price: 'P30', size: 'M' },
-  { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
-   { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
+  { src: 'images/beatlessshirt.png', title: 'Beatles Shirt', price: 'P30', size: 'S' },
+   { src: 'images/baseballshirt.png', title: 'Baseball Shirt', price: 'P40', size: 'M' }
   
   
 ], 'tops-tshirts-image', 'tops-tshirts-title', 'tops-tshirts-price', 'tops-tshirts-size', 'tops-tshirts-prev', 'tops-tshirts-next', 'add-tops-tshirts');
@@ -222,9 +222,19 @@ createCarousel([
 // Outerwear Carousel
 if (document.getElementById('outerwear-image')) {
 createCarousel([
-  { src: 'images/plainblacktshirt.png', title: 'Plain Black T-Shirt', price: 'P20', size: 'L' },
-  { src: 'images/shortlongsleeveshirt.png', title: 'Short Long Sleeve', price: 'P30', size: 'M' },
-  { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
+  { src: 'images/brownknitcardigan.png', title: 'Brown Knit Cardigan', price: 'P30', size: 'L' },
+  { src: 'images/navycardigan.png', title: 'Navy Cardigan', price: 'P30', size: 'M' },
+  { src: 'images/blacktrenchcoat.png', title: 'Black Trench Coat', price: 'P50', size: 'M' },
+   { src: 'images/woolcoat.png', title: 'Wool Coat', price: 'P50', size: 'L' },
+  { src: 'images/woolzipup.png', title: 'Wool Zip Up', price: 'P30', size: 'M' },
+  { src: 'images/navywindbreaker.png', title: 'Navy Wind Breaker', price: 'P30', size: 'M' },
+   { src: 'images/crewneckwindbreaker.png', title: 'Crewneck Windbreaker', price: 'P40', size: 'L' },
+  { src: 'images/redhoodie.png', title: 'Red Hoodie', price: 'P20', size: 'S' },
+  { src: 'images/blackhoodie.png', title: 'Black Hoodie', price: 'P20', size: 'S' },
+   { src: 'images/sweatshirt.png', title: 'Sweatshirt', price: 'P40', size: 'M' },
+   { src: 'images/woolvarsityjacket.png', title: 'Wool Varsity Jacket', price: 'P40', size: 'M' },
+   { src: 'images/retrozipup.png', title: 'Retro Zip Up', price: 'P40', size: 'S' }
+  
   
 ], 'outerwear-men-image', 'outerwear-men-title', 'outerwear-men-price', 'outerwear-men-size', 'outerwear-men-prev', 'outerwear-men-next', 'add-outerwear-men');
 }
