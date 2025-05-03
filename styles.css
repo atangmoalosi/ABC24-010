@@ -22,14 +22,12 @@ header {
 }
 
 header h1 {
-  font-size: 28px;
+font-size: 28px;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 3px solid #064218;
-  display: block;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  text-align: center;
 }
 
 /* Navigation bar */
@@ -257,8 +255,10 @@ footer {
 .winter-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .winter-container img {
@@ -302,6 +302,9 @@ footer {
     text-align: center;
     gap: 20px;
   }
+  .winter-container {
+    flex-direction: column;
+    text-align: center;
 
   .homepage-text {
     text-align: center;
