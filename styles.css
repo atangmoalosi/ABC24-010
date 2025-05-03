@@ -23,21 +23,22 @@ header {
 
 header h1 {
   position: relative;
+  display: block;
   font-size: 28px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  width: 100%;
-  text-align: center;
 }
 
 header h1::after {
   content: "";
   position: absolute;
-  height: 3px;
-  background-color: #064218;
   left: 0;
   bottom: 0;
+  height: 3px;
+  background-color: #064218;
   width: 100vw;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 /* Navigation bar */
@@ -216,10 +217,13 @@ footer {
   border: 3px solid #064218;
   border-radius: 20px;
   padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .homepage-banner img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -275,6 +279,13 @@ footer {
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    padding: 20px;
+  }
+
+  .homepage-banner img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
   }
 
   .homepage-text {
@@ -311,3 +322,4 @@ footer {
     margin: 10px 0;
   }
 }
+
