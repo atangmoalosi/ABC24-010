@@ -371,3 +371,65 @@ footer {
     align-items: center;
   }
 }
+  .women-intro {
+  text-align: center;
+  padding: 30px 20px;
+  color: #064218;
+}
+
+.women-intro h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.women-intro p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.women-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.product-card {
+  width: 200px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
+
+.product-card a {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #064218;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .women-products {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
