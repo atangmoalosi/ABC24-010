@@ -371,70 +371,65 @@ footer {
     align-items: center;
   }
 /* Women's section layout */
-.women-page {
-  padding: 40px 20px;
-  text-align: center;
-}
-
 .women-heading {
   font-size: 28px;
-  color: #064218;
   font-weight: bold;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 20px;
+  color: #064218;
 }
 
 .women-subheading {
   font-size: 18px;
+  text-align: center;
   margin-bottom: 30px;
-  color: #333;
+  color: #064218;
 }
 
 .women-categories {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .category {
-  flex: 0 0 250px;
+  width: 250px;
   text-align: center;
+  background-color: #d1ff5c;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .category img {
   width: 100%;
-  border-radius: 10px;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  height: 200px;
+  background-color: #9aff00; /* Green box if image missing */
+  border-radius: 6px;
+  object-fit: cover;
 }
 
-.category img:hover {
-  transform: scale(1.03);
+.category h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #064218;
 }
 
 .category p {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #064218;
-  text-decoration: none;
+  font-size: 14px;
+  color: #333;
 }
 
-.category a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Mobile view */
-@media screen and (max-width: 768px) {
+/* Make responsive */
+@media (max-width: 768px) {
   .women-categories {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
 
   .category {
-    width: 90%;
+    width: 80%;
   }
 }
