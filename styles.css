@@ -494,3 +494,9 @@ footer {
     align-items: center;
   }
 }
+
+  @media (min-width: 769px) {
+  .category-box {
+    width: 30%;
+  }
+}
