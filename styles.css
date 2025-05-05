@@ -474,10 +474,12 @@ footer {
 
 .category-box img {
   width: 100%;
-  height: auto;
+  height: 200px;        /* Fixes the height */
+  object-fit: cover;    /* Prevents distortion */
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
 
 .category-box h3 {
   margin-top: 10px;
