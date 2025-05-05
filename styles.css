@@ -439,15 +439,20 @@ footer {
   padding: 2em;
 }
 
-.category-section h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+.category-section {
+  text-align: center;
+  padding: 30px 20px;
 }
 
-.subtitle {
+.category-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.category-section .subtitle {
   font-size: 1.2em;
-  margin-bottom: 2em;
   color: #555;
+  margin-bottom: 30px;
 }
 
 .category-container {
@@ -455,27 +460,37 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .category-box {
-  flex: 1 1 calc(33.333% - 20px); /* Three boxes per row with spacing */
-  box-sizing: border-box;
-  background-color: #f8f8f8;
-  padding: 15px;
-  border-radius: 15px; /* Curved border */
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .category-box img {
   width: 100%;
-  height: auto;
-  max-height: 200px; /* Limit height if needed */
+  max-height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
-  
+
+.category-box h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+.category-box p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Mobile view: stack categories */
 @media (max-width: 768px) {
   .category-box {
     flex: 1 1 100%;
