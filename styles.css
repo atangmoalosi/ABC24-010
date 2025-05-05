@@ -302,9 +302,11 @@ footer {
     text-align: center;
     gap: 20px;
   }
+
   .winter-container {
     flex-direction: column;
     text-align: center;
+  }
 
   .homepage-text {
     text-align: center;
