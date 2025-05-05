@@ -22,7 +22,7 @@ header {
 }
 
 header h1 {
-font-size: 28px;
+  font-size: 28px;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 3px solid #064218;
@@ -212,12 +212,12 @@ footer {
 }
 
 /* Women's collection section */
-.women's-collection {
+.womens-collection {
   text-align: center;
   margin: 40px 0;
 }
 
-.women's-collection img.women's-image {
+.womens-collection img.womens-image {
   width: 90%;
   max-width: 500px;
   height: auto;
@@ -225,7 +225,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.women's-collection h2 {
+.womens-collection h2 {
   font-family: 'Boldonse', Arial, sans-serif;
   margin-top: 20px;
   font-size: 28px;
@@ -295,7 +295,7 @@ footer {
   margin-top: 10px;
 }
 
-/* Adjust layout for mobile */
+/* Responsive banner layout */
 @media (max-width: 768px) {
   .homepage-banner {
     flex-direction: column;
@@ -332,7 +332,8 @@ footer {
   vertical-align: middle;
 }
 
- .categories-container {
+/* Product categories grid */
+.categories-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -367,11 +368,14 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Stack layout for mobile */
 @media (max-width: 768px) {
   .categories-container {
     flex-direction: column;
     align-items: center;
   }
+}
+
 /* Women's section layout */
 .women-heading {
   font-size: 28px;
@@ -408,7 +412,7 @@ footer {
 .category img {
   width: 100%;
   height: 200px;
-  background-color: #9aff00; /* Green box if image missing */
+  background-color: #9aff00;
   border-radius: 6px;
   object-fit: cover;
 }
@@ -424,7 +428,7 @@ footer {
   color: #333;
 }
 
-/* Make responsive */
+/* Responsive categories */
 @media (max-width: 768px) {
   .women-categories {
     flex-direction: column;
@@ -436,6 +440,7 @@ footer {
   }
 }
 
+/* Category section headings */
 .category-section {
   text-align: center;
   padding: 30px 20px;
@@ -453,10 +458,7 @@ footer {
   font-size: 1em;
 }
 
-/* =======================
-   BASE STYLES (Default for wide screens)
-   ======================= */
-
+/* Category container */
 .category-container {
   display: flex;
   gap: 20px;
@@ -475,17 +477,14 @@ footer {
 
 .category-box img {
   width: 100%;
-  height: 200px; /* or adjust to your preferred height */
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
-  background-color: #9aff00; /* fallback if image doesn't load */
+  background-color: #9aff00;
 }
 
-
-/* =======================
-   MEDIA QUERY: SMALL SCREENS (Mobile)
-   ======================= */
+/* Mobile category layout */
 @media (max-width: 768px) {
   .category-container {
     flex-direction: column;
@@ -497,10 +496,7 @@ footer {
   }
 }
 
-
-/* =======================
-   MEDIA QUERY: WIDE SCREENS (Optional override if needed)
-   ======================= */
+/* Wide screen category override */
 @media (min-width: 1024px) {
   .category-box {
     max-width: 28%;
