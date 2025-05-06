@@ -159,7 +159,7 @@ createCarousel([
   {src: 'images/stonesnecklace.png', title: 'Stones Necklace', price: 'P30', size: 'One Size' },
   {src: 'images/woodenankhnecklace.png', title: 'Wooden Ankh Necklace', price: 'P20', size: 'One Size' },
   {src: 'images/cowrieshellnecklace.png', title: 'Cowrie Shell Necklace', price: 'P30', size: 'One Size' }
-], 'necklaces-image', 'necklaces-title', 'necklaces-price', 'necklaces-size', 'necklaces-prev', 'necklaces-next', 'add-necklaces'.'buy-necklaces');
+], 'necklaces-image', 'necklaces-title', 'necklaces-price', 'necklaces-size', 'necklaces-prev', 'necklaces-next', 'add-necklaces','buy-necklaces');
 }
 // Sandals and Flats Carousel
 if (document.getElementById('sandals-flats-image')) {
