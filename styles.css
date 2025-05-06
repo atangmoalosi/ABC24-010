@@ -172,24 +172,31 @@ footer {
   right: 10px;
 }
 
-/* Add to Cart Button */
-.add-to-cart {
+/* Add to Cart And Buy Now Button */
+.add-to-cart,
+.buy-now {
   font-family: 'Boldonse', Arial, sans-serif;
   background-color: transparent;
   color: #064218;
   padding: 10px 20px;
   margin-top: 10px;
-  border: none;
+  border: 2px solid #064218;
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.add-to-cart:hover {
+.add-to-cart:hover,
+.buy-now:hover {
   background-color: #45a049;
   color: white;
 }
+
 
 /* Product image styles */
 .product-image {
