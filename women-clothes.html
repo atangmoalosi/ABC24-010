@@ -5,21 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Women's Clothes | Eco Thrift</title>
 
-  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-  
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .js-carousel {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-behavior: smooth;
+    }
+    .js-carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .product-image {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 1rem;
+    }
+    .add-to-cart, .buy-now {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    .add-to-cart {
+      background: none;
+      color: #0f4d2c;
+      border: 1px solid #0f4d2c;
+    }
+    .buy-now {
+      background-color: #0f4d2c;
+      color: white;
+      border: none;
+    }
+    button.prev, button.next {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #0f4d2c;
+    }
+    @media (min-width: 768px) {
+      .js-carousel {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
 <header>
-   
   <h1>Eco Thrift – Women's Clothes</h1>
-  
-     <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <nav>
     <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -30,78 +75,95 @@
 <main>
   <h2>Women's Clothes</h2>
   <p>Here are our available clothes:</p>
- <section id="tops">
-  <h2>Women's Tops</h2>
 
-  <div class="js-carousel">
-    <button class="prev tops-prev">&#10094;</button>
-    <img id="tops-image" class="product-image" src="" alt="Top" />
-    <h3 id="tops-title"></h3>
-    <p id="tops-price">Price: </p>
-    <p id="tops-size">Size: </p>
-    <button class="add-to-cart" id="add-tops">
-  <span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-    <button class="next tops-next">&#10095;</button>
-  </div>
-</section>
+  <!-- Tops Section -->
+  <section id="tops">
+    <h2>Women's Tops</h2>
+    <div class="js-carousel">
+      <button class="prev tops-prev">&#10094;</button>
+      <div>
+        <img id="tops-image" class="product-image" src="" alt="Top">
+        <h3 id="tops-title"></h3>
+        <p id="tops-price">Price: </p>
+        <p id="tops-size">Size: </p>
+        <button class="add-to-cart" id="add-tops">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <button class="next tops-next">&#10095;</button>
+    </div>
+  </section>
 
-  <section id="skirts and dresses">
-  <h2>Women's Skirts And Dresses</h2>
-  <div class="js-carousel">
-    <button class="prev skirts-and-dresses-prev">&#10094;</button>
-    <img id="skirts-and-dresses-image" src="" alt="Skirt/Dress" class="product-image"/>
-    <h3 id="skirts-and-dresses-title"></h3>
-       <p id="skirts-and-dresses-price">Price: </p>
-    <p id="skirts-and-dresses-size">Size: </p>    
-    <button class="add-to-cart" id="add-skirts-and-dresses">
-  <span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-    <button class="next skirts-and-dresses-next">&#10095;</button>
-  </div>
-</section>
-  
- <section id="outerwear">
-  <h2>Women's Outerwear</h2>
-  <div class="js-carousel">
-    <button class="prev outerwear-prev">&#10094;</button>
-    <img id="outerwear-image" class="product-image" src="" alt="Outerwear">
-    <h3 id="outerwear-title"></h3>
-    <p id="outerwear-price">Price: </p>
-    <p id="outerwear-size">Size: </p>
-    <button class="add-to-cart" id="add-outerwear">
-  <span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-    <button class="next outerwear-next">&#10095;</button>
-  </div>
-</section>
+  <!-- Skirts and Dresses Section -->
+  <section id="skirts-and-dresses">
+    <h2>Women's Skirts And Dresses</h2>
+    <div class="js-carousel">
+      <button class="prev skirts-and-dresses-prev">&#10094;</button>
+      <div>
+        <img id="skirts-and-dresses-image" src="" alt="Skirt/Dress" class="product-image">
+        <h3 id="skirts-and-dresses-title"></h3>
+        <p id="skirts-and-dresses-price">Price: </p>
+        <p id="skirts-and-dresses-size">Size: </p>
+        <button class="add-to-cart" id="add-skirts-and-dresses">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <button class="next skirts-and-dresses-next">&#10095;</button>
+    </div>
+  </section>
 
- <section id="trousers-leggings">
-  <h2>Women's Trousers and Leggings</h2>
-  <div class="js-carousel">
-    <button class="prev trousers-leggings-prev">&#10094;</button>
-    <img id="trousers-leggings-image" class="product-image" src="" alt="Trousers and Leggings">
-    <h3 id="trousers-leggings-title"></h3>
-    <p id="trousers-leggings-price">Price: </p>
-    <p id="trousers-leggings-size">Size: </p>
-    <button class="add-to-cart" id="add-trousers-leggings">
-  <span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-    <button class="next trousers-leggings-next">&#10095;</button>
-  </div>
-</section>
+  <!-- Outerwear Section -->
+  <section id="outerwear">
+    <h2>Women's Outerwear</h2>
+    <div class="js-carousel">
+      <button class="prev outerwear-prev">&#10094;</button>
+      <div>
+        <img id="outerwear-image" class="product-image" src="" alt="Outerwear">
+        <h3 id="outerwear-title"></h3>
+        <p id="outerwear-price">Price: </p>
+        <p id="outerwear-size">Size: </p>
+        <button class="add-to-cart" id="add-outerwear">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <button class="next outerwear-next">&#10095;</button>
+    </div>
+  </section>
 
+  <!-- Trousers and Leggings Section -->
+  <section id="trousers-leggings">
+    <h2>Women's Trousers and Leggings</h2>
+    <div class="js-carousel">
+      <button class="prev trousers-leggings-prev">&#10094;</button>
+      <div>
+        <img id="trousers-leggings-image" class="product-image" src="" alt="Trousers and Leggings">
+        <h3 id="trousers-leggings-title"></h3>
+        <p id="trousers-leggings-price">Price: </p>
+        <p id="trousers-leggings-size">Size: </p>
+        <button class="add-to-cart" id="add-trousers-leggings">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+        </button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <button class="next trousers-leggings-next">&#10095;</button>
+    </div>
+  </section>
 </main>
 <footer>
   <p>&copy; 2025 Eco Thrift</p>
 </footer>
-  <script src="script.js"></script>
-  <script>
-function toggleMenu() {
-  const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('active');
-}
+
+<script src="script.js"></script>
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
 </script>
 </body>
 </html>
+
 
