@@ -173,15 +173,14 @@ footer {
 }
 
 /* Add to Cart And Buy Now Button */
-.add-to-cart,
 .buy-now {
   font-family: 'Boldonse', Arial, sans-serif;
-  background-color: transparent;
-  color: #064218;
+  background: none;
+  color: #0f4d2c;
+  border: 1px solid #0f4d2c;
   padding: 10px 20px;
   margin-top: 10px;
-  border: 2px solid #064218;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
   display: flex;
@@ -191,11 +190,17 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-.add-to-cart:hover,
 .buy-now:hover {
   background-color: #45a049;
   color: white;
 }
+
+.material-symbols-outlined {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+
 
 
 /* Product image styles */
