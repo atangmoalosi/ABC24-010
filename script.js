@@ -38,16 +38,17 @@ function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, next
     alert(`${item.title} has been added to your cart.`);
   });
 
+  buyNowBtn.addEventListener('click', () => {
+    const item = images[index];
+    const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+    cart.push(item);
+    localStorage.setItem('ecoCart', JSON.stringify(cart));
+    window.location.href = 'checkout.html';
+  });
+
   show();
 }
 
-buyNowBtn.addEventListener('click', () => {
-  const item = images[index];
-  const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
-  cart.push(item);
-  localStorage.setItem('ecoCart', JSON.stringify(cart));
-  window.location.href = 'checkout.html'; // Adjust path if needed
-});
 
 
 if (document.getElementById('tops-image')) {
