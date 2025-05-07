@@ -173,7 +173,7 @@ footer {
 }
 
 /* Add to Cart And Buy Now Button */
-.buy-now {
+.buy-now, .add-to-cart {
   font-family: 'Boldonse', Arial, sans-serif;
   background: none;
   color: #0f4d2c;
@@ -194,6 +194,12 @@ footer {
   background-color: #45a049;
   color: white;
 }
+
+.add-to-cart:hover {
+  background-color: #45a049;
+  color: white;
+}
+
 
 .material-symbols-outlined {
   font-size: 20px;
