@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  
 
   <!-- Custom Styles -->
   <style>
@@ -64,22 +65,75 @@
     h1, h4, h6 {
       color: #0f4d2c;
     }
+
+    /* Main checkout heading */
+.main-heading {
+  font-family: 'Boldonse', sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid #0f4d2c;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Navigation below header with curved border */
+.checkout-nav {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 90%;
+  border: 2px solid #0f4d2c;
+  border-radius: 25px;
+  background-color: #d4ff4d; /* match your theme */
+}
+
+.checkout-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.checkout-nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0f4d2c;
+  font-family: 'Boldonse', sans-serif;
+}
+
+.checkout-nav a:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
 <body>
 
 <!-- Navigation Header -->
-<header>
-  <a href="index.html">Home</a>
-  <a href="women.html"> Women</a>
-  <a href="men.html"> Men</a>
+<header class="checkout-header">
+  <h1 class="main-heading">Eco Thrift – Checkout</h1>
+  <nav class="checkout-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="women.html">Women</a></li>
+      <li><a href="men.html">Men</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+  </nav>
 </header>
+
 
 <!-- Main Container -->
 <div class="container my-5">
   <main>
     <div class="text-center mb-5">
-      <h1 class="h2">Eco Thrift – Checkout</h1>
       <p class="lead">Please complete your order below.</p>
     </div>
 
