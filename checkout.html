@@ -132,8 +132,9 @@
    <div class="main-heading-wrapper">
   <h1 class="main-heading">Eco Thrift – Checkout</h1>
        </div>
-  <nav class="checkout-nav">
-    <ul>
+ <div class="menu-icon" onclick="toggleMenu()">☰</div>
+<nav>
+  <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="women.html">Women</a></li>
@@ -288,11 +289,16 @@
 
   <footer class="mt-5 pt-4 text-center text-sm text-muted">
     <p>&copy; 2025 Eco Thrift</p>
-    <a href="#" class="me-3 text-decoration-none">Privacy</a>
-    <a href="#" class="me-3 text-decoration-none">Terms</a>
-    <a href="#" class="text-decoration-none">Support</a>
+ 
   </footer>
 </div>
+
+  <script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
 
 </body>
 </html>
