@@ -1040,48 +1040,50 @@ footer {
 /* About Page Enhancements */
 
 .about-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.about-image-wrapper {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.about-image {
   max-width: 100%;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.about-image:hover {
-  transform: scale(1.03);
-}
-
+/* Match navigation border width and alignment */
+.about-image-wrapper,
 .about-paragraph {
+  max-width: 90%;
+  margin: 0 auto 20px auto;
   border: 2px solid #064218;
   border-radius: 20px;
   background-color: #e7ffad;
   padding: 20px;
-  margin-bottom: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Image styling */
+.about-image {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+/* Hover effect on image */
+.about-image:hover {
+  transform: scale(1.03);
+}
+
+/* Paragraph text */
 .about-paragraph p {
   font-size: 1rem;
   line-height: 1.6;
   color: #064218;
 }
 
-/* Responsive image on smaller screens */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .about-image {
-    width: 90%;
+    width: 100%;
   }
 }
+
 
 
 
