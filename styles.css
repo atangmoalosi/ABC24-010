@@ -1046,7 +1046,11 @@ footer {
 }
 
 /* Match navigation border width and alignment */
-.about-image-wrapper,
+.about-image-wrapper {
+  max-width: 90%;
+  margin: 0 auto 20px auto;
+}
+
 .about-paragraph {
   max-width: 90%;
   margin: 0 auto 20px auto;
@@ -1056,7 +1060,6 @@ footer {
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 /* Image styling */
 .about-image {
   width: 100%;
