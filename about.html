@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About | Eco Thrift</title>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eco Thrift | About</title>
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
- 
 </head>
 <body>
+
   <header>
     <h1>Eco Thrift</h1>
     <nav>
-      <ul>
+      <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="women.html">Women</a></li>
         <li><a href="men.html">Men</a></li>
         <li><a href="checkout.html">Checkout</a></li>
       </ul>
+      <span class="menu-icon" onclick="document.getElementById('nav-links').classList.toggle('active')">&#9776;</span>
     </nav>
   </header>
 
   <main>
-    <h2>About Us</h2>
-    <p>Eco Thrift is a small-size thrift store dedicated to creating a sustainable and stylish environment. Our main goal is to provide affordable secondhand clothes, shoes, and accessories while encouraging a more conscious fashion industry to help reduce textile waste.</p>
-
-    <p>Formed in November 2023, Eco Thrift is a gradually growing platform with the hopes of becoming the first destination to think of when looking to find the best secondhand fashion and accessories. We aim to promote the culture of reselling sale clothes instead of leaning too much into fast fashion.</p>
-
-    <p>We are currently based in Gaborone and with this online space, we hope to reach thousands of Batswana who want to promote sustainability while also looking fashionable.</p>
+    <section class="about-section">
+      <h2 class="women-heading">About Us</h2>
+      <p>
+        Eco Thrift is a small-size thrift store dedicated to creating a sustainable and stylish environment. Our main goal is to provide affordable secondhand clothes, shoes, and accessories while encouraging a more conscious fashion industry to help reduce textile waste.
+      </p>
+      <p>
+        Formed in November 2023, Eco Thrift is a gradually growing platform with the hopes of becoming the first destination to think of when looking to find the best secondhand fashion and accessories. We aim to promote the culture of reselling clothes instead of leaning too much into fast fashion.
+      </p>
+      <p>
+        We are currently based in Gaborone and with this online space, we hope to reach thousands of Batswana who want to promote sustainability while also looking fashionable.
+      </p>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Eco Thrift</p>
   </footer>
+
 </body>
 </html>
+
