@@ -259,3 +259,9 @@ createCarousel([
   { src: 'images/men-trousers2.jpg', title: 'Chino Pants', price: 'P65', size: '34' }
 ], 'trousers-men-image', 'trousers-men-title', 'trousers-men-price', 'trousers-men-size', 'trousers-men-prev', 'trousers-men-next', 'add-trousers-men', 'buy-trousers-men');
 }
+
+
+function toggleMenu() {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('active');
+}
