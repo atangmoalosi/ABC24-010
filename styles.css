@@ -1096,6 +1096,30 @@ footer {
   margin-top: 1rem; /* slightly separates heading from nav */
 }
 
+/* Prevent horizontal scrolling on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure containers and navs don’t overflow */
+.container,
+.checkout-nav {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Optional: prevent large images or elements from overflowing */
+img,
+iframe,
+table {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
 
 
 
