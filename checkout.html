@@ -46,25 +46,10 @@
       <div class="col-md-5 col-lg-4 order-md-last">
         <h4 class="d-flex justify-content-between align-items-center mb-3">
           <span>Your Cart</span>
-          <span class="badge bg-primary rounded-pill">3</span>
+          <span class="badge bg-primary rounded-pill" id="cart-count">0</span>
         </h4>
-        <ul class="list-group mb-3">
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div><h6 class="my-0">Item One</h6><small>Brief description</small></div>
-            <span>P40</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div><h6 class="my-0">Item Two</h6><small>Brief description</small></div>
-            <span>P30</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div><h6 class="my-0">Item Three</h6><small>Brief description</small></div>
-            <span>P30</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <strong>Total</strong>
-            <strong>P100</strong>
-          </li>
+        <ul class="list-group mb-3" id="cart-items">
+          <!-- Items will be injected here -->
         </ul>
 
         <form class="card p-2">
@@ -167,6 +152,51 @@
   <footer class="text-center mt-5">
     <p>&copy; 2025 Eco Thrift</p>
   </footer>
+
+  <!-- Cart Script -->
+  <script>
+    function renderCartItems() {
+      const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+      const cartList = document.getElementById('cart-items');
+      const cartCount = document.getElementById('cart-count');
+
+      cartList.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const price = parseFloat(item.price.replace('P', ''));
+        total += price;
+
+        const li = document.createElement('li');
+        li.className = 'list-group-item d-flex justify-content-between align-items-start';
+        li.innerHTML = `
+          <div class="me-auto">
+            <h6 class="my-0">${item.title}</h6>
+            <small class="text-muted">Size: ${item.size}</small>
+          </div>
+          <span>${item.price}</span>
+          <button class="btn btn-sm btn-danger ms-2" onclick="removeItem(${index})">x</button>
+        `;
+        cartList.appendChild(li);
+      });
+
+      const totalLi = document.createElement('li');
+      totalLi.className = 'list-group-item d-flex justify-content-between';
+      totalLi.innerHTML = `<strong>Total</strong><strong>P${total.toFixed(2)}</strong>`;
+      cartList.appendChild(totalLi);
+
+      cartCount.textContent = cart.length;
+    }
+
+    function removeItem(index) {
+      const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+      cart.splice(index, 1);
+      localStorage.setItem('ecoCart', JSON.stringify(cart));
+      renderCartItems();
+    }
+
+    document.addEventListener('DOMContentLoaded', renderCartItems);
+  </script>
 </body>
 </html>
 
