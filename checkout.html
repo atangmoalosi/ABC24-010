@@ -11,7 +11,117 @@
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Boldonse', sans-serif;
+      background-color: #bbf74a;
+      color: #064218;
+    }
 
+    /* Header */
+    .checkout-header {
+      text-align: center;
+      padding: 1rem 0 0.5rem;
+    }
+
+    .main-heading {
+      font-size: 2.2rem;
+      border-bottom: 3px solid #0f4d2c;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Hamburger menu icon */
+    .menu-icon {
+      display: none;
+      font-size: 2rem;
+      color: #0f4d2c;
+      cursor: pointer;
+      text-align: right;
+      padding: 0 1rem;
+    }
+
+    /* Navigation */
+    .checkout-nav {
+      display: flex;
+      justify-content: center;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 90%;
+      border: 2px solid #0f4d2c;
+      border-radius: 25px;
+      background-color: #d4ff4d;
+    }
+
+    .checkout-nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .checkout-nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #0f4d2c;
+    }
+
+    .checkout-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Button */
+    .btn-primary {
+      background-color: #0f4d2c;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0c3d22;
+    }
+
+    /* Form fields */
+    .form-label {
+      color: #064218;
+    }
+
+    .form-control:focus {
+      border-color: #0f4d2c;
+      box-shadow: 0 0 0 0.2rem rgba(15, 77, 44, 0.25);
+    }
+
+    /* Footer */
+    footer {
+      color: #064218;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    /* Responsive adjustments */
+  @media (max-width: 768px) {
+.menu-icon {
+display: block;
+}
+#nav-links {
+display: none;
+flex-direction: column;
+align-items: center;
+background-color: #444;
+padding: 10px 0;
+margin-top: 10px;
+}
+#nav-links.active {
+display: flex;
+}
+#nav-links li {
+margin: 10px 0;
+}
+}
+  </style>
   
 </head>
 <body>
