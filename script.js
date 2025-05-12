@@ -265,3 +265,37 @@ function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
   navLinks.classList.toggle('active');
 }
+
+
+// === Render Cart on Checkout Page ===
+if (window.location.pathname.includes('checkout.html')) {
+  document.addEventListener('DOMContentLoaded', function () {
+    const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+    const cartList = document.getElementById('cart-list');
+    const totalPriceEl = document.getElementById('total-price');
+    const badge = document.querySelector('.badge.bg-primary');
+
+    cartList.innerHTML = '';
+    let total = 0;
+
+    cart.forEach(item => {
+      const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between lh-sm';
+      li.innerHTML = `
+        <div>
+          <h6 class="my-0">${item.title}</h6>
+          <small>${item.size}</small>
+        </div>
+        <span>${item.price}</span>
+      `;
+      cartList.appendChild(li);
+
+      // Convert price from "P40" to 40
+      total += parseFloat(item.price.replace('P', '')) || 0;
+    });
+
+    totalPriceEl.textContent = 'P' + total;
+    if (badge) badge.textContent = cart.length;
+  });
+}
+
