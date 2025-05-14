@@ -9,9 +9,6 @@ function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, next
   const addToCartBtn = document.getElementById(buttonId);
   const buyNowBtn = document.getElementById(buyNowButtonId);
 
-
-
-
   function show() {
     const item = images[index];
     imgEl.src = item.src;
@@ -20,17 +17,17 @@ function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, next
     sizeEl.textContent = `Size: ${item.size}`;
   }
 
-  prevBtn.addEventListener('click', () => {
+  prevBtn?.addEventListener('click', () => {
     index = (index - 1 + images.length) % images.length;
     show();
   });
 
-  nextBtn.addEventListener('click', () => {
+  nextBtn?.addEventListener('click', () => {
     index = (index + 1) % images.length;
     show();
   });
 
-  addToCartBtn.addEventListener('click', () => {
+  addToCartBtn?.addEventListener('click', () => {
     const item = images[index];
     const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
     cart.push(item);
@@ -38,7 +35,7 @@ function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, next
     alert(`${item.title} has been added to your cart.`);
   });
 
-  buyNowBtn.addEventListener('click', () => {
+  buyNowBtn?.addEventListener('click', () => {
     const item = images[index];
     const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
     cart.push(item);
@@ -51,59 +48,54 @@ function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, next
 
 function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('active');
+  navLinks?.classList.toggle('active');
 }
 
-// CHECKOUT LOGIC
-function renderCart() {
-  const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
-  const cartList = document.getElementById('cart-items');
-  const cartBadge = document.getElementById('cart-badge');
-  const cartTotal = document.getElementById('cart-total');
-
-  if (!cartList || !cartBadge || !cartTotal) return;
-
-  cartList.innerHTML = '';
-  let total = 0;
-
-  cart.forEach((item, index) => {
-    const priceValue = parseFloat(item.price.replace('P', '')) || 0;
-    total += priceValue;
-
-    const li = document.createElement('li');
-    li.className = 'list-group-item d-flex justify-content-between lh-sm';
-    li.innerHTML = `
-      <div>
-        <h6 class="my-0">${item.title}</h6>
-        <small>${item.size}</small>
-      </div>
-      <span>${item.price}</span>
-    `;
-    cartList.appendChild(li);
-  });
-
-  cartBadge.textContent = cart.length;
-  cartTotal.textContent = `P${total}`;
-}
-
-// Clear Cart on order submission (optional)
-function clearCartOnSubmit() {
-  const form = document.querySelector('form');
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you for your order!');
-    localStorage.removeItem('ecoCart');
-    window.location.reload();
-  });
-}
-
-// Run cart render on checkout page load
+// === Render Cart on Checkout Page ===
 if (window.location.pathname.includes('checkout.html')) {
-  window.addEventListener('DOMContentLoaded', () => {
-    renderCart();
-    clearCartOnSubmit();
+  document.addEventListener('DOMContentLoaded', () => {
+    const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+    const cartList = document.getElementById('cart-list');
+    const totalPriceEl = document.getElementById('total-price');
+    const cartCountEl = document.getElementById('cart-count');
+    const clearBtn = document.getElementById('clear-cart');
+
+    cartList.innerHTML = '';
+    let total = 0;
+
+    cart.forEach(item => {
+      const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between lh-sm';
+      li.innerHTML = `
+        <div>
+          <h6 class="my-0">${item.title}</h6>
+          <small>${item.size}</small>
+        </div>
+        <span>${item.price}</span>
+      `;
+      cartList.appendChild(li);
+
+      total += parseFloat(item.price.replace('P', '')) || 0;
+    });
+
+    totalPriceEl.textContent = `P${total}`;
+    cartCountEl.textContent = cart.length;
+
+    clearBtn?.addEventListener('click', () => {
+      localStorage.removeItem('ecoCart');
+      window.location.reload();
+    });
+
+    const form = document.getElementById('checkout-form');
+    form?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for your order!');
+      localStorage.removeItem('ecoCart');
+      window.location.href = 'thankyou.html'; // Optional redirect after checkout
+    });
   });
 }
+
 
 
 if (document.getElementById('tops-image')) {
