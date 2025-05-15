@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Women's Shoes | Eco Thrift</title>
 
-  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
-   
   <h1>Eco Thrift – Women's Shoes</h1>
-  
-     <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <nav>
     <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -30,59 +28,87 @@
 <main>
   <h2>Women's Shoes</h2>
   <p>Here are our available shoes:</p>
-  
+
+  <!-- Sandals and Flats -->
   <section id="sandals-flats">
     <h2>Sandals and Flats</h2>
     <div class="js-carousel">
       <button class="prev sandals-flats-prev">&#10094;</button>
-      <img id="sandals-flats-image" class="product-image" src="" alt="Sandals or Flats">
-      <h3 id="sandals-flats-title"></h3>
-      <p id="sandals-flats-price">Price: </p>
-      <p id="sandals-flats-size">Size: </p>
-      <button class="add-to-cart" id="add-sandals-flats">Add to Cart</button>
+      <div>
+        <img id="sandals-flats-image" class="product-image" src="" alt="Sandals or Flats" />
+        <h3 id="sandals-flats-title"></h3>
+        <p id="sandals-flats-price">Price: </p>
+        <p id="sandals-flats-size">Size: </p>
+        <button class="add-to-cart" id="add-sandals-flats">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+          Add To Cart
+        </button>
+        <button class="buy-now" id="buy-sandals-flats">
+          <span class="material-symbols-outlined">shopping_bag_speed</span>
+          Buy Now
+        </button>
+      </div>
       <button class="next sandals-flats-next">&#10095;</button>
     </div>
   </section>
 
+  <!-- Heels -->
   <section id="heels">
     <h2>Heels</h2>
     <div class="js-carousel">
       <button class="prev heels-prev">&#10094;</button>
-      <img id="heels-image" class="product-image" src="" alt="Heels">
-      <h3 id="heels-title"></h3>
-      <p id="heels-price">Price: </p>
-      <p id="heels-size">Size: </p>
-      <button class="add-to-cart" id="add-heels">Add to Cart</button>
+      <div>
+        <img id="heels-image" class="product-image" src="" alt="Heels" />
+        <h3 id="heels-title"></h3>
+        <p id="heels-price">Price: </p>
+        <p id="heels-size">Size: </p>
+        <button class="add-to-cart" id="add-heels">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+          Add To Cart
+        </button>
+        <button class="buy-now" id="buy-heels">
+          <span class="material-symbols-outlined">shopping_bag_speed</span>
+          Buy Now
+        </button>
+      </div>
       <button class="next heels-next">&#10095;</button>
     </div>
   </section>
 
+  <!-- Boots and Sneakers -->
   <section id="boots-sneakers">
     <h2>Boots and Sneakers</h2>
     <div class="js-carousel">
       <button class="prev boots-sneakers-prev">&#10094;</button>
-      <img id="boots-sneakers-image" class="product-image" src="" alt="Boots or Sneakers">
-      <h3 id="boots-sneakers-title"></h3>
-      <p id="boots-sneakers-price">Price: </p>
-      <p id="boots-sneakers-size">Size: </p>
-      <button class="add-to-cart" id="add-boots-sneakers">Add to Cart</button>
+      <div>
+        <img id="boots-sneakers-image" class="product-image" src="" alt="Boots or Sneakers" />
+        <h3 id="boots-sneakers-title"></h3>
+        <p id="boots-sneakers-price">Price: </p>
+        <p id="boots-sneakers-size">Size: </p>
+        <button class="add-to-cart" id="add-boots-sneakers">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+          Add To Cart
+        </button>
+        <button class="buy-now" id="buy-boots-sneakers">
+          <span class="material-symbols-outlined">shopping_bag_speed</span>
+          Buy Now
+        </button>
+      </div>
       <button class="next boots-sneakers-next">&#10095;</button>
     </div>
   </section>
-
-  
 </main>
 
 <footer>
   <p>&copy; 2025 Eco Thrift</p>
 </footer>
+
 <script>
-function toggleMenu() {
-  const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('active');
-}
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
 </script>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
