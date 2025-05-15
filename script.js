@@ -97,7 +97,7 @@ if (window.location.pathname.includes('checkout.html')) {
 }
 
 
-
+//women's tops
 if (document.getElementById('tops-image')) {
 createCarousel([
   { src: 'images/straplesstop.jpg', title: 'Strapless Top',price:'P40',size: 'S'},
@@ -112,7 +112,7 @@ createCarousel([
   {src: 'images/stripedlongsleeve.jpg',title: 'Striped Long Sleeve Top',price:'P30',size:'M'}          
 ], 'tops-image', 'tops-title','tops-price','tops-size', 'tops-prev', 'tops-next','add-tops','buy-tops');
 }
-
+//women's skirts and dresses
 if (document.getElementById('skirts-and-dresses-image')) {
 createCarousel([
   { src: 'images/blacklaceskirt.jpg', title: 'Black Lace Skirt',price:'P30',size:'M' },
@@ -128,6 +128,7 @@ createCarousel([
 ], 'skirts-and-dresses-image', 'skirts-and-dresses-title','skirts-and-dresses-price','skirts-and-dresses-size', 'skirts-and-dresses-prev', 'skirts-and-dresses-next','add-skirts-and-dresses','buy-skirts-and-dresses');
 }
 
+//women's outerwear
 if (document.getElementById('outerwear-image')) {
 createCarousel([
     { src: 'images/blackleatherjacket.jpg', title: 'Black Leather Jacket', price: 'P60', size: 'M' },
@@ -145,6 +146,7 @@ createCarousel([
   ],'outerwear-image','outerwear-title','outerwear-price','outerwear-size','outerwear-prev','outerwear-next', 'add-outerwear','buy-outerwear');
 }
 
+//women's trousers
 if (document.getElementById('trousers-leggings-image')) {
 createCarousel([
   { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P20', size: 'S' },
@@ -161,7 +163,7 @@ createCarousel([
 ], 'trousers-leggings-image', 'trousers-leggings-title', 'trousers-leggings-price', 'trousers-leggings-size', 'trousers-leggings-prev', 'trousers-leggings-next', 'add-trousers-leggings', 'buy-trousers-leggings');
 }
 
-// Earrings Carousel
+//women's Earrings 
 if (document.getElementById('earrings-image')) {
 createCarousel([
   { src: 'images/brownhoopearrings.png', title: 'Brown Hoop Earrings', price: 'P20', size: 'One Size' },
@@ -177,7 +179,7 @@ createCarousel([
   
 ], 'earrings-image', 'earrings-title', 'earrings-price', 'earrings-size', 'earrings-prev', 'earrings-next', 'add-earrings','buy-earrings');
 }
-// Bracelets Carousel
+// women's Bracelets 
   if (document.getElementById('bracelets-image')) {
 createCarousel([
   { src: 'images/brownbraceletset.png', title: 'Brown Bracelet Set', price: 'P20', size: 'One Size' },
@@ -193,7 +195,7 @@ createCarousel([
   
 ], 'bracelets-image', 'bracelets-title', 'bracelets-price', 'bracelets-size', 'bracelets-prev', 'bracelets-next', 'add-bracelets','buy-bracelets');
   }
-// Necklaces Carousel
+// Women's Necklaces 
 if (document.getElementById('necklaces-image')) {
 createCarousel([
   { src: 'images/browncowrieshellnecklace.png', title: 'Brown Cowrie Shell Necklace', price: 'P30', size: 'One Size' },
@@ -209,7 +211,7 @@ createCarousel([
   {src: 'images/cowrieshellnecklace.png', title: 'Cowrie Shell Necklace', price: 'P30', size: 'One Size' }
 ], 'necklaces-image', 'necklaces-title', 'necklaces-price', 'necklaces-size', 'necklaces-prev', 'necklaces-next', 'add-necklaces','buy-necklaces');
 }
-// Sandals and Flats Carousel
+// women's Sandals and Flats 
 if (document.getElementById('sandals-flats-image')) {
 createCarousel([
   { src: 'images/blackbowsandals.png', title: 'Black Gold Sandals', price: 'P40', size: '6' },
