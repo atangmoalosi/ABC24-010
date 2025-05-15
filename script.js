@@ -304,8 +304,20 @@ createCarousel([
 // Trousers Carousel
 if (document.getElementById('trousers-image')) {
 createCarousel([
-  { src: 'images/men-trousers1.jpg', title: 'Slim Fit Jeans', price: 'P70', size: '32' },
-  { src: 'images/men-trousers2.jpg', title: 'Chino Pants', price: 'P65', size: '34' }
+  { src: 'images/blackbootleg.png', title: 'Slim Fit Jeans', price: 'P30', size: '32' },
+  { src: 'images/blueskinnyjean.png', title: 'Blue Skinny Jean', price: 'P25', size: '30' },
+   { src: 'images/polojeanshorts.png', title: 'Polo Jean Shorts', price: 'P25', size: '28' },
+   { src: 'images/chinoshorts.png', title: 'Chino Shorts', price: 'P20', size: '29' },
+   { src: 'images/blueskinnyjean.png', title: 'Blue Skinny Jean', price: 'P25', size: '30' },
+   { src: 'images/pleatedshorts.png', title: 'Pleated Shorts', price: 'P25', size: '32' },
+   { src: 'images/drawstringpants.png', title: 'Draw String Pants', price: 'P25', size: '26' },
+   { src: 'images/blacktrackpants.png', title: 'Black Track Pants', price: 'P20', size: '30' },
+   { src: 'images/straightcargoparts.png', title: 'Straight Cargo Pants', price: 'P35', size: '26' },
+   { src: 'images/cuffedblacktrackpants.png', title: 'Cuffed Black Track Pants', price: 'P25', size: '30' },
+   { src: 'images/denimjorts.png', title: 'Denim Jorts', price: 'P35', size: '30' }
+
+
+  
 ], 'trousers-men-image', 'trousers-men-title', 'trousers-men-price', 'trousers-men-size', 'trousers-men-prev', 'trousers-men-next', 'add-trousers-men', 'buy-trousers-men');
 }
 
