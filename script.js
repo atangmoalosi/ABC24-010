@@ -319,32 +319,50 @@ function toggleMenu() {
 // === Render Cart on Checkout Page ===
 if (window.location.pathname.includes('checkout.html')) {
   document.addEventListener('DOMContentLoaded', function () {
-    const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
     const cartList = document.getElementById('cart-list');
     const totalPriceEl = document.getElementById('total-price');
     const badge = document.querySelector('.badge.bg-primary');
 
-    cartList.innerHTML = '';
-    let total = 0;
+    function renderCart() {
+      const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+      cartList.innerHTML = '';
+      let total = 0;
 
-    cart.forEach(item => {
-      const li = document.createElement('li');
-      li.className = 'list-group-item d-flex justify-content-between lh-sm';
-      li.innerHTML = `
-        <div>
-          <h6 class="my-0">${item.title}</h6>
-          <small>${item.size}</small>
-        </div>
-        <span>${item.price}</span>
-      `;
-      cartList.appendChild(li);
+      cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item d-flex justify-content-between align-items-center lh-sm';
 
-      // Convert price from "P40" to 40
-      total += parseFloat(item.price.replace('P', '')) || 0;
-    });
+        const priceValue = parseFloat(item.price.replace('P', '')) || 0;
+        total += priceValue;
 
-    totalPriceEl.textContent = 'P' + total;
-    if (badge) badge.textContent = cart.length;
+        li.innerHTML = `
+          <div>
+            <h6 class="my-0">${item.title}</h6>
+            <small>${item.size}</small>
+          </div>
+          <span>${item.price}</span>
+          <button class="btn btn-sm btn-danger ms-2 remove-item" data-index="${index}">✕</button>
+        `;
+
+        cartList.appendChild(li);
+      });
+
+      totalPriceEl.textContent = 'P' + total;
+      if (badge) badge.textContent = cart.length;
+
+      // Attach remove logic
+      const removeButtons = document.querySelectorAll('.remove-item');
+      removeButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const index = parseInt(this.getAttribute('data-index'));
+          const cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+          cart.splice(index, 1);
+          localStorage.setItem('ecoCart', JSON.stringify(cart));
+          renderCart(); // Refresh UI
+        });
+      });
+    }
+
+    renderCart(); // Initial call
   });
 }
-
