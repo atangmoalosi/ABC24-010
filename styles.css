@@ -1118,6 +1118,59 @@ table {
   display: block;
 }
 
+    .js-carousel {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-behavior: smooth;
+    }
+    .js-carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .product-image {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 1rem;
+    }
+    .add-to-cart, .buy-now {
+  font-family: 'Boldonse', Arial, sans-serif; 
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.add-to-cart {
+  background: none;
+  color: #0f4d2c;
+  border: 1px solid #0f4d2c;
+}
+
+.buy-now {
+  background-color: #0f4d2c;
+  color: white;
+  border: none;
+}
+
+    }
+    button.prev, button.next {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #0f4d2c;
+    }
+    @media (min-width: 768px) {
+      .js-carousel {
+        justify-content: center;
+      }
+    }
+  
 
 
 
