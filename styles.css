@@ -1182,22 +1182,35 @@ table {
 }
 
 /* Hover effect on image */
-.section-link .hover-img {
+.category-block {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.category-block h2 {
+  font-family: 'Boldonse', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #0f4d2c;
+  transition: color 0.3s ease;
+}
+
+.category-block h2:hover {
+  color: #145c38;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hover-img {
   width: 100%;
   max-width: 300px;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.section-link .hover-img:hover {
+.hover-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Optional: make h2 look like a button/link on hover */
-.section-link h2:hover {
-  text-decoration: underline;
-  color: #0f4d2c;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 
