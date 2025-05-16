@@ -1171,6 +1171,34 @@ table {
       }
     }
   
+/* Section link styling */
+.section-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on image */
+.section-link .hover-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-link .hover-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: make h2 look like a button/link on hover */
+.section-link h2:hover {
+  text-decoration: underline;
+  color: #0f4d2c;
+}
 
 
 
