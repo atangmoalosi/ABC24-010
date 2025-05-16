@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Men's Clothes | Eco Thrift</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men's Shoes | Eco Thrift</title>
 
-  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <!-- Google Fonts & Material Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
   <h1>Eco Thrift – Men's Shoes</h1>
-  
-  
-     <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <nav>
     <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -30,43 +30,64 @@
 <main>
   <h2>Men's Shoes</h2>
   <p>Here are our available shoes:</p>
+
+  <!-- Sandals and Flats -->
   <section id="men-sandals-flats">
     <h2>Sandals and Flats</h2>
     <div class="js-carousel">
       <button class="prev men-sandals-flats-prev">&#10094;</button>
-      <img id="men-sandals-flats-image" class="product-image" src="" alt="Men's Sandals or Flats">
-      <h3 id="men-sandals-flats-title"></h3>
-      <p id="men-sandals-flats-price">Price: </p>
-      <p id="men-sandals-flats-size">Size: </p>
-      <button class="add-to-cart" id="add-men-sandals-flats">Add to Cart</button>
+      <div>
+        <img id="men-sandals-flats-image" class="product-image" src="" alt="Men's Sandals or Flats" />
+        <h3 id="men-sandals-flats-title"></h3>
+        <p id="men-sandals-flats-price">Price: </p>
+        <p id="men-sandals-flats-size">Size: </p>
+        <button class="add-to-cart" id="add-men-sandals-flats">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+          Add To Cart
+        </button>
+        <button class="buy-now" id="buy-men-sandals-flats">
+          <span class="material-symbols-outlined">shopping_bag_speed</span>
+          Buy Now
+        </button>
+      </div>
       <button class="next men-sandals-flats-next">&#10095;</button>
     </div>
   </section>
 
+  <!-- Sneakers and Boots -->
   <section id="men-sneakers-boots">
     <h2>Sneakers and Boots</h2>
     <div class="js-carousel">
       <button class="prev men-sneakers-boots-prev">&#10094;</button>
-      <img id="men-sneakers-boots-image" class="product-image" src="" alt="Men's Sneakers or Boots">
-      <h3 id="men-sneakers-boots-title"></h3>
-      <p id="men-sneakers-boots-price">Price: </p>
-      <p id="men-sneakers-boots-size">Size: </p>
-      <button class="add-to-cart" id="add-men-sneakers-boots">Add to Cart</button>
+      <div>
+        <img id="men-sneakers-boots-image" class="product-image" src="" alt="Men's Sneakers or Boots" />
+        <h3 id="men-sneakers-boots-title"></h3>
+        <p id="men-sneakers-boots-price">Price: </p>
+        <p id="men-sneakers-boots-size">Size: </p>
+        <button class="add-to-cart" id="add-men-sneakers-boots">
+          <span class="material-symbols-outlined">add_shopping_cart</span>
+          Add To Cart
+        </button>
+        <button class="buy-now" id="buy-men-sneakers-boots">
+          <span class="material-symbols-outlined">shopping_bag_speed</span>
+          Buy Now
+        </button>
+      </div>
       <button class="next men-sneakers-boots-next">&#10095;</button>
     </div>
   </section>
-
-  
 </main>
 
 <footer>
   <p>&copy; 2025 Eco Thrift</p>
 </footer>
+
 <script>
-function toggleMenu() {
-  const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('active');
-}
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
 </script>
+<script src="script.js"></script>
 </body>
 </html>
