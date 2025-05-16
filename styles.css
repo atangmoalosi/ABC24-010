@@ -1157,7 +1157,7 @@ table {
   border: none;
 }
 
-    }
+    
     button.prev, button.next {
       font-size: 2rem;
       background: none;
@@ -1171,12 +1171,3 @@ table {
       }
     }
   
-/* Section link styling */
-.section-link {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease;
-}
