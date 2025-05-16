@@ -5,87 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Men's Clothes | Eco Thrift</title>
 
-   
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  
   <h1>Eco Thrift – Men's Clothes</h1>
-  
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    < nav>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <nav>
     <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="men.html">Back to Men</a></li>
     </ul>
   </nav>
 </header>
+
 <main>
   <h2>Men's Clothes</h2>
   <p>Here are our available clothes:</p>
+
+  <!-- Tops -->
   <section id="tops-tshirts">
     <h2>Tops and T-Shirts</h2>
     <div class="js-carousel">
       <button class="prev tops-tshirts-prev">&#10094;</button>
-      <img id="tops-tshirts-image" class="product-image" src="" alt="Men's Tops or T-Shirts">
-      <h3 id="tops-tshirts-title"></h3>
-      <p id="tops-tshirts-price">Price: </p>
-      <p id="tops-tshirts-size">Size: </p>
-      <button class="add-to-cart" id="add-tops-tshirts">Add to Cart</button>
+      <div>
+        <img id="tops-tshirts-image" class="product-image" src="" alt="Men's Tops or T-Shirts">
+        <h3 id="tops-tshirts-title"></h3>
+        <p id="tops-tshirts-price">Price: </p>
+        <p id="tops-tshirts-size">Size: </p>
+        <button class="add-to-cart" id="add-tops-tshirts">
+          <span class="material-symbols-outlined">add_shopping_cart</span> Add to Cart
+        </button>
+        <button class="buy-now" id="buy-tops-tshirts">
+          <span class="material-symbols-outlined">shopping_bag_speed</span> Buy Now
+        </button>
+      </div>
       <button class="next tops-tshirts-next">&#10095;</button>
     </div>
   </section>
 
+  <!-- Outerwear -->
   <section id="outerwear-men">
     <h2>Outerwear</h2>
     <div class="js-carousel">
       <button class="prev outerwear-men-prev">&#10094;</button>
-      <img id="outerwear-men-image" class="product-image" src="" alt="Men's Outerwear">
-      <h3 id="outerwear-men-title"></h3>
-      <p id="outerwear-men-price">Price: </p>
-      <p id="outerwear-men-size">Size: </p>
-      <button class="add-to-cart" id="add-outerwear-men">Add to Cart</button>
+      <div>
+        <img id="outerwear-men-image" class="product-image" src="" alt="Men's Outerwear">
+        <h3 id="outerwear-men-title"></h3>
+        <p id="outerwear-men-price">Price: </p>
+        <p id="outerwear-men-size">Size: </p>
+        <button class="add-to-cart" id="add-outerwear-men">
+          <span class="material-symbols-outlined">add_shopping_cart</span> Add to Cart
+        </button>
+        <button class="buy-now" id="buy-outerwear-men">
+          <span class="material-symbols-outlined">shopping_bag_speed</span> Buy Now
+        </button>
+      </div>
       <button class="next outerwear-men-next">&#10095;</button>
     </div>
   </section>
 
+  <!-- Trousers -->
   <section id="trousers-men">
     <h2>Trousers</h2>
     <div class="js-carousel">
       <button class="prev trousers-men-prev">&#10094;</button>
-      <img id="trousers-men-image" class="product-image" src="" alt="Men's Trousers">
-      <h3 id="trousers-men-title"></h3>
-      <p id="trousers-men-price">Price: </p>
-      <p id="trousers-men-size">Size: </p>
-      <button class="add-to-cart" id="add-trousers-men">Add to Cart</button>
+      <div>
+        <img id="trousers-men-image" class="product-image" src="" alt="Men's Trousers">
+        <h3 id="trousers-men-title"></h3>
+        <p id="trousers-men-price">Price: </p>
+        <p id="trousers-men-size">Size: </p>
+        <button class="add-to-cart" id="add-trousers-men">
+          <span class="material-symbols-outlined">add_shopping_cart</span> Add to Cart
+        </button>
+        <button class="buy-now" id="buy-trousers-men">
+          <span class="material-symbols-outlined">shopping_bag_speed</span> Buy Now
+        </button>
+      </div>
       <button class="next trousers-men-next">&#10095;</button>
     </div>
   </section>
-  
 </main>
 
 <footer>
   <p>&copy; 2025 Eco Thrift</p>
 </footer>
-
-
 <script>
-function toggleMenu() {
-  const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('active');
-}
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
 </script>
-
-  <script src="script.js"></script>
-  
+<script src="script.js"></script>
 </body>
 </html>
 
-</body>
-</html>
