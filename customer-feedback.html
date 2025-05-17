@@ -3,32 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eco Thrift | Checkout</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css" />
-
+  <title>Customer Care | Eco Thrift</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <h1>Eco Thrift</h1>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <nav>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="women.html">Women</a></li>
-        <li><a href="men.html">Men</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-      </ul>
-    </nav>
-  </header>
 
+<header>
+  <h1>Eco Thrift – Customer Care</h1>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <footer>
-    <p>&copy; 2025 Eco Thrift</p>
-  </footer>
+<main class="container customer-care-section">
+  <section class="info-section">
+    <h2>Ordering & Delivery</h2>
+    <p>Once you place your order, our team will package your selected items and dispatch them within 1-2 business days. Delivery typically takes 3-5 business days in Gaborone and surrounding areas. We’ll send a confirmation email and tracking info once your order is on its way.</p>
+
+    <h2>Privacy Policy</h2>
+    <p>We respect your privacy. Your personal information is used only to process your orders and communicate with you about your purchases. We never share your data with third parties.</p>
+  </section>
+
+  <section class="feedback-section">
+    <h2>Share Your Feedback</h2>
+    <div class="feedback-form-wrapper">
+      <div class="card feedback-card">
+        <div class="card-header bg-primary text-white">
+          <h5 class="card-title mt-2">Feedback Request</h5>
+        </div>
+        <div class="card-body">
+          <div class="text-center mb-3">
+            <i class="far fa-file-alt fa-4x text-primary"></i>
+            <p><strong>Your opinion matters</strong></p>
+            <p>Have some ideas how to improve our product? <strong>Give us your feedback.</strong></p>
+          </div>
+          <hr />
+
+          <form class="px-4">
+            <p class="text-center"><strong>Your rating:</strong></p>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="rating" id="rating1">
+              <label class="form-check-label" for="rating1">Very good</label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="rating" id="rating2">
+              <label class="form-check-label" for="rating2">Good</label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="rating" id="rating3">
+              <label class="form-check-label" for="rating3">Mediocre</label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="rating" id="rating4">
+              <label class="form-check-label" for="rating4">Bad</label>
+            </div>
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="radio" name="rating" id="rating5">
+              <label class="form-check-label" for="rating5">Very bad</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="feedbackText">What could we improve?</label>
+              <textarea class="form-control" id="feedbackText" rows="4"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-end">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Eco Thrift</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
 </body>
 </html>
 
