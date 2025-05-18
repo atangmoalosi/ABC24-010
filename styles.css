@@ -101,7 +101,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
   }
-
+}
 
 /* MOBILE nav */
 @media (max-width: 768px) {
