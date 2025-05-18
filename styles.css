@@ -30,23 +30,6 @@ header h1 {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  header h1 {
-    text-align: left;
-    margin: 0;
-    padding-left: 10px;
-    font-size: 24px;
-    width: auto;
-    border: none;
-  }
-}
 
 
 /* Navigation bar */
@@ -110,7 +93,15 @@ nav {
   top: 0;
   display: none;
 }
-
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #064218;
+  width: 100%;
+  text-align: center;
+  margin-right: 50px; /* create space for the hamburger */
+}
 /* MOBILE nav */
 @media (max-width: 768px) {
   .menu-icon {
@@ -644,7 +635,7 @@ nav {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #444;
+    background-color: #e7ffad;
     padding: 10px 0;
     margin-top: 10px;
   }
