@@ -95,13 +95,15 @@ nav {
   
 }
 @media (max-width: 768px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  header h1 {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 10px;
+    flex: 1 1 100%;
   }
 }
+
 
 /* MOBILE nav */
 @media (max-width: 768px) {
