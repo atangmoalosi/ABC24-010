@@ -102,15 +102,6 @@ nav {
     flex-wrap: wrap;
   }
 
-header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #064218;
-  width: 100%;
-  text-align: center;
-  margin-right: 50px; /* create space for the hamburger */
-}
 /* MOBILE nav */
 @media (max-width: 768px) {
   .menu-icon {
