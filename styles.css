@@ -56,7 +56,7 @@ display: flex !important;
 flex-direction: row;
 justify-content: center;
 }
-}
+
 
 */ Nav links */
 #nav-links {
@@ -131,7 +131,7 @@ display: flex;
 #nav-links li {
 margin: 10px 0;
 }
-}
+
 
 /* Main content */
 main {
@@ -351,7 +351,7 @@ font-size: 1rem;
 .winter-date {
 font-size: 1.3rem;
 }
-}
+
 
 /* Material Icon support */
 .material-symbols-outlined {
@@ -469,7 +469,7 @@ align-items: center;
 .category {
 width: 80%;
 }
-}
+
 
 /* Category section headings */
 .category-section {
@@ -525,14 +525,14 @@ align-items: center;
 .category-box {
 max-width: 90%;
 }
-}
+
 
 /* Wide screen category override */
 @media (min-width: 1024px) {
 .category-box {
 max-width: 28%;
 }
-}
+
 
 /* Reset some default browser styles */
 
@@ -1081,7 +1081,7 @@ display: block;
 }
 
 /* Hover effect on image */
-.about-image\:hover {
+.about-image:hover {
 transform: scale(1.03);
 }
 
@@ -1215,7 +1215,7 @@ background-color: #064218;
 border-color: #064218;
 }
 
-.btn-primary\:hover {
+.btn-primary:hover {
 background-color: #0a5c2a;
 border-color: #0a5c2a;
 }
