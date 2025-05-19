@@ -1,12 +1,12 @@
-/\* Reset some default browser styles \*/
+/* Reset some default browser styles */
 
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   }
 
-/\* Body style \*/
+/* Body style */
 body {
 font-family: 'Boldonse', Arial, sans-serif;
 background-color: #bbf74a;
@@ -14,7 +14,7 @@ color: #064218;
 line-height: 1.6;
 }
 
-/\* Header section \*/
+/* Header section */
 header {
 background-color: #bbf74a;
 padding: 20px 0;
@@ -31,13 +31,13 @@ width: 100%;
 text-align: center;
 }
 
-/\* Navigation bar \*/
+/* Navigation bar */
 nav {
 background-color: #bbf74a;
 position: relative;
 }
 
-/\* Wide screen nav curved border \*/
+/* Wide screen nav curved border */
 @media (min-width: 769px) {
 nav {
 border: 2px solid #064218;
@@ -51,24 +51,24 @@ max-width: 90%;
 display: none;
 }
 
-\#nav-links {
+#nav-links {
 display: flex !important;
 flex-direction: row;
 justify-content: center;
 }
 }
 
-/\* Nav links \*/
-\#nav-links {
+*/ Nav links */
+#nav-links {
 list-style: none;
 padding: 10px 0;
 }
 
-\#nav-links li {
+nav-links li {
 margin: 0 15px;
 }
 
-\#nav-links li a {
+nav-links li a {
 color: #064218;
 text-decoration: none;
 padding: 10px 15px;
@@ -76,12 +76,12 @@ font-weight: bold;
 transition: background-color 0.3s ease;
 }
 
-\#nav-links li a\:hover {
+#nav-links li a:hover {
 background-color: #666;
 border-radius: 4px;
 }
 
-/\* Hamburger icon \*/
+/* Hamburger icon */
 .menu-icon {
 font-size: 30px;
 cursor: pointer;
@@ -109,13 +109,13 @@ text-align: left;
 }
 }
 
-/\* MOBILE nav \*/
+/* MOBILE nav */
 @media (max-width: 768px) {
 .menu-icon {
 display: block;
 }
 
-\#nav-links {
+#nav-links {
 display: none;
 flex-direction: column;
 align-items: center;
@@ -124,16 +124,16 @@ padding: 10px 0;
 margin-top: 10px;
 }
 
-\#nav-links.active {
+#nav-links.active {
 display: flex;
 }
 
-\#nav-links li {
+#nav-links li {
 margin: 10px 0;
 }
 }
 
-/\* Main content \*/
+/* Main content */
 main {
 width: 90%;
 max-width: 1200px;
@@ -141,7 +141,7 @@ margin: 0 auto;
 padding: 20px;
 }
 
-/\* Footer \*/
+/* Footer */
 footer {
 text-align: center;
 background-color: #333;
@@ -150,7 +150,7 @@ padding: 15px 0;
 margin-top: 30px;
 }
 
-/\* Carousel \*/
+/* Carousel */
 .js-carousel {
 position: relative;
 width: 100%;
@@ -189,7 +189,7 @@ left: 10px;
 right: 10px;
 }
 
-/\* Add to Cart And Buy Now Button \*/
+/* Add to Cart And Buy Now Button */
 .buy-now, .add-to-cart {
 font-family: 'Boldonse', Arial, sans-serif;
 background: none;
@@ -207,12 +207,12 @@ gap: 8px;
 transition: background-color 0.3s ease;
 }
 
-.buy-now\:hover {
+.buy-now:hover {
 background-color: #45a049;
 color: white;
 }
 
-.add-to-cart\:hover {
+.add-to-cart:hover {
 background-color: #45a049;
 color: white;
 }
@@ -222,7 +222,7 @@ font-size: 20px;
 vertical-align: middle;
 }
 
-/\* Product image styles \*/
+/* Product image styles */
 .product-image {
 width: 100%;
 max-width: 300px;
@@ -232,9 +232,9 @@ margin: 10px auto;
 border-radius: 8px;
 }
 
-\#tops-image,
-\#skirts-and-dresses-image,
-\#trousers-leggings-image {
+#tops-image,
+#skirts-and-dresses-image,
+#trousers-leggings-image {
 width: 100%;
 max-width: 300px;
 height: auto;
@@ -242,7 +242,7 @@ display: block;
 margin: 0 auto;
 }
 
-/\* Women's collection section \*/
+/* Women's collection section */
 .womens-collection {
 text-align: center;
 margin: 40px 0;
@@ -263,7 +263,7 @@ font-size: 28px;
 color: #333;
 }
 
-/\* Homepage banner \*/
+/* Homepage banner */
 .homepage-content {
 display: flex;
 justify-content: center;
@@ -303,7 +303,7 @@ display: block;
 margin: 0 auto;
 }
 
-.winter-container img\:hover {
+.winter-container img:hover {
 transform: scale(1.03);
 }
 
@@ -326,7 +326,7 @@ color: #013a00;
 margin-top: 10px;
 }
 
-/\* Responsive banner layout \*/
+/* Responsive banner layout */
 @media (max-width: 768px) {
 .homepage-banner {
 flex-direction: column;
@@ -353,7 +353,7 @@ font-size: 1.3rem;
 }
 }
 
-/\* Material Icon support \*/
+/* Material Icon support */
 .material-symbols-outlined {
 font-family: 'Material Symbols Outlined';
 font-weight: normal;
@@ -363,7 +363,7 @@ display: inline-block;
 vertical-align: middle;
 }
 
-/\* Product categories grid \*/
+/* Product categories grid */
 .categories-container {
 display: flex;
 flex-wrap: wrap;
@@ -399,7 +399,7 @@ margin: 10px 0 5px;
 font-size: 0.9rem;
 }
 
-/\* Stack layout for mobile \*/
+/* Stack layout for mobile */
 @media (max-width: 768px) {
 .categories-container {
 flex-direction: column;
@@ -407,7 +407,7 @@ align-items: center;
 }
 }
 
-/\* Women's section layout \*/
+/* Women's section layout */
 .women-heading {
 font-size: 28px;
 font-weight: bold;
@@ -459,7 +459,7 @@ font-size: 14px;
 color: #333;
 }
 
-/\* Responsive categories \*/
+/* Responsive categories */
 @media (max-width: 768px) {
 .women-categories {
 flex-direction: column;
@@ -471,7 +471,7 @@ width: 80%;
 }
 }
 
-/\* Category section headings \*/
+/* Category section headings */
 .category-section {
 text-align: center;
 padding: 30px 20px;
@@ -489,7 +489,7 @@ margin-bottom: 30px;
 font-size: 1em;
 }
 
-/\* Category container \*/
+/* Category container */
 .category-container {
 display: flex;
 gap: 20px;
@@ -515,7 +515,7 @@ border-radius: 10px;
 background-color: #9aff00;
 }
 
-/\* Mobile category layout \*/
+/* Mobile category layout */
 @media (max-width: 768px) {
 .category-container {
 flex-direction: column;
@@ -527,22 +527,22 @@ max-width: 90%;
 }
 }
 
-/\* Wide screen category override \*/
+/* Wide screen category override */
 @media (min-width: 1024px) {
 .category-box {
 max-width: 28%;
 }
 }
 
-/\* Reset some default browser styles \*/
+/* Reset some default browser styles */
 
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   }
 
-/\* Body style \*/
+/* Body style */
 body {
 font-family: 'Boldonse', Arial, sans-serif;
 background-color: #bbf74a;
@@ -550,7 +550,7 @@ color: #064218;
 line-height: 1.6;
 }
 
-/\* Header section \*/
+/* Header section */
 header {
 background-color: #bbf74a;
 padding: 20px 0;
@@ -567,13 +567,13 @@ width: 100%;
 text-align: center;
 }
 
-/\* Navigation bar \*/
+/* Navigation bar */
 nav {
 background-color: #bbf74a;
 position: relative;
 }
 
-/\* Wide screen nav curved border \*/
+/* Wide screen nav curved border */
 @media (min-width: 769px) {
 nav {
 border: 2px solid #064218;
@@ -587,24 +587,24 @@ max-width: 90%;
 display: none;
 }
 
-\#nav-links {
+#nav-links {
 display: flex !important;
 flex-direction: row;
 justify-content: center;
 }
 }
 
-/\* Nav links \*/
-\#nav-links {
+/* Nav links */
+#nav-links {
 list-style: none;
 padding: 10px 0;
 }
 
-\#nav-links li {
+#nav-links li {
 margin: 0 15px;
 }
 
-\#nav-links li a {
+#nav-links li a {
 color: #064218;
 text-decoration: none;
 padding: 10px 15px;
@@ -612,12 +612,12 @@ font-weight: bold;
 transition: background-color 0.3s ease;
 }
 
-\#nav-links li a\:hover {
+#nav-links li a:hover {
 background-color: #666;
 border-radius: 4px;
 }
 
-/\* Hamburger icon \*/
+/* Hamburger icon */
 .menu-icon {
 font-size: 30px;
 cursor: pointer;
@@ -629,13 +629,13 @@ top: 0;
 display: none;
 }
 
-/\* MOBILE nav \*/
+/* MOBILE nav */
 @media (max-width: 768px) {
 .menu-icon {
 display: block;
 }
 
-\#nav-links {
+#nav-links {
 display: none;
 flex-direction: column;
 align-items: center;
@@ -644,16 +644,16 @@ padding: 10px 0;
 margin-top: 10px;
 }
 
-\#nav-links.active {
+#nav-links.active {
 display: flex;
 }
 
-\#nav-links li {
+#nav-links li {
 margin: 10px 0;
 }
 }
 
-/\* Main content \*/
+/* Main content */
 main {
 width: 90%;
 max-width: 1200px;
@@ -661,7 +661,7 @@ margin: 0 auto;
 padding: 20px;
 }
 
-/\* Footer \*/
+/* Footer */
 footer {
 text-align: center;
 background-color: #333;
@@ -670,7 +670,7 @@ padding: 15px 0;
 margin-top: 30px;
 }
 
-/\* Carousel \*/
+/* Carousel */
 .js-carousel {
 position: relative;
 width: 100%;
@@ -709,7 +709,7 @@ left: 10px;
 right: 10px;
 }
 
-/\* Add to Cart Button \*/
+/* Add to Cart Button */
 .buy-now {
 font-family: 'Boldonse', Arial, sans-serif;
 background-color: transparent;
@@ -727,7 +727,7 @@ gap: 8px;
 transition: background-color 0.3s ease;
 }
 
-.buy-now\:hover {
+.buy-now:hover {
 background-color: #45a049;
 color: white;
 }
@@ -737,7 +737,7 @@ font-size: 20px;
 vertical-align: middle;
 }
 
-/\* Product image styles \*/
+/* Product image styles */
 .product-image {
 width: 100%;
 max-width: 300px;
@@ -747,9 +747,9 @@ margin: 10px auto;
 border-radius: 8px;
 }
 
-\#tops-image,
-\#skirts-and-dresses-image,
-\#trousers-leggings-image {
+#tops-image,
+#skirts-and-dresses-image,
+#trousers-leggings-image {
 width: 100%;
 max-width: 300px;
 height: auto;
@@ -757,7 +757,7 @@ display: block;
 margin: 0 auto;
 }
 
-/\* Women's collection section \*/
+/* Women's collection section */
 .womens-collection {
 text-align: center;
 margin: 40px 0;
@@ -778,7 +778,7 @@ font-size: 28px;
 color: #333;
 }
 
-/\* Homepage banner \*/
+/* Homepage banner */
 .homepage-content {
 display: flex;
 justify-content: center;
@@ -841,7 +841,7 @@ color: #013a00;
 margin-top: 10px;
 }
 
-/\* Responsive banner layout \*/
+/* Responsive banner layout */
 @media (max-width: 768px) {
 .homepage-banner {
 flex-direction: column;
@@ -868,7 +868,7 @@ font-size: 1.3rem;
 }
 }
 
-/\* Material Icon support \*/
+/* Material Icon support */
 .material-symbols-outlined {
 font-family: 'Material Symbols Outlined';
 font-weight: normal;
@@ -878,7 +878,7 @@ display: inline-block;
 vertical-align: middle;
 }
 
-/\* Product categories grid \*/
+/* Product categories grid */
 .categories-container {
 display: flex;
 flex-wrap: wrap;
@@ -914,7 +914,7 @@ margin: 10px 0 5px;
 font-size: 0.9rem;
 }
 
-/\* Stack layout for mobile \*/
+/* Stack layout for mobile */
 @media (max-width: 768px) {
 .categories-container {
 flex-direction: column;
@@ -922,7 +922,7 @@ align-items: center;
 }
 }
 
-/\* Women's section layout \*/
+/* Women's section layout */
 .women-heading {
 font-size: 28px;
 font-weight: bold;
@@ -974,7 +974,7 @@ font-size: 14px;
 color: #333;
 }
 
-/\* Responsive categories \*/
+/* Responsive categories */
 @media (max-width: 768px) {
 .women-categories {
 flex-direction: column;
@@ -986,7 +986,7 @@ width: 80%;
 }
 }
 
-/\* Category section headings \*/
+/* Category section headings */
 .category-section {
 text-align: center;
 padding: 30px 20px;
@@ -1004,7 +1004,7 @@ margin-bottom: 30px;
 font-size: 1em;
 }
 
-/\* Category container \*/
+/* Category container */
 .category-container {
 display: flex;
 gap: 20px;
@@ -1030,7 +1030,7 @@ border-radius: 10px;
 background-color: #9aff00;
 }
 
-/\* Mobile category layout \*/
+/* Mobile category layout */
 @media (max-width: 768px) {
 .category-container {
 flex-direction: column;
@@ -1042,14 +1042,14 @@ max-width: 90%;
 }
 }
 
-/\* Wide screen category override \*/
+/* Wide screen category override */
 @media (min-width: 1024px) {
 .category-box {
 max-width: 28%;
 }
 }
 
-/\* About Page Enhancements \*/
+/* About Page Enhancements */
 
 .about-section {
 max-width: 100%;
@@ -1057,7 +1057,7 @@ margin: 0 auto;
 padding: 20px 0;
 }
 
-/\* Match navigation border width and alignment \*/
+/* Match navigation border width and alignment */
 .about-image-wrapper {
 max-width: 90%;
 margin: 0 auto 20px auto;
@@ -1072,7 +1072,7 @@ background-color: #e7ffad;
 padding: 20px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-/\* Image styling \*/
+/* Image styling */
 .about-image {
 width: 100%;
 border-radius: 20px;
@@ -1080,19 +1080,19 @@ transition: transform 0.3s ease;
 display: block;
 }
 
-/\* Hover effect on image \*/
+/* Hover effect on image */
 .about-image\:hover {
 transform: scale(1.03);
 }
 
-/\* Paragraph text \*/
+/* Paragraph text */
 .about-paragraph p {
 font-size: 1rem;
 line-height: 1.6;
 color: #064218;
 }
 
-/\* Mobile responsiveness \*/
+/* Mobile responsiveness */
 @media (max-width: 768px) {
 .about-image {
 width: 100%;
@@ -1104,16 +1104,16 @@ text-align: center;
 font-size: 2rem;
 font-weight: bold;
 color: #064218;
-margin-bottom: 3rem; /\* add this to give space between heading and image */
+margin-bottom: 3rem; /* add this to give space between heading and image */
 margin-top: 1rem; /* slightly separates heading from nav \*/
 }
 
-/\* Prevent horizontal scrolling on mobile \*/
+/*Prevent horizontal scrolling on mobile */
 body {
 overflow-x: hidden;
 }
 
-/\* Ensure containers and navs don’t overflow \*/
+/* Ensure containers and navs don’t overflow */
 .container,
 .checkout-nav {
 max-width: 100%;
@@ -1121,7 +1121,7 @@ box-sizing: border-box;
 overflow-x: hidden;
 }
 
-/\* Optional: prevent large images or elements from overflowing \*/
+/* Optional: prevent large images or elements from overflowing */
 img,
 iframe,
 table {
@@ -1130,7 +1130,7 @@ height: auto;
 display: block;
 }
 
-```
+
 .js-carousel {
   display: flex;
   align-items: center;
@@ -1149,7 +1149,7 @@ display: block;
   border-radius: 1rem;
 }
 .add-to-cart, .buy-now {
-```
+
 
 font-family: 'Boldonse', Arial, sans-serif;
 width: 100%;
@@ -1172,7 +1172,7 @@ color: white;
 border: none;
 }
 
-```
+
 button.prev, button.next {
   font-size: 2rem;
   background: none;
@@ -1185,7 +1185,7 @@ button.prev, button.next {
     justify-content: center;
   }
 }
-```
+
 
 /*customer care css*/
 body {
