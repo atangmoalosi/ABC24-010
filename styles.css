@@ -1097,26 +1097,7 @@ body {
   border-color: #0a5c2a;
 }
 
-  @media (min-width: 1024px) {
-  /* Limit size of product and category images */
-  .product-image,
-  .product-card img,
-  .category img,
-  .category-box img {
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-  }
 
-  /* Showcase and decorative images can be wider */
-  .womens-image,
-  .winter-container img,
-  .about-image {
-    max-width: 500px;
-    height: auto;
-    object-fit: cover;
-  }
-}
 
 
 
