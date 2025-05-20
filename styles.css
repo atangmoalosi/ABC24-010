@@ -117,15 +117,16 @@ nav {
 @media (max-width: 768px) {
   #nav-links {
     position: absolute;
-    top: 60px;               /* distance from the top of the page */
-    right: 10px;             /* anchor it to the right */
+    top: 60px;
+    right: 10px;
     background-color: #444;
     display: none;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 15px;
-    border-radius: 10px;
-    z-index: 1000;           /* make sure it appears above other elements */
+    min-width: 180px;         /* Ensures nav box is wide enough */
+    border-radius: 0;         /* Removes curved edges */
+    z-index: 1000;
   }
 
   #nav-links.active {
@@ -134,8 +135,10 @@ nav {
 
   #nav-links li {
     margin: 10px 0;
+    white-space: nowrap;      /* Prevents links from breaking into two lines */
   }
 }
+
 
 
 
