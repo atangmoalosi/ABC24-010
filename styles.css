@@ -14,30 +14,29 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
   background-color: #bbf74a;
   padding: 20px 0;
   text-align: center;
   color: #064218;
+  position: relative;
 }
 
 header h1 {
   font-size: 24px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
   border-bottom: 3px solid #064218;
-  width: 100%;
+  padding-bottom: 10px;
   text-align: center;
+  width: 100%;
 }
 
-/* Nav Container */
+/* NAV */
 nav {
   background-color: #bbf74a;
   position: relative;
 }
 
-/* Nav Links */
 #nav-links {
   list-style: none;
   padding: 10px 0;
@@ -60,7 +59,7 @@ nav {
   border-radius: 4px;
 }
 
-/* Hamburger Icon */
+/* Hamburger icon */
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
@@ -72,8 +71,7 @@ nav {
   display: none;
 }
 
-
-/* ========== WIDE SCREEN STYLES ========== */
+/* WIDE SCREEN */
 @media (min-width: 769px) {
   nav {
     border: 2px solid #064218;
@@ -84,7 +82,7 @@ nav {
   }
 
   .menu-icon {
-    display: none;
+    display: none !important;
   }
 
   #nav-links {
@@ -93,14 +91,9 @@ nav {
     justify-content: center;
     background-color: transparent;
   }
-
-  #nav-links li {
-    margin: 0 15px;
-  }
 }
 
-
-/* ========== MOBILE SCREEN STYLES ========== */
+/* MOBILE */
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -110,24 +103,26 @@ nav {
   }
 
   header h1 {
-    font-size: 18px !important;
-    padding-left: 10px;
+    font-size: 18px;
     margin-top: 10px;
     text-align: center;
   }
-}
 
   .menu-icon {
-    display: block;
+    display: block !important;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 
   #nav-links {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #064218;
+    background-color: #444;
     padding: 10px 0;
-    margin-top: 10px;
+    margin-top: 50px;
+    width: 100%;
   }
 
   #nav-links.active {
@@ -138,7 +133,6 @@ nav {
     margin: 10px 0;
   }
 }
-
 
 /* Main content */
 main {
