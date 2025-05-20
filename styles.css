@@ -1116,3 +1116,22 @@ body {
   background-color: #0a5c2a;
   border-color: #0a5c2a;
 }
+@media (min-width: 1024px) {
+  img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .product-image,
+  .product-card img,
+  .category img,
+  .category-box img,
+  .womens-image,
+  .winter-container img,
+  .about-image {
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+}
