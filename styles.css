@@ -114,19 +114,18 @@ nav {
     right: 10px;
     top: 10px;
   }
-
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   #nav-links {
+    position: absolute;
+    top: 60px;               /* distance from the top of the page */
+    right: 10px;             /* anchor it to the right */
+    background-color: #444;
     display: none;
     flex-direction: column;
-    align-items: flex-end; /* change from center to flex-end */
-    background-color: #444;
-    padding: 10px 20px;
-    margin-top: 50px;
-    width: fit-content; /* makes the nav take only as much space as it needs */
-    margin-left: auto;  /* pushes the menu to the right */
-    margin-right: 10px; /* optional: small space from screen edge */
+    align-items: flex-start;
+    padding: 10px 15px;
     border-radius: 10px;
+    z-index: 1000;           /* make sure it appears above other elements */
   }
 
   #nav-links.active {
@@ -137,6 +136,8 @@ nav {
     margin: 10px 0;
   }
 }
+
+
 
 /* Main content */
 main {
