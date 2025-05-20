@@ -115,14 +115,18 @@ nav {
     top: 10px;
   }
 
+ @media (max-width: 768px) {
   #nav-links {
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end; /* change from center to flex-end */
     background-color: #444;
-    padding: 10px 0;
+    padding: 10px 20px;
     margin-top: 50px;
-    width: 100%;
+    width: fit-content; /* makes the nav take only as much space as it needs */
+    margin-left: auto;  /* pushes the menu to the right */
+    margin-right: 10px; /* optional: small space from screen edge */
+    border-radius: 10px;
   }
 
   #nav-links.active {
