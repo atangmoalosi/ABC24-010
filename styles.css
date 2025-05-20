@@ -247,36 +247,7 @@ footer {
   border-radius: 8px;
 }
 
-#tops-image,
-#skirts-and-dresses-image,
-#trousers-leggings-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
-/* Women's collection section */
-.womens-collection {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.womens-collection img.womens-image {
-  width: 90%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.womens-collection h2 {
-  font-family: 'Boldonse', Arial, sans-serif;
-  margin-top: 20px;
-  font-size: 28px;
-  color: #333;
-}
 
 /* Homepage banner */
 .homepage-content {
@@ -1097,6 +1068,16 @@ body {
   border-color: #0a5c2a;
 }
 
+ @media (min-width: 1024px) {
+  img {
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+}
+ 
 
 
 
