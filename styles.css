@@ -73,6 +73,15 @@ nav {
   display: none;
 }
 
+img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
 /* WIDE SCREEN */
 @media (min-width: 769px) {
   nav {
