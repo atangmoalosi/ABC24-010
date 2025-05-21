@@ -432,6 +432,85 @@ footer {
     align-items: center;
   }
 }
+/* Category Section Layout (used in women.html and men.html) */
+.category-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #bbf74a;
+}
+
+.category-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #064218;
+  margin-bottom: 10px;
+}
+
+.category-section .subtitle {
+  font-size: 18px;
+  color: #064218;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Grid container for categories */
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Individual category box */
+.category-box {
+  width: 250px;
+  background-color: #d1ff5c;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.category-box:hover {
+  transform: scale(1.03);
+}
+
+.category-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #9aff00;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.category-box h3 {
+  font-size: 20px;
+  color: #064218;
+  margin-bottom: 8px;
+}
+
+.category-box p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .category-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-box {
+    width: 80%;
+  }
+}
 
 
 
