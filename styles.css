@@ -389,49 +389,6 @@ footer {
   vertical-align: middle;
 }
 
-/* Product categories grid */
-.categories-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.product-card {
-  flex: 1 1 300px;
-  max-width: 300px;
-  border: 2px solid #003f1f;
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-  background-color: #a3d45e;
-}
-
-.product-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.product-card h3 {
-  margin: 10px 0 5px;
-}
-
-.product-card p {
-  font-size: 0.9rem;
-}
-
-/* Stack layout for mobile */
-@media (max-width: 768px) {
-  .categories-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /* Category Section Layout (used in women.html and men.html) */
 .category-section {
   text-align: center;
