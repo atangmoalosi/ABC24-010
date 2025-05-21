@@ -352,6 +352,86 @@ footer {
     font-size: 1.3rem;
   }
 
+  /* Responsive banner layout */
+@media (max-width: 768px) {
+  .homepage-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .winter-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homepage-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .winter-line {
+    font-size: 1rem;
+  }
+
+  .winter-date {
+    font-size: 1.3rem;
+  }
+}
+
+/* Material Icon support */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Product categories grid */
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border: 2px solid #003f1f;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  background-color: #a3d45e;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+}
+
+/* Stack layout for mobile */
+@media (max-width: 768px) {
+  .categories-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 
