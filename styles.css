@@ -141,7 +141,208 @@ nav {
   }
 }
 
- 
+ /* Main content */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* Carousel */
+.js-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.js-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.js-carousel button.prev,
+.js-carousel button.next {
+  font-family: 'Boldonse', Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.js-carousel .prev {
+  left: 10px;
+}
+
+.js-carousel .next {
+  right: 10px;
+}
+
+/* Add to Cart And Buy Now Button */
+.buy-now, .add-to-cart {
+  font-family: 'Boldonse', Arial, sans-serif;
+  background: none;
+  color: #0f4d2c;
+  border: 1px solid #0f4d2c;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+
+.material-symbols-outlined {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+
+
+
+/* Product image styles */
+.product-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+#tops-image,
+#skirts-and-dresses-image,
+#trousers-leggings-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Homepage banner */
+.homepage-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.homepage-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  border: 3px solid #064218;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.winter-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.winter-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.winter-container img:hover {
+  transform: scale(1.03);
+}
+
+.homepage-text {
+  max-width: 400px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.winter-line {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #013a00;
+}
+
+.winter-date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #013a00;
+  margin-top: 10px;
+}
+
+/* Responsive banner layout */
+@media (max-width: 768px) {
+  .homepage-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .winter-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homepage-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .winter-line {
+    font-size: 1rem;
+  }
+
+  .winter-date {
+    font-size: 1.3rem;
+  }
+
 
 
 
