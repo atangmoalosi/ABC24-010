@@ -389,7 +389,7 @@ footer {
   vertical-align: middle;
 }
 
-/* Category Section Layout (used in women.html and men.html) */
+/* Category section */
 .category-section {
   text-align: center;
   padding: 40px 20px;
@@ -403,18 +403,18 @@ footer {
   margin-bottom: 10px;
 }
 
-.category-section .subtitle {
+.subtitle {
   font-size: 18px;
   color: #064218;
   margin-bottom: 30px;
   font-style: italic;
 }
 
-/* Grid container for categories */
+/* Container holding all category cards */
 .category-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -423,12 +423,13 @@ footer {
 
 /* Individual category box */
 .category-box {
-  width: 250px;
+  flex: 1 1 250px;
+  max-width: 250px;
   background-color: #d1ff5c;
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -457,7 +458,7 @@ footer {
   margin: 0;
 }
 
-/* Responsive for mobile */
+/* MOBILE: stack cards vertically */
 @media (max-width: 768px) {
   .category-container {
     flex-direction: column;
@@ -466,10 +467,6 @@ footer {
 
   .category-box {
     width: 80%;
+    max-width: 90%;
   }
 }
-
-
-
-
-
