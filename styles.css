@@ -476,3 +476,25 @@ footer {
     height: 200px;
   }
 }
+
+/* Wide screen layout for category boxes */
+@media (min-width: 1024px) {
+  .category-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .category-box {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+
+  .category-box img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+  
