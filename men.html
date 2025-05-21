@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco Thrift - Men</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men's Section | Eco Thrift</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Men</h1>
-  </header>
-
+<header>
+  <h1>Men</h1>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <nav>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="men-clothes.html">Clothes</a></li>
-      <li><a href="men-jewellery.html">Jewellery</a></li>
       <li><a href="men-shoes.html">Shoes</a></li>
+      <li><a href="men-jewellery.html">Jewellery</a></li>
       <li><a href="checkout.html">Checkout</a></li>
     </ul>
   </nav>
+</header>
 
-  <main>
-    <section class="category-section">
-      <h2 class="men-heading">DISCOVER TIMELESS AND TRENDY MEN’S PIECES</h2>
-      <p class="subtitle">Select A Category To Start Shopping</p>
+<section class="category-section">
+  <h2>DISCOVER TIMELESS AND TRENDY MEN’S PIECES</h2>
+  <p class="subtitle">Select A Category To Start Shopping</p>
 
-      <div class="category-container">
-        <div class="category-box">
-          <img src="images/clothesmen.png" alt="Men Clothes">
-          <h3>Clothes</h3>
-          <p>Stylish vintage and modern men’s clothing for all seasons.</p>
-        </div>
-        <div class="category-box">
-          <img src="images/shoesmen.png" alt="Men Shoes">
-          <h3>Shoes</h3>
-          <p>Durable and fashionable shoes for every occasion.</p>
-        </div>
-        <div class="category-box">
-          <img src="images/jewellerymen.png" alt="Men Jewellery">
-          <h3>Jewellery</h3>
-          <p>Accessorize with bold or minimal men’s jewellery pieces.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <div class="category-container">
+    <div class="category-box">
+      <a href="men-clothes.html">
+        <img src="images/clothesmen.png" alt="Men's Clothes">
+        <h3>Clothes</h3>
+        <p>Stylish vintage and modern men’s clothing for all seasons.</p>
+      </a>
+    </div>
+    <div class="category-box">
+      <a href="men-shoes.html">
+        <img src="images/shoesmen.png" alt="Men's Shoes">
+        <h3>Shoes</h3>
+        <p>Durable and fashionable shoes for every occasion.</p>
+      </a>
+    </div>
+    <div class="category-box">
+      <a href="men-jewellery.html">
+        <img src="images/jewellerymen.png" alt="Men's Jewellery">
+        <h3>Jewellery</h3>
+        <p>Accessorize with bold or minimal men’s jewellery pieces.</p>
+      </a>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Eco Thrift. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Eco Thrift. All rights reserved.</p>
+</footer>
 
-  <script>
-    function toggleMenu() {
-      const navLinks = document.getElementById("nav-links");
-      navLinks.classList.toggle("active");
-    }
-  </script>
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active");
+  }
+</script>
+
 </body>
 </html>
+
 
