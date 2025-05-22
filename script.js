@@ -283,7 +283,7 @@ createCarousel([
 ], 'tops-tshirts-image', 'tops-tshirts-title', 'tops-tshirts-price', 'tops-tshirts-size', 'tops-tshirts-prev', 'tops-tshirts-next', 'add-tops-tshirts','buy-tops-tshirts');
 }
 // Outerwear Carousel
-if (document.getElementById('outerwear-image')) {
+if (document.getElementById('outerwear-men-image')) {
 createCarousel([
   { src: 'images/brownknitcardigan.png', title: 'Brown Knit Cardigan', price: 'P30', size: 'L' },
   { src: 'images/navycardigan.png', title: 'Navy Cardigan', price: 'P30', size: 'M' },
@@ -302,7 +302,7 @@ createCarousel([
 ], 'outerwear-men-image', 'outerwear-men-title', 'outerwear-men-price', 'outerwear-men-size', 'outerwear-men-prev', 'outerwear-men-next', 'add-outerwear-men', 'buy-outerwear-men');
 }
 // Trousers Carousel
-if (document.getElementById('trousers-image')) {
+if (document.getElementById('trousers-men-image')) {
 createCarousel([
   { src: 'images/blackbootleg.png', title: 'Slim Fit Jeans', price: 'P30', size: '32' },
   { src: 'images/blueskinnyjean.png', title: 'Blue Skinny Jean', price: 'P25', size: '30' },
