@@ -557,6 +557,17 @@ table {
     .js-carousel::-webkit-scrollbar {
       display: none;
     }
+
+.js-carousel > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
     .product-image {
       width: 100%;
       max-width: 250px;
