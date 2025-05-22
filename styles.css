@@ -471,4 +471,170 @@ footer {
   }
 }
 
+  /* About Page Enhancements */
+
+.about-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Match navigation border width and alignment */
+.about-image-wrapper {
+  max-width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.about-paragraph {
+  max-width: 90%;
+  margin: 0 auto 20px auto;
+  border: 2px solid #064218;
+  border-radius: 20px;
+  background-color: #e7ffad;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Image styling */
+.about-image {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+/* Hover effect on image */
+.about-image:hover {
+  transform: scale(1.03);
+}
+
+/* Paragraph text */
+.about-paragraph p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #064218;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-image {
+    width: 100%;
+  }
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #064218;
+  margin-bottom: 3rem; /* add this to give space between heading and image */
+  margin-top: 1rem; /* slightly separates heading from nav */
+}
+
+/* Prevent horizontal scrolling on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure containers and navs don’t overflow */
+.container,
+.checkout-nav {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Optional: prevent large images or elements from overflowing */
+img,
+iframe,
+table {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+    .js-carousel {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-behavior: smooth;
+    }
+    .js-carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .product-image {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 1rem;
+    }
+    .add-to-cart, .buy-now {
+  font-family: 'Boldonse', Arial, sans-serif; 
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.add-to-cart {
+  background: none;
+  color: #0f4d2c;
+  border: 1px solid #0f4d2c;
+}
+
+.buy-now {
+  background-color: #0f4d2c;
+  color: white;
+  border: none;
+}
+
+
+    button.prev, button.next {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #0f4d2c;
+    }
+    @media (min-width: 768px) {
+      .js-carousel {
+        justify-content: center;
+      }
+    }
+
+/*customer care css*/
+body {
+  font-family: 'Boldonse', Arial, sans-serif;
+  background-color: #bbf74a;
+  color: #064218;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #e7ffad;
+  border: 2px solid #064218;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header.bg-primary {
+  background-color: #064218 !important;
+}
+
+.card-title {
+  font-family: 'Boldonse', Arial, sans-serif;
+}
+
+.btn-primary {
+  background-color: #064218;
+  border-color: #064218;
+}
+
+.btn-primary:hover {
+  background-color: #0a5c2a;
+  border-color: #0a5c2a;
+}
   
