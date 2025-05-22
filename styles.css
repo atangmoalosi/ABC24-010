@@ -257,16 +257,6 @@ footer {
   border-radius: 8px;
 }
 
-#tops-image,
-#skirts-and-dresses-image,
-#trousers-leggings-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 /* Homepage banner */
 .homepage-content {
   display: flex;
