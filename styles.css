@@ -326,7 +326,6 @@ footer {
   margin-top: 10px;
 }
 
-/* Responsive banner layout */
 @media (max-width: 768px) {
   .homepage-banner {
     flex-direction: column;
@@ -351,33 +350,8 @@ footer {
   .winter-date {
     font-size: 1.3rem;
   }
+} /* ← this closes the media query */
 
-  /* Responsive banner layout */
-@media (max-width: 768px) {
-  .homepage-banner {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .winter-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .homepage-text {
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .winter-line {
-    font-size: 1rem;
-  }
-
-  .winter-date {
-    font-size: 1.3rem;
-  }
-}
 
 /* Material Icon support */
 .material-symbols-outlined {
