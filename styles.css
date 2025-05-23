@@ -183,11 +183,12 @@ footer {
   max-width: 600px;
 }
 
-/* Product content in center */
+/* Center content block (product area) */
 .js-carousel > div {
   flex: 1 1 auto;
   max-width: 300px;
   text-align: center;
+  position: relative;
 }
 
 /* Product image */
@@ -200,10 +201,12 @@ footer {
   display: block;
 }
 
-/* Carousel buttons */
+/* Prev/Next buttons (always left/right of image) */
 .js-carousel button.prev,
 .js-carousel button.next {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -211,11 +214,19 @@ footer {
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
   font-family: 'Boldonse', Arial, sans-serif;
 }
 
-/* Buy Now and Add to Cart styles */
+.js-carousel button.prev {
+  left: -50px; /* move to left outside content */
+}
+
+.js-carousel button.next {
+  right: -50px; /* move to right outside content */
+}
+
+/* Add to Cart */
 .add-to-cart {
   background: none;
   color: #0f4d2c;
@@ -230,8 +241,10 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  font-family: 'Boldonse', Arial, sans-serif;
 }
 
+/* Buy Now */
 .buy-now {
   background-color: #0f4d2c;
   color: white;
@@ -246,30 +259,35 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  font-family: 'Boldonse', Arial, sans-serif;
 }
 
-/* Mobile responsiveness */
+/* Responsive fix */
 @media (max-width: 768px) {
   .js-carousel {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
 
-  .js-carousel button.prev,
+  .js-carousel button.prev {
+    left: 0;
+  }
+
   .js-carousel button.next {
-    position: static;
-    align-self: center;
+    right: 0;
   }
 
   .product-image {
     max-width: 220px;
   }
 
-  .buy-now, .add-to-cart {
+  .buy-now,
+  .add-to-cart {
     font-size: 14px;
     padding: 8px;
   }
 }
+
 
 
 
