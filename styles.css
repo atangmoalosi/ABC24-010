@@ -171,20 +171,19 @@ footer {
   margin-top: 30px;
 }
 
+/* Carousel Wrapper */
 .js-carousel {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
   overflow: hidden;
-  width: 100%;
   max-width: 600px;
   margin: 20px auto;
   padding: 1rem;
-  scroll-behavior: smooth;
 }
 
+/* Carousel Content Container */
 .js-carousel > div {
   display: flex;
   flex-direction: column;
@@ -194,44 +193,53 @@ footer {
   margin: 0 auto;
 }
 
-.js-carousel img,
+/* Product Image */
 .product-image {
   width: 100%;
   max-width: 250px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: block;
   margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Prev/Next buttons */
+/* Carousel Navigation Buttons */
 .js-carousel button.prev,
 .js-carousel button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   font-size: 24px;
   padding: 10px;
-  cursor: pointer;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 10;
+  cursor: pointer;
   font-family: 'Boldonse', Arial, sans-serif;
 }
 
-.js-carousel .prev {
-  left: 10px;
+.js-carousel button.prev {
+  left: 5px;
 }
 
-.js-carousel .next {
-  right: 10px;
+.js-carousel button.next {
+  right: 5px;
 }
 
-/* Buttons */
-.buy-now, .add-to-cart {
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .js-carousel button.prev,
+  .js-carousel button.next {
+    font-size: 20px;
+    padding: 8px;
+  }
+}
+
+/* Add to Cart Button */
+.add-to-cart {
   font-family: 'Boldonse', Arial, sans-serif;
   background: none;
   color: #0f4d2c;
@@ -241,35 +249,40 @@ footer {
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-.buy-now:hover,
 .add-to-cart:hover {
   background-color: #45a049;
   color: white;
 }
 
-/* Hide horizontal scrollbar on mobile carousel */
-.js-carousel::-webkit-scrollbar {
-  display: none;
+/* Buy Now Button */
+.buy-now {
+  font-family: 'Boldonse', Arial, sans-serif;
+  background-color: #0f4d2c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .js-carousel {
-    padding: 1rem 0.5rem;
-  }
-
-  .js-carousel button.prev,
-  .js-carousel button.next {
-    font-size: 1.5rem;
-    padding: 8px;
-  }
+.buy-now:hover {
+  background-color: #45a049;
 }
 
 
