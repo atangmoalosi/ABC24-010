@@ -262,13 +262,17 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+ .product-image {
+    max-width: 150px;
+  }
+
+
+  
   .js-carousel {
     max-width: 320px;
   }
 
-  .product-image {
-    max-width: 180px;
-  }
+ 
 
   .add-to-cart,
   .buy-now {
