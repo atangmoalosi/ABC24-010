@@ -173,22 +173,20 @@ footer {
 
 /* Carousel container */
 .js-carousel {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
   gap: 1rem;
   margin: 20px auto;
   max-width: 600px;
+  position: relative;
 }
 
-/* Center content block (product area) */
+/* Product content */
 .js-carousel > div {
   flex: 1 1 auto;
   max-width: 300px;
   text-align: center;
-  position: relative;
 }
 
 /* Product image */
@@ -201,16 +199,16 @@ footer {
   display: block;
 }
 
-/* Prev/Next buttons (always left/right of image) */
+/* Prev/Next buttons */
 .js-carousel button.prev,
 .js-carousel button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: transparent; /* ← transparent background */
+  color: #0f4d2c;
   border: none;
-  font-size: 24px;
+  font-size: 28px;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -219,14 +217,14 @@ footer {
 }
 
 .js-carousel button.prev {
-  left: -50px; /* move to left outside content */
+  left: -40px;
 }
 
 .js-carousel button.next {
-  right: -50px; /* move to right outside content */
+  right: -40px;
 }
 
-/* Add to Cart */
+/* Add to Cart and Buy Now Buttons */
 .add-to-cart {
   background: none;
   color: #0f4d2c;
@@ -241,10 +239,8 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-family: 'Boldonse', Arial, sans-serif;
 }
 
-/* Buy Now */
 .buy-now {
   background-color: #0f4d2c;
   color: white;
@@ -259,30 +255,28 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-family: 'Boldonse', Arial, sans-serif;
 }
 
-/* Responsive fix */
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .js-carousel {
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  .js-carousel button.prev {
-    left: 0;
-  }
-
-  .js-carousel button.next {
-    right: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   .product-image {
-    max-width: 220px;
+    max-width: 180px; /* smaller image on mobile */
   }
 
-  .buy-now,
-  .add-to-cart {
+  .js-carousel button.prev,
+  .js-carousel button.next {
+    position: static;
+    margin: 5px 0;
+    transform: none;
+  }
+
+  .add-to-cart,
+  .buy-now {
     font-size: 14px;
     padding: 8px;
   }
