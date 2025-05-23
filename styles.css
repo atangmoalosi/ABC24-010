@@ -263,7 +263,7 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
  .product-image {
-    max-width: 150px;
+    max-width: 170px;
   }
 
 
