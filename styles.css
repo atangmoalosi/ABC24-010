@@ -290,19 +290,6 @@ footer {
 }
 
 
-
-
-
-/* Product image styles */
-.product-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-  border-radius: 8px;
-}
-
 /* Homepage banner */
 .homepage-content {
   display: flex;
