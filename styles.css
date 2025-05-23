@@ -173,18 +173,18 @@ footer {
 
 /* Carousel container */
 .js-carousel {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   margin: 20px auto;
   max-width: 600px;
-  position: relative;
 }
 
 /* Product content */
 .js-carousel > div {
-  flex: 1 1 auto;
+  flex: 1;
   max-width: 300px;
   text-align: center;
 }
@@ -205,7 +205,7 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: transparent; /* ← transparent background */
+  background: none; /* No background */
   color: #0f4d2c;
   border: none;
   font-size: 28px;
@@ -217,16 +217,17 @@ footer {
 }
 
 .js-carousel button.prev {
-  left: -40px;
+  left: 0;
 }
 
 .js-carousel button.next {
-  right: -40px;
+  right: 0;
 }
 
-/* Add to Cart and Buy Now Buttons */
+/* Add to Cart button */
 .add-to-cart {
-  background: none;
+  font-family: 'Boldonse', Arial, sans-serif;
+  background: none; /* No background */
   color: #0f4d2c;
   border: 1px solid #0f4d2c;
   width: 100%;
@@ -241,8 +242,10 @@ footer {
   gap: 8px;
 }
 
+/* Buy Now button */
 .buy-now {
-  background-color: #0f4d2c;
+  font-family: 'Boldonse', Arial, sans-serif;
+  background-color: #0f4d2c; /* Background retained */
   color: white;
   border: none;
   width: 100%;
@@ -257,22 +260,14 @@ footer {
   gap: 8px;
 }
 
-/* Mobile adjustments */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .js-carousel {
-    flex-direction: column;
-    align-items: center;
+    max-width: 320px;
   }
 
   .product-image {
-    max-width: 180px; /* smaller image on mobile */
-  }
-
-  .js-carousel button.prev,
-  .js-carousel button.next {
-    position: static;
-    margin: 5px 0;
-    transform: none;
+    max-width: 180px;
   }
 
   .add-to-cart,
@@ -280,7 +275,16 @@ footer {
     font-size: 14px;
     padding: 8px;
   }
+
+  .js-carousel button.prev {
+    left: -10px;
+  }
+
+  .js-carousel button.next {
+    right: -10px;
+  }
 }
+
 
 
 
