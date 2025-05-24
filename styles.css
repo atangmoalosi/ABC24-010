@@ -197,11 +197,11 @@ footer {
   border-radius: 20px;
   padding: 20px;
   margin: 20px auto;
-  max-width: 700px;
+  width: 90%;         /* Match nav width */
+  max-width: 1200px;  /* Optional cap for really wide screens */
   box-sizing: border-box;
 }
 
-                            
 
 /* Product content */
 .js-carousel > div {
