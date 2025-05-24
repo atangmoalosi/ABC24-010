@@ -321,7 +321,7 @@ createCarousel([
 ], 'trousers-men-image', 'trousers-men-title', 'trousers-men-price', 'trousers-men-size', 'trousers-men-prev', 'trousers-men-next', 'add-trousers-men', 'buy-trousers-men');
 }
 
-// Sneakers and Boots
+// Sandals and Flats
 if (document.getElementById('men-sandals-flats-image')) {
 createCarousel([
 
@@ -339,7 +339,26 @@ createCarousel([
   ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
 }
 
-if (document.getElementById('men-sandals-flats-men-image')) {
+//Sneakers And Boots
+
+if (document.getElementById('men-sneakers-boots-image')) {
+createCarousel([
+
+     { src: 'images/pumaspeedcat.png', title: 'Puma Speed Cat', price: 'P70', size: '3' },
+     { src: 'images/timberlands.png', title: 'Timberlands', price: 'P90', size: '6' },
+     { src: 'images/salomon.png', title: 'Salomon Trainers', price: 'P80', size: '3' },
+     { src: 'images/citiusnike.png', title: 'Citius Nike', price: 'P50', size: '5' },
+     { src: 'images/adidasforum.png', title: 'Adidas Forum', price: 'P60', size: '5' },
+     { src: 'images/newbalance200r.png', title: 'New Balance 200r', price: 'P50', size: '4' },
+     { src: 'images/reebok.png', title: 'Brown Reeboks', price: 'P60', size: '5' }, 
+     { src: 'images/drmartens.png', title: 'Dr Martens Platform', price: 'P70', size: '7' },   
+     { src: 'images/nikedunk.png', title: 'Nike Dunks', price: 'P80', size: '6' }
+     
+
+  ], 'men-sneakers-boots-image', 'men-sneakers-boots-title', 'men-sneakers-boots-price', 'men-sneakers-boots-size', 'men-sneakers-boots-prev', 'men-sneakers-boots-next', 'add-men-sneakers-boots', 'buy-men-sneakers-boots');
+}
+
+if (document.getElementById('men-bracelets-image')) {
 createCarousel([
 
      { src: 'images/.png', title: '', price: '', size: '' },
@@ -357,25 +376,7 @@ createCarousel([
   ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
 }
 
-if (document.getElementById('men-sandals-flats-men-image')) {
-createCarousel([
-
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' }, 
-     { src: 'images/.png', title: '', price: '', size: '' },   
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-
-  ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
-}
-
-if (document.getElementById('men-sandals-flats-men-image')) {
+if (document.getElementById('men-necklaces-image')) {
 createCarousel([
 
      { src: 'images/.png', title: '', price: '', size: '' },
