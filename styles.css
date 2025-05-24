@@ -81,6 +81,15 @@ img {
   margin: 0 auto;
 }
 
+/* Center section headings */
+main section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #064218;
+}
+
+
 
 /* WIDE SCREEN */
 @media (min-width: 769px) {
