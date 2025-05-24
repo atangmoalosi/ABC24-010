@@ -361,37 +361,36 @@ createCarousel([
 if (document.getElementById('men-bracelets-image')) {
 createCarousel([
 
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' }, 
-     { src: 'images/.png', title: '', price: '', size: '' },   
+     { src: 'images/abstractgoldbracelet.png', title: 'Abstract Gold Bracelet', price: '', size: 'One Size' },
+     { src: 'images/chainbracelet.png', title: 'Chain Bracelet', price: '', size: 'One Size' },
+     { src: 'images/leatherbracelet.png', title: 'Leather Bracelet', price: 'P25', size: 'One Size' },
+     { src: 'images/woodblockbracelet.png', title: 'Wood Block Bracelet ', price: 'P30', size: 'One Size' },
+     { src: 'images/goldchainbracelt.png', title: 'Gold Chain Bracelt ', price: 'P45', size: 'One Size' },
+     { src: 'images/fourlinkbracelet.png', title: 'Four Link Bracelet ', price: 'P30', size: 'One Size' },
+     { src: 'images/silverbracelet.png', title: 'Silver Bracelet', price: 'P40', size: 'One Size' }, 
+     { src: 'images/twistedsilverbracelts.png', title: 'Twisted Sliver Bracelets', price: 'P40', size: 'One Size' },   
      { src: 'images/.png', title: '', price: '', size: '' },
      { src: 'images/.png', title: '', price: '', size: '' },
      { src: 'images/.png', title: '', price: '', size: '' },
 
-  ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
+  ], 'men-bracelets-image', 'men-bracelets-title', 'men-bracelets-price', 'men-bracelets-size', 'men-bracelets-prev', 'men-bracelets-next', 'add-men-braclets', 'buy-men-bracelets');
 }
 
 if (document.getElementById('men-necklaces-image')) {
 createCarousel([
 
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' }, 
-     { src: 'images/.png', title: '', price: '', size: '' },   
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/beadedtribalnecklace.png', title: 'Beaded Tribal Neclace', price: 'P30', size: 'One Size' },
+     { src: 'images/lighternecklace.png', title: 'Lighter Necklace', price: '40', size: 'One Size' },
+     { src: 'images/beadnecklace.png', title: 'Bead Necklace', price: 'P35', size: 'One Size' },
+     { src: 'images/whitetusknecklace.png', title: 'White Tusk Necklace', price: 'P35', size: 'One Size' },
+     { src: 'images/gemstonenecklace.png', title: 'Gemstone Necklace', price: 'P30', size: 'One Size' },
+     { src: 'images/silvermilitarynecklace.png', title: ' silvermilitarynecklace', price: '', size: 'One Size' },
+     { src: 'images/ sevenecklace.png', title: 'Seven Necklace', price: 'P25', size: 'One Size' }, 
+     { src: 'images/goldstarnecklace.png', title: 'Gold Star Necklace', price: 'P45', size: 'One Size' },   
+     { src: 'images/razornecklace.png', title: 'Razor Necklace', price: 'S', size: 'One Size' }
+  
 
-  ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
+  ], 'men-necklaces-image', 'men-necklaces-title', 'men-necklaces-price', 'men-necklaces-size', 'men-necklaces-prev', 'men-necklaces-next', 'add-men-necklaces', 'buy-men-necklaces');
 }
 
 
