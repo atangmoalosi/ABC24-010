@@ -321,7 +321,87 @@ createCarousel([
 ], 'trousers-men-image', 'trousers-men-title', 'trousers-men-price', 'trousers-men-size', 'trousers-men-prev', 'trousers-men-next', 'add-trousers-men', 'buy-trousers-men');
 }
 
+// Sneakers and Boots
+if (document.getElementById('men-sandals-flats-image')) {
+createCarousel([
 
+     { src: 'images/blackstrapsandals.png', title: 'Black Strap Sandals', price: 'P30', size: '5' },
+     { src: 'images/suedesandals.png', title: 'Suede Sandals', price: 'P40', size: '4' },
+     { src: 'images/loafersburgundy.png', title: 'Burgundy Loafers', price: 'P50', size: '5' },
+     { src: 'images/brownflips.png', title: 'Brown Flips', price: 'P20', size: '3' },
+     { src: 'images/crocs.png', title: 'Crocs', price: 'P20', size: '6' },
+     { src: 'images/monsterasandals.png', title: 'Monstera Slides', price: 'P30', size: '5' },
+     { src: 'images/chunkyloafers.png', title: 'Chunky Loafers', price: 'P45', size: '7' }, 
+     { src: 'images/yeezyslides.png', title: 'Yeezy Slides', price: 'P35', size: '3' },   
+     { src: 'images/tbarslides.png', title: 'T-bar Slides', price: 'P45', size: '6' },
+     { src: 'images/greyflips.png', title: 'Grey Flips', price: 'P20', size: '4' }
+
+  ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
+}
+
+if (document.getElementById('men-sandals-flats-men-image')) {
+createCarousel([
+
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' }, 
+     { src: 'images/.png', title: '', price: '', size: '' },   
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+
+  ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
+}
+
+if (document.getElementById('men-sandals-flats-men-image')) {
+createCarousel([
+
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' }, 
+     { src: 'images/.png', title: '', price: '', size: '' },   
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+
+  ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
+}
+
+if (document.getElementById('men-sandals-flats-men-image')) {
+createCarousel([
+
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' }, 
+     { src: 'images/.png', title: '', price: '', size: '' },   
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/.png', title: '', price: '', size: '' },
+
+  ], 'men-sandals-flats-image', 'men-sandals-flats-title', 'men-sandals-flats-price', 'men-sandals-flats-size', 'men-sandals-flats-prev', 'men-sandals-flats-next', 'add-men-sandals-flats', 'buy-men-sandals-flats');
+}
+
+
+
+
+
+
+
+
+
+  
 function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
   navLinks.classList.toggle('active');
