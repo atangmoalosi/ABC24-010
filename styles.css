@@ -191,6 +191,18 @@ footer {
   max-width: 600px;
 }
 
+/* Wrapper for product sections with curved border */
+.product-wrapper {
+  border: 2px solid #064218;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+                            
+
 /* Product content */
 .js-carousel > div {
   flex: 1;
@@ -274,6 +286,13 @@ footer {
  .product-image {
     max-width: 170px;
   }
+@media (max-width: 768px) {
+  .product-wrapper {
+    padding: 15px;
+    margin: 15px auto;
+  }
+}
+
 
 
   
