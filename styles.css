@@ -10,7 +10,7 @@
 
 /* Body */
 body {
-  font-family: 'Boldonse', Arial, sans-serif;
+  font-family: 'Verdana', Arial, sans-serif;
   background-color: #bbf74a;
   color: #064218;
   line-height: 1.6;
@@ -247,7 +247,7 @@ footer {
 
 /* Add to Cart button */
 .add-to-cart {
-  font-family: 'Boldonse', Arial, sans-serif;
+  font-family: 'Verdana', Arial, sans-serif;
   background: none; /* No background */
   color: #0f4d2c;
   border: 1px solid #0f4d2c;
@@ -265,7 +265,7 @@ footer {
 
 /* Buy Now button */
 .buy-now {
-  font-family: 'Boldonse', Arial, sans-serif;
+  font-family: 'Verdana', Arial, sans-serif;
   background-color: #0f4d2c; /* Background retained */
   color: white;
   border: none;
@@ -609,7 +609,7 @@ table {
 
 /*customer care css*/
 body {
-  font-family: 'Boldonse', Arial, sans-serif;
+  font-family: 'Verdana', Arial, sans-serif;
   background-color: #bbf74a;
   color: #064218;
   line-height: 1.6;
@@ -627,7 +627,7 @@ body {
 }
 
 .card-title {
-  font-family: 'Boldonse', Arial, sans-serif;
+  font-family: 'Verdana', Arial, sans-serif;
 }
 
 .btn-primary {
