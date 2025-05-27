@@ -270,13 +270,13 @@ if (document.getElementById('tops-tshirts-image')) {
 createCarousel([
  { src: 'images/plainblacktshirt.png', title: 'Plain Black T-Shirt', price: 'P20', size: 'L' },
   { src: 'images/shortlongsleeveshirt.png', title: 'Short Long Sleeve', price: 'P30', size: 'M' },
-  { src: 'images/croppedsleevelesshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
+  { src: 'images/croppedsleevelessshirt.png', title: 'Cropped Sleeveless Shirt', price: 'P30', size: 'M' },
    { src: 'images/crewneckshirt.png', title: 'Crew Neck Shirt', price: 'P20', size: 'S' },
   { src: 'images/vintageshirt.png', title: 'Vintage Shirt', price: 'P30', size: 'M' },
   { src: 'images/collartshirt.png', title: 'Collar T Shirt', price: 'P30', size: 'M' },
    { src: 'images/spidermantshirt.png', title: 'Spider Man T-Shirt', price: 'P20', size: 'S' },
   { src: 'images/longsleevetshirt.png', title: 'Long Sleeve T-Shirt', price: 'P30', size: 'M' },
-  { src: 'images/beatlessshirt.png', title: 'Beatles Shirt', price: 'P30', size: 'S' },
+  { src: 'images/beatlesshirt.png', title: 'Beatles Shirt', price: 'P30', size: 'S' },
    { src: 'images/baseballshirt.png', title: 'Baseball Shirt', price: 'P40', size: 'M' }
   
   
@@ -304,15 +304,14 @@ createCarousel([
 // Trousers Carousel
 if (document.getElementById('trousers-men-image')) {
 createCarousel([
-  { src: 'images/blackbootleg.png', title: 'Slim Fit Jeans', price: 'P30', size: '32' },
-  { src: 'images/blueskinnyjean.png', title: 'Blue Skinny Jean', price: 'P25', size: '30' },
+  { src: 'images/blackbootleg.png', title: 'Black Boot Leg', price: 'P30', size: '32' },
+  { src: 'images/blueskinnyjean.png', title: 'Blue Skinny Jeans', price: 'P25', size: '30' },
    { src: 'images/polojeanshorts.png', title: 'Polo Jean Shorts', price: 'P25', size: '28' },
    { src: 'images/chinoshorts.png', title: 'Chino Shorts', price: 'P20', size: '29' },
-   { src: 'images/blueskinnyjean.png', title: 'Blue Skinny Jean', price: 'P25', size: '30' },
-   { src: 'images/pleatedshorts.png', title: 'Pleated Shorts', price: 'P25', size: '32' },
+   { src: 'images/pleatedtrousers.png', title: 'Pleated Trousers', price: 'P25', size: '32' },
    { src: 'images/drawstringpants.png', title: 'Draw String Pants', price: 'P25', size: '26' },
    { src: 'images/blacktrackpants.png', title: 'Black Track Pants', price: 'P20', size: '30' },
-   { src: 'images/straightcargoparts.png', title: 'Straight Cargo Pants', price: 'P35', size: '26' },
+   { src: 'images/straightlegcargoparts.png', title: 'Straight Leg Cargo Pants', price: 'P35', size: '26' },
    { src: 'images/cuffedblacktrackpants.png', title: 'Cuffed Black Track Pants', price: 'P25', size: '30' },
    { src: 'images/denimjorts.png', title: 'Denim Jorts', price: 'P35', size: '30' }
 
@@ -358,24 +357,23 @@ createCarousel([
   ], 'men-sneakers-boots-image', 'men-sneakers-boots-title', 'men-sneakers-boots-price', 'men-sneakers-boots-size', 'men-sneakers-boots-prev', 'men-sneakers-boots-next', 'add-men-sneakers-boots', 'buy-men-sneakers-boots');
 }
 
+//Bracelets
 if (document.getElementById('men-bracelets-image')) {
 createCarousel([
 
      { src: 'images/abstractgoldbracelet.png', title: 'Abstract Gold Bracelet', price: '', size: 'One Size' },
      { src: 'images/chainbracelet.png', title: 'Chain Bracelet', price: '', size: 'One Size' },
      { src: 'images/leatherbracelet.png', title: 'Leather Bracelet', price: 'P25', size: 'One Size' },
-     { src: 'images/woodblockbracelet.png', title: 'Wood Block Bracelet ', price: 'P30', size: 'One Size' },
-     { src: 'images/goldchainbracelt.png', title: 'Gold Chain Bracelt ', price: 'P45', size: 'One Size' },
+     { src: 'images/woodenblockbracelet.png', title: 'Wooden Block Bracelet ', price: 'P30', size: 'One Size' },
+     { src: 'images/goldchainbracelet.png', title: 'Gold Chain Bracelet ', price: 'P45', size: 'One Size' },
      { src: 'images/fourlinkbracelet.png', title: 'Four Link Bracelet ', price: 'P30', size: 'One Size' },
      { src: 'images/silverbracelet.png', title: 'Silver Bracelet', price: 'P40', size: 'One Size' }, 
-     { src: 'images/twistedsilverbracelts.png', title: 'Twisted Sliver Bracelets', price: 'P40', size: 'One Size' },   
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
-     { src: 'images/.png', title: '', price: '', size: '' },
+     { src: 'images/twistedsilverbracelets.png', title: 'Twisted Sliver Bracelets', price: 'P40', size: 'One Size' }  
 
   ], 'men-bracelets-image', 'men-bracelets-title', 'men-bracelets-price', 'men-bracelets-size', 'men-bracelets-prev', 'men-bracelets-next', 'add-men-braclets', 'buy-men-bracelets');
 }
 
+//Necklaces
 if (document.getElementById('men-necklaces-image')) {
 createCarousel([
 
@@ -384,8 +382,8 @@ createCarousel([
      { src: 'images/beadnecklace.png', title: 'Bead Necklace', price: 'P35', size: 'One Size' },
      { src: 'images/whitetusknecklace.png', title: 'White Tusk Necklace', price: 'P35', size: 'One Size' },
      { src: 'images/gemstonenecklace.png', title: 'Gemstone Necklace', price: 'P30', size: 'One Size' },
-     { src: 'images/silvermilitarynecklace.png', title: ' silvermilitarynecklace', price: '', size: 'One Size' },
-     { src: 'images/ sevenecklace.png', title: 'Seven Necklace', price: 'P25', size: 'One Size' }, 
+     { src: 'images/silvermilitarynecklace.png', title: ' Silver Military Necklace', price: 'P40', size: 'One Size' },
+     { src: 'images/sevenecklace.png', title: 'Seven Necklace', price: 'P25', size: 'One Size' }, 
      { src: 'images/goldstarnecklace.png', title: 'Gold Star Necklace', price: 'P45', size: 'One Size' },   
      { src: 'images/razornecklace.png', title: 'Razor Necklace', price: 'S', size: 'One Size' }
   
@@ -394,14 +392,6 @@ createCarousel([
 }
 
 
-
-
-
-
-
-
-
-  
 function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
   navLinks.classList.toggle('active');
