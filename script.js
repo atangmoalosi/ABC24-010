@@ -368,7 +368,7 @@ createCarousel([
      { src: 'images/goldchainbracelet.png', title: 'Gold Chain Bracelet ', price: 'P45', size: 'One Size' },
      { src: 'images/fourlinkbracelet.png', title: 'Four Link Bracelet ', price: 'P30', size: 'One Size' },
      { src: 'images/silverbracelet.png', title: 'Silver Bracelet', price: 'P40', size: 'One Size' }, 
-     { src: 'images/twistedsilverbracelets.png', title: 'Twisted Sliver Bracelets', price: 'P40', size: 'One Size' }  
+     { src: 'images/twistedsilverbracelet.png', title: 'Twisted Sliver Bracelets', price: 'P40', size: 'One Size' }  
 
   ], 'men-bracelets-image', 'men-bracelets-title', 'men-bracelets-price', 'men-bracelets-size', 'men-bracelets-prev', 'men-bracelets-next', 'add-men-braclets', 'buy-men-bracelets');
 }
@@ -384,7 +384,6 @@ createCarousel([
      { src: 'images/gemstonenecklace.png', title: 'Gemstone Necklace', price: 'P30', size: 'One Size' },
      { src: 'images/silvermilitarynecklace.png', title: ' Silver Military Necklace', price: 'P40', size: 'One Size' },
      { src: 'images/sevenecklace.png', title: 'Seven Necklace', price: 'P25', size: 'One Size' }, 
-     { src: 'images/goldstarnecklace.png', title: 'Gold Star Necklace', price: 'P45', size: 'One Size' },   
      { src: 'images/razornecklace.png', title: 'Razor Necklace', price: 'S', size: 'One Size' }
   
 
