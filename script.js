@@ -150,7 +150,6 @@ createCarousel([
 if (document.getElementById('trousers-leggings-image')) {
 createCarousel([
   { src: 'images/blackleggings.jpg', title: 'Black Leggings', price: 'P20', size: 'S' },
-  { src: 'images/blackvelourpants.png', title: 'Black Velour Pants', price: 'P35', size: 'M' },
    { src: 'images/bluedenimjorts.jpg', title: 'Blue Denim Jorts', price: 'P45', size: 'L' },
    { src: 'images/browncargopants.png', title: 'Brown Cargo Pants', price: 'P45', size: 'M' },
    { src: 'images/blueskinnyjeans.jpg', title: 'Brown Skinny Jeans', price: 'P35', size: 'M' },
@@ -383,10 +382,9 @@ createCarousel([
      { src: 'images/whitetusknecklace.png', title: 'White Tusk Necklace', price: 'P35', size: 'One Size' },
      { src: 'images/gemstonenecklace.png', title: 'Gemstone Necklace', price: 'P30', size: 'One Size' },
      { src: 'images/silvermilitarynecklace.png', title: ' Silver Military Necklace', price: 'P40', size: 'One Size' },
-     { src: 'images/sevenecklace.png', title: 'Seven Necklace', price: 'P25', size: 'One Size' }, 
-     { src: 'images/razornecklace.png', title: 'Razor Necklace', price: 'S', size: 'One Size' }
+     { src: 'images/sevenecklace.png', title: 'Seven Necklace', price: 'P25', size: 'One Size' } 
+    
   
-
   ], 'men-necklaces-image', 'men-necklaces-title', 'men-necklaces-price', 'men-necklaces-size', 'men-necklaces-prev', 'men-necklaces-next', 'add-men-necklaces', 'buy-men-necklaces');
 }
 
