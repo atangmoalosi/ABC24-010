@@ -1,4 +1,4 @@
-function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, nextClass, buttonId, buyNowButtonId) {
+function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, nextClass, buttonId, buyNowButtonId, ) {
   let index = 0;
   const imgEl = document.getElementById(imgId);
   const titleEl = document.getElementById(titleId);
@@ -8,6 +8,7 @@ function createCarousel(images, imgId, titleId, priceId, sizeId, prevClass, next
   const nextBtn = document.querySelector(`.${nextClass}`);
   const addToCartBtn = document.getElementById(buttonId);
   const buyNowBtn = document.getElementById(buyNowButtonId);
+  
 
   function show() {
     const item = images[index];
@@ -444,3 +445,21 @@ if (window.location.pathname.includes('checkout.html')) {
     renderCart(); // Initial call
   });
 }
+
+
+  document.getElementById("feedback-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent page reload
+
+    this.reset(); // clear the form
+
+    const message = document.getElementById("feedback-message");
+    message.textContent = "Thank you for your feedback!";
+    message.style.display = "block";
+  });
+
+  function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active");
+  }
+
+
