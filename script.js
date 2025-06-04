@@ -447,19 +447,24 @@ if (window.location.pathname.includes('checkout.html')) {
 }
 
 
-  document.getElementById("feedback-form").addEventListener("submit", function (e) {
-    e.preventDefault(); // prevent page reload
+ // Feedback Form Submission
+document.addEventListener("DOMContentLoaded", function () {
+  const feedbackForm = document.getElementById("feedback-form");
+  const thankYou = document.getElementById("feedback-thank-you");
 
-    this.reset(); // clear the form
-
-    const message = document.getElementById("feedback-message");
-    message.textContent = "Thank you for your feedback!";
-    message.style.display = "block";
-  });
-
-  function toggleMenu() {
-    const navLinks = document.getElementById("nav-links");
-    navLinks.classList.toggle("active");
+  if (feedbackForm) {
+    feedbackForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (thankYou) {
+        thankYou.classList.remove("d-none");
+        thankYou.scrollIntoView({ behavior: "smooth" });
+      }
+      feedbackForm.reset();
+    });
   }
+});
+
+
+
 
 
