@@ -615,6 +615,12 @@ body {
   line-height: 1.6;
 }
 
+.feedback-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
 .card {
   background-color: #e7ffad;
   border: 2px solid #064218;
@@ -639,4 +645,35 @@ body {
   background-color: #0a5c2a;
   border-color: #0a5c2a;
 }
-  
+
+@media (max-width: 768px) {
+  .feedback-form-wrapper {
+    padding: 0 1rem;
+  }
+
+  .feedback-card {
+    margin-top: 1rem;
+    border-radius: 12px;
+  }
+
+  .feedback-card .card-body {
+    padding: 1rem;
+  }
+
+  .feedback-card .form-check {
+    margin-left: 0.5rem;
+  }
+
+  .feedback-card .btn {
+    width: 100%; 
+    font-size: 1rem;
+  }
+
+  #feedback-thank-you {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+
