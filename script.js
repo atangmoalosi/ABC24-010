@@ -91,7 +91,6 @@ if (window.location.pathname.includes('checkout.html')) {
       e.preventDefault();
       alert('Thank you for your order!');
       localStorage.removeItem('ecoCart');
-      window.location.href = 'thankyou.html'; // Optional redirect after checkout
     });
   });
 }
