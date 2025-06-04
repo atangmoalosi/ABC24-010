@@ -30,43 +30,61 @@
 
 
   <!-- Move feedback section first -->
- <form id="feedback-form" class="px-4">
-  <p class="text-center"><strong>Your rating:</strong></p>
+<section class="feedback-section">
+  <h2>Share Your Feedback</h2>
+  <div class="feedback-form-wrapper">
+    <div class="card feedback-card">
+      <div class="card-header bg-primary text-white">
+        <h5 class="card-title mt-2">Feedback Request</h5>
+      </div>
+      <div class="card-body">
+        <div class="text-center mb-3">
+          <i class="far fa-file-alt fa-4x text-primary"></i>
+          <p><strong>Your opinion matters</strong></p>
+          <p>Have some ideas how to improve our product? <strong>Give us your feedback.</strong></p>
+        </div>
+        <hr />
 
-  <div class="form-check mb-2">
-    <input class="form-check-input" type="radio" name="rating" id="rating1">
-    <label class="form-check-label" for="rating1">Very good</label>
-  </div>
-  <div class="form-check mb-2">
-    <input class="form-check-input" type="radio" name="rating" id="rating2">
-    <label class="form-check-label" for="rating2">Good</label>
-  </div>
-  <div class="form-check mb-2">
-    <input class="form-check-input" type="radio" name="rating" id="rating3">
-    <label class="form-check-label" for="rating3">Mediocre</label>
-  </div>
-  <div class="form-check mb-2">
-    <input class="form-check-input" type="radio" name="rating" id="rating4">
-    <label class="form-check-label" for="rating4">Bad</label>
-  </div>
-  <div class="form-check mb-4">
-    <input class="form-check-input" type="radio" name="rating" id="rating5">
-    <label class="form-check-label" for="rating5">Very bad</label>
-  </div>
+        <form class="px-4" id="feedback-form">
+          <p class="text-center"><strong>Your rating:</strong></p>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="rating" id="rating1">
+            <label class="form-check-label" for="rating1">Very good</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="rating" id="rating2">
+            <label class="form-check-label" for="rating2">Good</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="rating" id="rating3">
+            <label class="form-check-label" for="rating3">Mediocre</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="rating" id="rating4">
+            <label class="form-check-label" for="rating4">Bad</label>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="radio" name="rating" id="rating5">
+            <label class="form-check-label" for="rating5">Very bad</label>
+          </div>
 
-  <div class="form-outline mb-4">
-    <label class="form-label" for="feedbackText">What could we improve?</label>
-    <textarea class="form-control" id="feedbackText" rows="4"></textarea>
-  </div>
+          <div class="form-outline mb-4">
+            <label class="form-label" for="feedbackText">What could we improve?</label>
+            <textarea class="form-control" id="feedbackText" rows="4"></textarea>
+          </div>
 
-  <!--  Submit button INSIDE the form -->
-  <div class="text-end">
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
 
-  <!-- Feedback message area -->
-  <div id="feedback-message" class="text-success mt-3" style="display: none;"></div>
-</form>
+        <div id="feedback-thank-you" class="text-success text-center mt-3" style="display: none;">
+          <strong>Thank you for your feedback!</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
   <!-- info section  -->
